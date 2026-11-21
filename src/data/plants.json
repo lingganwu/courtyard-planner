@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "status": "verified-seed",
+  "policy": "Only records with explicit botanical-source verification enter this formal catalog. Price and local image fields remain pending until separately sourced and licensed.",
+  "plants": [
+    {
+      "id": "ginkgo-biloba",
+      "name": "银杏",
+      "latinName": "Ginkgo biloba L.",
+      "family": "Ginkgoaceae",
+      "genus": "Ginkgo",
+      "growthForm": "乔木",
+      "categories": ["落叶乔木", "庭院观果树"],
+      "ornamentalFeatures": ["观叶", "观果", "观姿观干"],
+      "phenology": {"flowerMonths": [3,4], "fruitMonths": [9,10], "colorMonths": [9,10,11]},
+      "sourceDistribution": ["安徽","福建","甘肃","贵州","河南","河北","湖北","江苏","江西","陕西","山东","山西","四川","云南"],
+      "sourceNotes": "iPlant记载银杏为乔木，高可达40m，叶扇形，秋季亮黄色，花期3-4月，种子9-10月成熟；栽培区广。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E9%93%B6%E6%9D%8F?t=focn",
+      "sourceType": "iPlant/植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license"
+    },
+    {
+      "id": "syringa-oblata",
+      "name": "紫丁香",
+      "latinName": "Syringa oblata Lindl.",
+      "family": "Oleaceae",
+      "genus": "Syringa",
+      "growthForm": "灌木",
+      "categories": ["灌木与球类"],
+      "ornamentalFeatures": ["观花", "芳香"],
+      "phenology": {"flowerMonths": [], "fruitMonths": [], "colorMonths": []},
+      "sourceDistribution": ["吉林","辽宁","内蒙古","河北","天津","山西","山东","河南","陕西","宁夏","甘肃","青海","四川"],
+      "sourceNotes": "iPlant确认中文名紫丁香、学名Syringa oblata Lindl.，并列出吉林、辽宁、内蒙古、河北、天津、山西、山东、河南、陕西、宁夏、甘肃、青海、四川等分布记录。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%B4%AB%E4%B8%81%E9%A6%99?t=n",
+      "sourceType": "iPlant/物种信息",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license"
+    },
+    {
+      "id": "hylotelephium-erythrostictum",
+      "name": "八宝",
+      "aliases": ["八宝三七", "白花蝎子草"],
+      "latinName": "Hylotelephium erythrostictum (Miq.) H. Ohba",
+      "family": "Crassulaceae",
+      "genus": "Hylotelephium",
+      "growthForm": "草本",
+      "categories": ["花境·填充", "地被草本"],
+      "ornamentalFeatures": ["观花"],
+      "phenology": {"flowerMonths": [], "fruitMonths": [], "colorMonths": []},
+      "sourceDistribution": ["吉林","辽宁","河北","山西","山东","河南","陕西","安徽","江苏","浙江","四川","贵州","云南"],
+      "sourceNotes": "iPlant记录正式中文名为八宝，学名Hylotelephium erythrostictum (Miq.) H. Ohba；此前工程口语中的“八宝景天”必须避免误绑定到同名检索结果。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E5%85%AB%E5%AE%9D?t=n",
+      "sourceType": "iPlant/物种信息",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license"
+    }
+  ]
+}
