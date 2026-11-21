@@ -61,8 +61,8 @@
 
 **查证数据层（本轮新增，可追溯来源）**
 - `image-candidates.json`：从 Wikimedia Commons 按拉丁学名抓取的**本地化图片**元数据（来源页、CC 许可、作者、视觉类型、置信度、SHA256、图源关键词打分）
-- `price-benchmarks.json`：**851 条公开查证价格，覆盖 210 个品种**。来源扩展为：政府造价信息（信息价 79）、政府采购中标/结算价（121）、园林苗木平台规格报价与招标控制价（行情价 348）、百度爱采购 2026 年公开起批量价（批发价 303）。每条带规格、口径、地区、来源 URL、日期
-- `plants.enriched.json` / `plants.verified.enriched.json`：把图片、查证价、植物学物候合并进 382 条导入层和 32 条已核验层的增强目录；当前 **211 株带查证价**
+- `price-benchmarks.json`：**1138 条公开查证价格，覆盖 341 个品种**。来源扩展为：政府造价信息/材料综合价（信息价 127，含北京、汕头、太原官方发布）、政府采购中标/结算价（129，含京西林场、兰州大学、成都动物园）、园林苗木平台规格报价与招标控制价（行情价）、百度爱采购 2026 年公开起批量价（批发价）、一亩田/切它网产地行情。每条带规格、口径、地区、来源 URL、日期
+- `plants.enriched.json` / `plants.verified.enriched.json`：把图片、查证价、观赏属性、植物学物候合并进 382 条导入层和 32 条已核验层的增强目录；当前 **352 株带查证价、474 株观赏属性全覆盖**
 - `plants.regional.json`：**华南/西南各 30 种乡土适生植物**（拉丁学名经核实、图片本地化），补齐区域覆盖缺口
 
 **合并层**：`src/catalog.js` 负责把各层合并成前端目录（植物共 **474** 条，材料共 **89** 项），并为导入植物自动生成工程参数条目，保证卡片与 BOQ 同价。
@@ -71,7 +71,7 @@
 - 导入层**绝不得**冒充 `botanical-verified`；选品抽屉按「已核验 / 导入待复核」分层展示
 - 图片**全部本地化**到 `public/assets/`，来自许可明确的 Wikimedia Commons / GBIF / iNaturalist，逐张带来源/许可/作者/视觉类型/审核状态；**不加载任何外链图**，图名不符、水印、裂图一律剔除
 - 价格优先级：①公开查证基准价（至少 6 个渠道交叉，带来源/口径/地区）→ ②poke 原始参考价（明确标注 reference-only）→ ③无价（标注待询价）；**查不到的绝不编造**，卡片与 BOQ 同口径。种子价（斤）与成品草坪价（㎡）不混用，单位不匹配的价格不进入 BOQ
-- 观赏/物候属性来自植物学资料，缺的标 `pending` 不臆造
+- 观赏/物候属性来自植物学资料与园艺共识：观赏属性已 474/474 全覆盖；物候月份只补有可靠共识的品类（如芒属花期 8–10 月、秋色叶 10–11 月），无法可靠判断的保持空，来源标 `horticultural-reference`，不冒充 `botanical-verified`
 - “多少种植物 / 多少项材料 / 多少张图”均从实际记录统计，不写死宣传数量
 
 ## 自动化验证
@@ -101,6 +101,10 @@ node scripts/compress-and-sync.mjs      # 图片压缩+哈希同步
 node scripts/fetch-alt-images.mjs       # GBIF / iNaturalist 补图（明确许可 + 异名映射）
 node scripts/expand-prices.mjs          # 合并第二批公开查证价格（园林苗木网/爱采购/政府采购等）
 node scripts/refresh-prices.mjs         # 用最新价格库刷新三份 enriched 目录（不动图片/物候）
+node scripts/enrich-prices-batch3.mjs   # 第三批价格：乔木/宿根/观赏草/藤本/水生/蕨类（汕头+太原官方价等）
+node scripts/enrich-prices-batch4.mjs   # 第四批价格：草花/竹类/成都动物园中标价
+node scripts/enrich-prices-batch5.mjs   # 第五批价格：常见灌木/乔木/草花最后一轮
+node scripts/enrich-attributes.mjs      # 补齐观赏属性与可靠物候月份（幂等，不覆盖已有值）
 ```
 
 ## 可靠资料索引

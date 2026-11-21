@@ -8,7 +8,7 @@
     "huanan": 30,
     "xinan": 30,
     "withImage": 59,
-    "withVerifiedPrice": 35
+    "withVerifiedPrice": 48
   },
   "plants": [
     {
@@ -144,8 +144,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 417,
+        "min": 274,
+        "max": 417,
+        "unit": "株",
+        "spec": "胸径13-15cm/高5.1-5.5m",
+        "priceType": "信息价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "汕头市中心城区(北区)2026年第二季度材料综合价格表（到达工地含税参考价）",
+        "sourceUrl": "https://www.shantou.gov.cn/attachment/0/157/157303/2554983.pdf",
+        "date": "2026-Q2",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -434,8 +446,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 150,
+        "min": 150,
+        "max": 150,
+        "unit": "株",
+        "spec": "移植苗/庭院观赏",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年苗木实时起批量报价（江苏常州供应商）",
+        "sourceUrl": "https://b2b.baidu.com/land/e62d8e63d0c76b7f30a87f006a51d023?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -729,8 +753,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 580,
+        "min": 580,
+        "max": 580,
+        "unit": "株",
+        "spec": "容器苗/规格齐全",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年苗木实时起批量报价（江苏常州供应商）",
+        "sourceUrl": "https://b2b.baidu.com/land/e62d8e63d0c76b7f30a87f006a51d023?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -975,8 +1011,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 80,
+        "min": 80,
+        "max": 80,
+        "unit": "株",
+        "spec": "盆栽/观叶",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年苗木实时起批量报价（江苏常州供应商）",
+        "sourceUrl": "https://b2b.baidu.com/land/e62d8e63d0c76b7f30a87f006a51d023?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1037,8 +1085,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 230,
+        "min": 120,
+        "max": 230,
+        "unit": "株",
+        "spec": "高度150cm",
+        "priceType": "行情价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·绿化工程报价（红瑞木/苏铁/罗汉松等）",
+        "sourceUrl": "http://www.qieta.com/sell/show-5060217.html",
+        "date": "2026",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1184,8 +1244,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 3,
+        "min": 3,
+        "max": 3,
+        "unit": "株",
+        "spec": "小红盆",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年华南绿化苗木实时起批量报价",
+        "sourceUrl": "https://b2b.baidu.com/land/688877b1a711b6472f7a6d0ed88eecd6?fid=403116032",
+        "date": "2026-10-22",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1375,8 +1447,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 18,
+        "min": 18,
+        "max": 18,
+        "unit": "株",
+        "spec": "多色工程苗",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年华南绿化苗木实时起批量报价",
+        "sourceUrl": "https://b2b.baidu.com/land/688877b1a711b6472f7a6d0ed88eecd6?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1436,8 +1520,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.7,
+        "min": 0.7,
+        "max": 0.7,
+        "unit": "株",
+        "spec": "绿化植株/小苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年华南绿化苗木实时起批量报价",
+        "sourceUrl": "https://b2b.baidu.com/land/688877b1a711b6472f7a6d0ed88eecd6?fid=403116032",
+        "date": "2026-09-01",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1500,8 +1596,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 15,
+        "min": 11,
+        "max": 15,
+        "unit": "株",
+        "spec": "墙体绿化苗",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "百度爱采购·2026年藤本植物实时起批量报价",
+        "sourceUrl": "https://b2b.baidu.com/land/f13ed8707c9e9712e99b9995bd814087?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1725,7 +1833,12 @@
         "耐旱"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          7,
+          8,
+          9,
+          10
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -1799,7 +1912,12 @@
         "水生"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          6,
+          7,
+          8,
+          9
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -1838,17 +1956,17 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "price": 0.32,
-        "min": 0.32,
-        "max": 0.32,
-        "unit": "株",
-        "spec": "水生造景苗",
-        "priceType": "批发价",
-        "province": "浙江",
-        "climate": "华东暖温带",
-        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
-        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
-        "date": "2026-08",
+        "price": 10,
+        "min": 10,
+        "max": 10,
+        "unit": "盆",
+        "spec": "盆栽/100盆",
+        "priceType": "中标价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "成都动物园2026年园庭景观绿化苗木采购项目中标合同",
+        "sourceUrl": "https://www.ccgp-sichuan.gov.cn/maincms-web/article?channel=c5bff13f-21ca-4dac-b158-cb40accd3035&id=23edef07-edf5-44b4-aa37-0a9322864fe4",
+        "date": "2026-06-24",
         "recordCount": 1,
         "status": "verified",
         "matchType": "name"
@@ -1871,7 +1989,12 @@
         "水生"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          6,
+          7,
+          8,
+          9
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -1910,17 +2033,17 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "price": 0.35,
-        "min": 0.35,
-        "max": 0.35,
-        "unit": "株",
-        "spec": "湿地浅水苗",
-        "priceType": "批发价",
-        "province": "浙江",
-        "climate": "华东暖温带",
-        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
-        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
-        "date": "2026-08",
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "盆",
+        "spec": "盆栽/80盆",
+        "priceType": "中标价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "成都动物园2026年园庭景观绿化苗木采购项目中标合同",
+        "sourceUrl": "https://www.ccgp-sichuan.gov.cn/maincms-web/article?channel=c5bff13f-21ca-4dac-b158-cb40accd3035&id=23edef07-edf5-44b4-aa37-0a9322864fe4",
+        "date": "2026-06-24",
         "recordCount": 1,
         "status": "verified",
         "matchType": "name"
@@ -1993,17 +2116,17 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "price": 2,
-        "min": 2,
-        "max": 2,
-        "unit": "株",
-        "spec": "高60-120cm",
-        "priceType": "批发价",
-        "province": "河南",
+        "price": 64,
+        "min": 64,
+        "max": 64,
+        "unit": "㎡",
+        "spec": "地被成片/≥2年生",
+        "priceType": "信息价",
+        "province": "山西",
         "climate": "华北温带",
-        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
-        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
-        "date": "2026-09",
+        "source": "太原地区2026年常用园林苗木春季价格信息（住建局）",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202607/P020260720602292347125.pdf",
+        "date": "2026-07",
         "recordCount": 1,
         "status": "verified",
         "matchType": "name"
@@ -2071,17 +2194,17 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "price": 2,
-        "min": 2,
-        "max": 2,
-        "unit": "株",
-        "spec": "浮叶水生苗",
-        "priceType": "批发价",
-        "province": "浙江",
-        "climate": "华东暖温带",
-        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
-        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
-        "date": "2026-08",
+        "price": 64,
+        "min": 64,
+        "max": 64,
+        "unit": "㎡",
+        "spec": "地被成片/≥2年生",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "太原地区2026年常用园林苗木春季价格信息（住建局）",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202607/P020260720602292347125.pdf",
+        "date": "2026-07",
         "recordCount": 1,
         "status": "verified",
         "matchType": "name"
@@ -2722,8 +2845,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 380,
+        "min": 10,
+        "max": 12000,
+        "unit": "株",
+        "spec": "地径10cm",
+        "priceType": "行情价",
+        "province": "湖北",
+        "climate": "华中过渡",
+        "source": "宜昌沛林景观苗木·鸡爪槭2026年11月行情参考",
+        "sourceUrl": "http://www.ycplmm.com/product/847.html",
+        "date": "2026-11-20",
+        "recordCount": 20,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3167,8 +3302,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 12,
+        "min": 12,
+        "max": 12,
+        "unit": "盆",
+        "spec": "盆栽/工程苗",
+        "priceType": "中标价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "成都动物园2026年园庭景观绿化苗木采购项目中标合同",
+        "sourceUrl": "https://www.ccgp-sichuan.gov.cn/maincms-web/article?channel=c5bff13f-21ca-4dac-b158-cb40accd3035&id=23edef07-edf5-44b4-aa37-0a9322864fe4",
+        "date": "2026-06-24",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3265,7 +3412,10 @@
         "乡土"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          4,
+          5
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -3304,8 +3454,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 10,
+        "min": 1,
+        "max": 610,
+        "unit": "株",
+        "spec": "冠径60cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3413619.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "alias"
       }
     },
     {
@@ -3403,7 +3565,10 @@
         "耐阴"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          4,
+          5
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -3905,7 +4070,11 @@
         "耐阴"
       ],
       "phenology": {
-        "flowerMonths": [],
+        "flowerMonths": [
+          7,
+          8,
+          9
+        ],
         "fruitMonths": [],
         "colorMonths": [],
         "source": "regional-reference"
@@ -3945,7 +4114,7 @@
       "demoConstCost": 0,
       "price": {
         "price": 100,
-        "min": 100,
+        "min": 98,
         "max": 100,
         "unit": "元/㎡",
         "spec": "苗龄≥2a,蓬径≥20cm,枝条≥5",
@@ -3955,7 +4124,7 @@
         "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
         "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
         "date": "2025-09",
-        "recordCount": 1,
+        "recordCount": 2,
         "status": "verified",
         "matchType": "name"
       }
@@ -4018,7 +4187,7 @@
       "demoConstCost": 0,
       "price": {
         "price": 67,
-        "min": 67,
+        "min": 65,
         "max": 67,
         "unit": "元/㎡",
         "spec": "苗龄≥2a,蓬径≥15cm,枝条≥5",
@@ -4028,7 +4197,7 @@
         "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
         "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
         "date": "2025-09",
-        "recordCount": 1,
+        "recordCount": 2,
         "status": "verified",
         "matchType": "name"
       }
@@ -4092,8 +4261,20 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.1,
+        "min": 0.1,
+        "max": 0.1,
+        "unit": "株",
+        "spec": "高度20cm",
+        "priceType": "批发价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "西北苗木网·水生植物基地报价（江苏宿迁梵昌苗木）",
+        "sourceUrl": "https://www.xbmiaomu.com/gongyingxinxi/list.php?catid=2949",
+        "date": "2026-10-24",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -4154,17 +4335,17 @@
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "price": 32,
-        "min": 32,
-        "max": 32,
-        "unit": "株",
-        "spec": "1加仑",
-        "priceType": "中标价",
-        "province": "甘肃",
-        "climate": "全国参考",
-        "source": "兰州大学后勤保障部2026年花卉采购项目结算价格",
-        "sourceUrl": "https://hq.lzu.edu.cn/hdupf/fil/202604/202604101775803131572269.pdf",
-        "date": "2026-04",
+        "price": 81,
+        "min": 81,
+        "max": 81,
+        "unit": "㎡",
+        "spec": "地被成片/≥2年生",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "太原地区2026年常用园林苗木春季价格信息（住建局）",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202607/P020260720602292347125.pdf",
+        "date": "2026-07",
         "recordCount": 1,
         "status": "verified",
         "matchType": "name"
