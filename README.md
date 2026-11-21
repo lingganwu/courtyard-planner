@@ -32,14 +32,18 @@
 
 ## 图片本地化
 
-本轮已完成图片本地化：400+ 张植物真实照片存放在 `public/assets/plants/`，全部来自 **Wikimedia Commons**（许可明确：CC BY / CC BY-SA / Public Domain），按拉丁学名精确匹配下载，本地压缩至 800px。
+本轮已完成图片本地化：**474 张植物真实照片全部本地化**存放在 `public/assets/plants/`，覆盖目录中全部 474 条植物。图源按许可明确性分级：
 
-- 每张图带完整审核字段：来源页、许可类型与 URL、作者、视觉类型（整株 habit / 细节 detail）、审核方式（auto-reviewed）、置信度、SHA256 哈希
+- 主源 **Wikimedia Commons**（CC BY / CC BY-SA / Public Domain），按拉丁学名匹配下载
+- 补充源 **GBIF**（按 `CC_BY_4_0 / CC0_1_0 / CC_BY_SA_4_0` 过滤）与 **iNaturalist**（按 `photo_license=cc-by,cc-by-sa,cc0` 过滤），用于补 Wikimedia 无匹配的 11 个条目；异名映射（如玉兰→*Magnolia denudata*）写在抓取脚本里
+- 图片统一压缩至 800px；每张带完整审核字段：来源页、许可类型与 URL、作者、视觉类型（整株 habit / 细节 detail）、审核方式、置信度、SHA256 哈希
 - 乔木优先整株立面图，无法确认的一律标 detail 而不是冒充整株
 - 选品卡片直接显示本地缩略图 + 许可标注，图源可点击查看原始页面
 - 图片元数据登记在 `src/data/image-candidates.json` 与各 `*.enriched.json` 中
 
-`scripts/fetch-plant-images.mjs`、`retry-plant-images.mjs`、`enrich-verified.mjs`、`add-regional.mjs` 是可复现的抓取脚本（低并发 + 限流退避）。`scripts/compress-and-sync.mjs` 负责压缩并同步哈希。`scripts/audit-assets.mjs` 检查图片路径与重复。
+`scripts/fetch-plant-images.mjs`、`retry-plant-images.mjs`、`enrich-verified.mjs`、`add-regional.mjs` 是可复现的 Wikimedia 抓取脚本；`scripts/fetch-alt-images.mjs` 负责 GBIF / iNaturalist 补图（同样低并发 + 限流退避 + 哈希去重）。`scripts/compress-and-sync.mjs` 负责压缩并同步哈希。`scripts/audit-assets.mjs` 检查图片路径与重复。
+
+**不采用的图源**：花瓣网、淘宝商品图、搜索引擎缩略图——授权链条不清或页面反爬，不能合法打包。这类站点只作为发现线索，回溯到原始许可来源后才可能引入。详见 [SOURCES.md](./SOURCES.md)。
 
 ## 数据结构
 
@@ -57,16 +61,16 @@
 
 **查证数据层（本轮新增，可追溯来源）**
 - `image-candidates.json`：从 Wikimedia Commons 按拉丁学名抓取的**本地化图片**元数据（来源页、CC 许可、作者、视觉类型、置信度、SHA256、图源关键词打分）
-- `price-benchmarks.json`：**234 条公开查证价格**，来自政府造价信息（信息价）、政府采购中标价、苗木行情与批发价；每条带规格、口径、地区、来源 URL、日期
-- `plants.enriched.json` / `plants.verified.enriched.json`：把图片、查证价、植物学物候合并进 382 条导入层和 32 条已核验层的增强目录
+- `price-benchmarks.json`：**851 条公开查证价格，覆盖 210 个品种**。来源扩展为：政府造价信息（信息价 79）、政府采购中标/结算价（121）、园林苗木平台规格报价与招标控制价（行情价 348）、百度爱采购 2026 年公开起批量价（批发价 303）。每条带规格、口径、地区、来源 URL、日期
+- `plants.enriched.json` / `plants.verified.enriched.json`：把图片、查证价、植物学物候合并进 382 条导入层和 32 条已核验层的增强目录；当前 **211 株带查证价**
 - `plants.regional.json`：**华南/西南各 30 种乡土适生植物**（拉丁学名经核实、图片本地化），补齐区域覆盖缺口
 
 **合并层**：`src/catalog.js` 负责把各层合并成前端目录（植物共 **474** 条，材料共 **89** 项），并为导入植物自动生成工程参数条目，保证卡片与 BOQ 同价。
 
 **数据分层纪律（红线）**：
 - 导入层**绝不得**冒充 `botanical-verified`；选品抽屉按「已核验 / 导入待复核」分层展示
-- 图片**全部本地化**到 `public/assets/`，来自许可明确的 Wikimedia Commons，逐张带来源/许可/作者/视觉类型/审核状态；**不加载任何外链图**，图名不符、水印、裂图一律剔除
-- 价格优先级：①公开查证基准价（带来源/口径/地区）→ ②poke 原始参考价（明确标注 reference-only）→ ③无价（标注待询价）；**查不到的绝不编造**，卡片与 BOQ 同口径
+- 图片**全部本地化**到 `public/assets/`，来自许可明确的 Wikimedia Commons / GBIF / iNaturalist，逐张带来源/许可/作者/视觉类型/审核状态；**不加载任何外链图**，图名不符、水印、裂图一律剔除
+- 价格优先级：①公开查证基准价（至少 6 个渠道交叉，带来源/口径/地区）→ ②poke 原始参考价（明确标注 reference-only）→ ③无价（标注待询价）；**查不到的绝不编造**，卡片与 BOQ 同口径。种子价（斤）与成品草坪价（㎡）不混用，单位不匹配的价格不进入 BOQ
 - 观赏/物候属性来自植物学资料，缺的标 `pending` 不臆造
 - “多少种植物 / 多少项材料 / 多少张图”均从实际记录统计，不写死宣传数量
 
@@ -94,7 +98,18 @@ node scripts/build-prices.mjs           # 整理查证价格库（需 /tmp/price
 node scripts/integrate-data.mjs         # 合并图片/价格/物候到植物目录
 node scripts/add-regional.mjs           # 区域补充植物+抓图（需 /tmp/regional_plants.json）
 node scripts/compress-and-sync.mjs      # 图片压缩+哈希同步
+node scripts/fetch-alt-images.mjs       # GBIF / iNaturalist 补图（明确许可 + 异名映射）
+node scripts/expand-prices.mjs          # 合并第二批公开查证价格（园林苗木网/爱采购/政府采购等）
+node scripts/refresh-prices.mjs         # 用最新价格库刷新三份 enriched 目录（不动图片/物候）
 ```
+
+## 可靠资料索引
+
+工程量口径、施工构造、植物配置与价格的在线可核查依据汇总在 [SOURCES.md](./SOURCES.md)，包含：
+
+- **现行标准 GB/T 50858-2024**《园林绿化工程工程量计算标准》（2025-09-01 实施，**GB 50858-2013 已废止**）、CJJ 82-2012、消耗量定额 ZYA2-31-2018
+- 植物配置书籍与物候研究（探绿、园林植物与造景、北京园林植物群落案例等）、期刊论文、中国大学 MOOC 视频课程
+- 全部图源与价格源的 URL、许可/口径说明及使用边界
 
 ## 造价模型
 

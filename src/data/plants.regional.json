@@ -7,7 +7,8 @@
     "total": 60,
     "huanan": 30,
     "xinan": 30,
-    "withImage": 59
+    "withImage": 59,
+    "withVerifiedPrice": 35
   },
   "plants": [
     {
@@ -61,15 +62,28 @@
         "confidence": "medium",
         "sha256": "5156f1eba0b0bacb6ee305b98f8605bd7bf046c59e2abfe16e8c69759ac921f5",
         "width": 9316,
-        "height": 6433
+        "height": 6433,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 1000,
+        "min": 29.9,
+        "max": 1000,
+        "unit": "棵",
+        "spec": "胸径13.1-15cm,高400-450cm,冠幅250-300cm,假植苗",
+        "priceType": "中标价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "宣汉县行道树补植苗木采购项目中标结果公告",
+        "sourceUrl": "https://m.yfbzb.com/inviteBid/detail/20250411_498593091.html",
+        "date": "2025-04-11",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -122,7 +136,8 @@
         "confidence": "medium",
         "sha256": "6482ebb6dcb674bf0bdbc01fc5f93f318fb4029e446333c48894df1551b16238",
         "width": 1537,
-        "height": 2304
+        "height": 2304,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -182,15 +197,28 @@
         "confidence": "medium",
         "sha256": "595e2477a0a556ebba5259869e4e5b2147ac7e098b832c90fa27e02e649b069a",
         "width": 4000,
-        "height": 3000
+        "height": 3000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 29.9,
+        "min": 29.9,
+        "max": 29.9,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有水东陂林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "https://m.cgwenjian.com/view/file/202503060001605646",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -243,15 +271,28 @@
         "confidence": "medium",
         "sha256": "e34845fa8bf85db41805afaff27220d58b54f6dec709813a178d1a62932fbd68",
         "width": 2700,
-        "height": 3600
+        "height": 3600,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 578.5,
+        "min": 200.2,
+        "max": 1584.7,
+        "unit": "株",
+        "spec": "胸径Φ12.1-14cm",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "达州市建设工程造价信息2025年第2期(总第125期)",
+        "sourceUrl": "http://zjj.dazhou.gov.cn/uploadfile/14/Attachment/3c6f862983.pdf",
+        "date": "2025-02",
+        "recordCount": 4,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -304,15 +345,28 @@
         "confidence": "medium",
         "sha256": "1386289cc882746267d42d335016942d682708fc64914875aed2a196d41ba34c",
         "width": 4896,
-        "height": 3672
+        "height": 3672,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 34.9,
+        "min": 30,
+        "max": 34.9,
+        "unit": "株",
+        "spec": "未细分规格",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "丰顺县2025年绿美丰顺六大行动苗木保障项目采购合同(gdgpo.czt.gd.gov.cn)",
+        "sourceUrl": "https://gdgpo.czt.gd.gov.cn/gpx-bid-file/ZF_JGBM_000009/441423/2025/3/26/8a7eaf7e954d82170195cb2ef1214939/gpx-contract/8a7e8859967787c10196a9c8f3e25756.pdf?accessCode=8d360d86310737191df100acb82e9cb3",
+        "date": "2025-03-26",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -372,7 +426,8 @@
         "confidence": "medium",
         "sha256": "2f4dc2fd6cabab782b7d54b05d6e55b5d3affd4fd07bc9d5324c1b60f0984a29",
         "width": 2710,
-        "height": 1814
+        "height": 1814,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -440,15 +495,28 @@
         "confidence": "high",
         "sha256": "34c76ca9527021ecec92007ffea906a949679cfce07896cd0d332087105412e6",
         "width": 2448,
-        "height": 3264
+        "height": 3264,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 30,
+        "min": 30,
+        "max": 30,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -500,15 +568,28 @@
         "confidence": "medium",
         "sha256": "64625db7eadca4e44d6f6d45841b9e9cb1278cb9cc78963ee687c8944270dd29",
         "width": 8160,
-        "height": 6120
+        "height": 6120,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 29.2,
+        "min": 29.2,
+        "max": 29.2,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -568,15 +649,28 @@
         "confidence": "high",
         "sha256": "f125c1529637ecb9688b97dcac9eecd939023681abd39ecbb6cf9c919172591e",
         "width": 2268,
-        "height": 4032
+        "height": 4032,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 50,
+        "min": 50,
+        "max": 50,
+        "unit": "棵",
+        "spec": "容器苗胸径3-50cm",
+        "priceType": "批发价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "百度爱采购·广东苗木商户报价",
+        "sourceUrl": "https://b2b.baidu.com/land/da051c469eea489be03d0c1168ad030b?fid=403116032",
+        "date": "2026-09-01",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -627,7 +721,8 @@
         "confidence": "high",
         "sha256": "1cc0642a491b88b46c7227dd173a9b7ef8313f4fb1bdd9edb08eb62315c6c636",
         "width": 954,
-        "height": 1269
+        "height": 1269,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -688,7 +783,8 @@
         "confidence": "high",
         "sha256": "7d19a67829efcdb9c88a7d43c305a6643b046b995ee0c95a4b5ddc3826460831",
         "width": 4000,
-        "height": 3000
+        "height": 3000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -748,7 +844,8 @@
         "confidence": "medium",
         "sha256": "78464ce44122a12f936a705e65a1f4b5bef69705e1a5fd1548001afffe554155",
         "width": 5918,
-        "height": 3945
+        "height": 3945,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -808,7 +905,8 @@
         "confidence": "medium",
         "sha256": "df0ad4bd6a1ac2b98e1955eda26d0ea613b3995ed48c229b7547e721fb86c776",
         "width": 4608,
-        "height": 3456
+        "height": 3456,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -869,7 +967,8 @@
         "confidence": "high",
         "sha256": "48d79083d0d7fa92f86077897a94813a71c1017b19bcf25b5d3183ae8bd79c21",
         "width": 1712,
-        "height": 2288
+        "height": 2288,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -930,7 +1029,8 @@
         "confidence": "medium",
         "sha256": "5c0c0c512382a754bfbb033790901bf513a57d6e8d20b5d2e78345b5512976fe",
         "width": 6000,
-        "height": 4000
+        "height": 4000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -997,15 +1097,28 @@
         "confidence": "high",
         "sha256": "3c423aec369f6877025430e3a9bc8880a784460bc54820e9ce3246e787a18ebd",
         "width": 2592,
-        "height": 1944
+        "height": 1944,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 29.9,
+        "min": 12.43,
+        "max": 29.9,
+        "unit": "株",
+        "spec": "未细分规格",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "丰顺县2025年绿美丰顺六大行动苗木保障项目采购合同(gdgpo.czt.gd.gov.cn)",
+        "sourceUrl": "https://gdgpo.czt.gd.gov.cn/gpx-bid-file/ZF_JGBM_000009/441423/2025/3/26/8a7eaf7e954d82170195cb2ef1214939/gpx-contract/8a7e8859967787c10196a9c8f3e25756.pdf?accessCode=8d360d86310737191df100acb82e9cb3",
+        "date": "2025-03-26",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1063,7 +1176,8 @@
         "confidence": "high",
         "sha256": "b7008acff37ccfc0887e8c78761fbbdf52826e54cb803090cff110f8d866b2ce",
         "width": 4608,
-        "height": 3456
+        "height": 3456,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -1133,7 +1247,8 @@
         "confidence": "high",
         "sha256": "6be1d5df5812afbd8aec9d8980b44178d9206caaaff00ec74c1e6ff6f13a305d",
         "width": 4080,
-        "height": 3060
+        "height": 3060,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -1192,7 +1307,8 @@
         "confidence": "high",
         "sha256": "7deca8a1c6fa2ff21a304ea082cc66a5accb04dbe4ca6b40a664e0fa6d032165",
         "width": 3648,
-        "height": 2736
+        "height": 2736,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -1251,7 +1367,8 @@
         "confidence": "medium",
         "sha256": "49d07131b9efa007805c708cbe2825b87f9b916be4008e7f053a438f7b0982b4",
         "width": 4896,
-        "height": 3672
+        "height": 3672,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -1311,7 +1428,8 @@
         "confidence": "medium",
         "sha256": "1ef21a82a7e22311a875b0849f058b8ff491567700efdadeaf29871f379a8156",
         "width": 4608,
-        "height": 3456
+        "height": 3456,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -1374,7 +1492,8 @@
         "confidence": "medium",
         "sha256": "8440ef6f8c73d03f6752fcf41730b56f7451a0430042ea2423c6ac76f4d8f520",
         "width": 8192,
-        "height": 5464
+        "height": 5464,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -1441,7 +1560,8 @@
         "confidence": "high",
         "sha256": "206286d203b087075e5c4cd632424820d8205d0351039e108d66dfdf91f9197f",
         "width": 4928,
-        "height": 3280
+        "height": 3280,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -1500,15 +1620,28 @@
         "confidence": "high",
         "sha256": "cafbaa52ff850bf6c6d7de2eacea4ad66ddc2419fbe6703e41431ae57912c431",
         "width": 5472,
-        "height": 3648
+        "height": 3648,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 1,
+        "min": 1,
+        "max": 1,
+        "unit": "株",
+        "spec": "高30-50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1560,7 +1693,8 @@
         "confidence": "medium",
         "sha256": "086cf0cf42dbdb4eb52328a39fb293c133916656144bda67752e580b859027dc",
         "width": 3000,
-        "height": 4000
+        "height": 4000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -1622,15 +1756,28 @@
         "confidence": "high",
         "sha256": "a290a65a256e1bf06980575b5f90809c5c327335af5bfd0025d9801a8c4263d9",
         "width": 3264,
-        "height": 2448
+        "height": 2448,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.3,
+        "min": 0.3,
+        "max": 0.3,
+        "unit": "丛",
+        "spec": "丛苗",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1683,15 +1830,28 @@
         "confidence": "high",
         "sha256": "bb7531904cc08b20e52270dc65a517d750a54d30cd87953c344d094f2140f6ab",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.32,
+        "min": 0.32,
+        "max": 0.32,
+        "unit": "株",
+        "spec": "水生造景苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1742,15 +1902,28 @@
         "confidence": "high",
         "sha256": "4e76289a13f5d71ec3e9d2f091e7e6d219e6696ea92c44850f2d354894397fad",
         "width": 5184,
-        "height": 3456
+        "height": 3456,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.35,
+        "min": 0.35,
+        "max": 0.35,
+        "unit": "株",
+        "spec": "湿地浅水苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1812,15 +1985,28 @@
         "confidence": "medium",
         "sha256": "0b65d2eea128567ec726cf42c04448706bfbc60959970d298b4c6a5424bf2130",
         "width": 4000,
-        "height": 6016
+        "height": 6016,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 2,
+        "min": 2,
+        "max": 2,
+        "unit": "株",
+        "spec": "高60-120cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1877,15 +2063,28 @@
         "confidence": "medium",
         "sha256": "2564f39f4064c4ff75145d664cb0ca7383aa45fee380716c553eb2466511bc5a",
         "width": 8192,
-        "height": 5464
+        "height": 5464,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 2,
+        "min": 2,
+        "max": 2,
+        "unit": "株",
+        "spec": "浮叶水生苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1938,15 +2137,28 @@
         "confidence": "high",
         "sha256": "b220d65410fc5fc706e0ab0c0c96e1c970ae44338faae73769d4dabb62a307ee",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 362,
+        "min": 362,
+        "max": 362,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -1999,7 +2211,8 @@
         "confidence": "medium",
         "sha256": "cbeb5978f1b6750fa328217c97377c62960bf74010fc8dfd77de855b2cd3b5a0",
         "width": 4608,
-        "height": 3072
+        "height": 3072,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -2066,15 +2279,28 @@
         "confidence": "high",
         "sha256": "91eee2cc81d177e97f978ef6e33bdff5568ac52a5df23b0a84d0653835d2c85b",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 30,
+        "min": 29.5,
+        "max": 2959,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2126,15 +2352,28 @@
         "confidence": "medium",
         "sha256": "65f885d472fae094c07a97d448276830619a3cd1a93c4724b21da654dd83d424",
         "width": 4320,
-        "height": 3240
+        "height": 3240,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 423,
+        "min": 423,
+        "max": 423,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2185,7 +2424,8 @@
         "confidence": "medium",
         "sha256": "fd3c0daf90f4f569ca872a3394f18dcd3e47c45ef98cad60287bcf2461121a21",
         "width": 3705,
-        "height": 4940
+        "height": 4940,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -2246,15 +2486,28 @@
         "confidence": "medium",
         "sha256": "a3862e39cf12ae5f83618d169611fa7d854cb339fc0be3b7f03a6c93db975459",
         "width": 4000,
-        "height": 3000
+        "height": 3000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 350,
+        "min": 350,
+        "max": 350,
+        "unit": "株",
+        "spec": "高3-3.5m",
+        "priceType": "信息价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "《北京工程造价信息(建设工程)》2026年08月·园林绿化(市场参考价)",
+        "sourceUrl": "http://bjjs.zjw.beijing.gov.cn/eportal/ui?areacode=110000&menuGuid=1626173942294&moduleId=d8bcb681d09f46e88a6edb55924d4b85&month=08&pageId=53618840&struts.portlet.action=/portlet/priceFront!queryList.action&struts.portlet.mode=view&year=2026",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2309,15 +2562,28 @@
         "confidence": "medium",
         "sha256": "94c484eb95648f99d4e3218030f6523e6b9a75d3d8464b54f04eee4ed4273ce7",
         "width": 1814,
-        "height": 2710
+        "height": 2710,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 1000,
+        "min": 1000,
+        "max": 1000,
+        "unit": "株",
+        "spec": "胸径15cm全冠",
+        "priceType": "中标价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "2025年度墓区苗木、草花采购项目分项价格表(ccgp-jiangsu)",
+        "sourceUrl": "http://www.ccgp-jiangsu.gov.cn/fileApi/320000/d93c697c0f81458cb003b93a308a39b1.pdf",
+        "date": "2025",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2372,15 +2638,28 @@
         "confidence": "medium",
         "sha256": "1bf867c7788b52bbea6268b0cba69a37751d9899a3ecf1fc1e2fc4fac6228678",
         "width": 3312,
-        "height": 4416
+        "height": 4416,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 1021,
+        "min": 1021,
+        "max": 1021,
+        "unit": "株",
+        "spec": "未注明规格",
+        "priceType": "中标价",
+        "province": "江西",
+        "climate": "华中过渡",
+        "source": "上饶经开区董团乡人民政府绿植网上超市合同公告",
+        "sourceUrl": "https://sc.zhiliaobiaoxun.com/article/75192783",
+        "date": "2025-08-29",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2435,7 +2714,8 @@
         "confidence": "medium",
         "sha256": "2957df9d71a1f205dcc3af42f0c420e602ccf5c1e2454f969554cf3acb675022",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -2498,15 +2778,28 @@
         "confidence": "medium",
         "sha256": "27bff5901ad07d6eb5fe4e5162b5121195cb17b3524035dbe13ed2bf5207293d",
         "width": 6120,
-        "height": 8160
+        "height": 8160,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 322,
+        "min": 322,
+        "max": 322,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2564,15 +2857,28 @@
         "confidence": "high",
         "sha256": "8152239058adc6a0c569a889a973c6015d0ddbf1f350a8871022b824f77abb18",
         "width": 2288,
-        "height": 1712
+        "height": 1712,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 3,
+        "min": 1,
+        "max": 30,
+        "unit": "株",
+        "spec": "冠径50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2615,15 +2921,42 @@
       "sourceUrl": "",
       "sourceType": "regional-research",
       "reviewStatus": "imported-unverified",
-      "image": null,
-      "imageStatus": "image-pending",
+      "image": {
+        "file": "plants/reg-xn-42.jpg",
+        "source": "iNaturalist",
+        "provider": "iNaturalist",
+        "sourcePage": "https://www.inaturalist.org/photos/63357957",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "artist": "Marco Mussita",
+        "title": "白玉兰 · iNaturalist 记录照",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed-source-license",
+        "confidence": "source-license-verified",
+        "sha256": "f6316f7bd24e976d5f72e438a3e6b284a0c51f3b213fa4189101086c33216d97",
+        "width": 800
+      },
+      "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
-      }
+        "price": 415,
+        "min": 200,
+        "max": 415,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      },
+      "assetStatus": "local-licensed"
     },
     {
       "id": "reg-xn-43",
@@ -2675,15 +3008,28 @@
         "confidence": "high",
         "sha256": "3091f15b4d32397a6872fe3a00a897b8e92bb787a5fb89447dd7bd5748083a6a",
         "width": 1186,
-        "height": 2132
+        "height": 2132,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 30,
+        "min": 6,
+        "max": 40,
+        "unit": "株",
+        "spec": "冠径100cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 4,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2734,15 +3080,28 @@
         "confidence": "medium",
         "sha256": "3b0a7bdfd9c39ed5e263bff9404f1949ef2cfd4d4eae0fd45686e613b71d481a",
         "width": 5152,
-        "height": 3864
+        "height": 3864,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 280,
+        "min": 2.49,
+        "max": 280,
+        "unit": "株",
+        "spec": "地径8cm",
+        "priceType": "中标价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "2025年度墓区苗木、草花采购项目分项价格表(ccgp-jiangsu)",
+        "sourceUrl": "http://www.ccgp-jiangsu.gov.cn/fileApi/320000/d93c697c0f81458cb003b93a308a39b1.pdf",
+        "date": "2025",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2800,7 +3159,8 @@
         "confidence": "high",
         "sha256": "c67dab81cc5eeef93b203a94153e99ba781eaeae91d31a6f6beeea1f8de15458",
         "width": 3944,
-        "height": 2958
+        "height": 2958,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -2863,15 +3223,28 @@
         "confidence": "high",
         "sha256": "3829439347d33bd6bb29c690a8c12ba9179cd98258bb8be0b81358c1f5c4dd71",
         "width": 4320,
-        "height": 3240
+        "height": 3240,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 10,
+        "min": 1,
+        "max": 610,
+        "unit": "株",
+        "spec": "冠径60cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3413619.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -2923,7 +3296,8 @@
         "confidence": "high",
         "sha256": "ecfe7e012c401714e5ce097e5dc0e2dcc7b3cba0a8d6d1d8c71d25f75ac04ba8",
         "width": 3240,
-        "height": 4320
+        "height": 4320,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -2986,15 +3360,28 @@
         "confidence": "medium",
         "sha256": "4b12df83fda8de2e27fff8b330fc695d27b211b93f50456676624f756d2b3801",
         "width": 4990,
-        "height": 3564
+        "height": 3564,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 23,
+        "min": 0.8,
+        "max": 90,
+        "unit": "株",
+        "spec": "冠径80cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 6,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3047,7 +3434,8 @@
         "confidence": "high",
         "sha256": "e2491a477a9899a98a19d1d993f0a4180345c9a1fcedcfb1f4619b9749d799b1",
         "width": 4860,
-        "height": 3240
+        "height": 3240,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
@@ -3108,15 +3496,28 @@
         "confidence": "medium",
         "sha256": "246c5ec9c1652dee4836412e446d67636cb257049032f97c1f59720261ae7216",
         "width": 4592,
-        "height": 3056
+        "height": 3056,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 37.8,
+        "min": 19.7,
+        "max": 37.8,
+        "unit": "株",
+        "spec": "P80-100cm/H80-100cm,成都",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "四川地区城市园林绿化主要苗木指导价(第一百六十期·2025年1月)",
+        "sourceUrl": "https://home.gd-esa.com/attachment?id=1603740620512296960",
+        "date": "2025-01",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3174,15 +3575,28 @@
         "confidence": "medium",
         "sha256": "2012c08b13e773aebd8866034d3f2d44baeb7cf8dc2d5fa803238828221dc846",
         "width": 4608,
-        "height": 3072
+        "height": 3072,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 1,
+        "min": 0.35,
+        "max": 40,
+        "unit": "株",
+        "spec": "高40-60cm 冠30-50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3239,7 +3653,8 @@
         "confidence": "medium",
         "sha256": "913e73169ae0908fd2d7282afde75c7ccd3650367acac0c3140510acbebcdd66",
         "width": 4295,
-        "height": 3068
+        "height": 3068,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -3299,15 +3714,28 @@
         "confidence": "high",
         "sha256": "f1bc91223d5c12271d7fa7b134e44a8e7be7ab6d91b5d2ea6c5dc4b216e02cdf",
         "width": 5184,
-        "height": 3456
+        "height": 3456,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "平方米",
+        "spec": "细叶/阔叶 每平方米",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3359,15 +3787,28 @@
         "confidence": "high",
         "sha256": "0f47800cfccf08b42e950e7ce2af5e90d25a964ddf47a6f214a77f4fc74595ba",
         "width": 4320,
-        "height": 3240
+        "height": 3240,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-whole",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "平方米",
+        "spec": "细叶/阔叶 每平方米",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "alias"
       }
     },
     {
@@ -3420,15 +3861,28 @@
         "confidence": "medium",
         "sha256": "ab4e9d6f67fd6f5a5b70b880c565e2654a27a5f061071bdfacb486372c30e1c7",
         "width": 6000,
-        "height": 4000
+        "height": 4000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 0.3,
+        "min": 0.3,
+        "max": 0.3,
+        "unit": "丛",
+        "spec": "丛苗",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3482,15 +3936,28 @@
         "confidence": "medium",
         "sha256": "7dc5277489fb5d58f4d3779e2e2306942864fff86e11741a28d4bad905676713",
         "width": 2448,
-        "height": 3264
+        "height": 3264,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 100,
+        "min": 100,
+        "max": 100,
+        "unit": "元/㎡",
+        "spec": "苗龄≥2a,蓬径≥20cm,枝条≥5",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3542,15 +4009,28 @@
         "confidence": "medium",
         "sha256": "244b4dc4c9bf845add36a8856c96647f9a3a1998fd4dad076dffb45036393f42",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 67,
+        "min": 67,
+        "max": 67,
+        "unit": "元/㎡",
+        "spec": "苗龄≥2a,蓬径≥15cm,枝条≥5",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3604,7 +4084,8 @@
         "confidence": "medium",
         "sha256": "2085ad9ee2822c15eaa28844ae8a2ab8f1f980bcb97e481c194e64713d71b424",
         "width": 3000,
-        "height": 4000
+        "height": 4000,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
@@ -3665,15 +4146,28 @@
         "confidence": "medium",
         "sha256": "7649c6ca256cb66ad57398a71f23103a2856a97bfb1c9c5c1b084ceb6a81c6e9",
         "width": 4592,
-        "height": 3056
+        "height": 3056,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
       "demoPrice": 0,
       "demoConstCost": 0,
       "price": {
-        "status": "unavailable",
-        "note": "暂无查证价格，需项目询价"
+        "price": 32,
+        "min": 32,
+        "max": 32,
+        "unit": "株",
+        "spec": "1加仑",
+        "priceType": "中标价",
+        "province": "甘肃",
+        "climate": "全国参考",
+        "source": "兰州大学后勤保障部2026年花卉采购项目结算价格",
+        "sourceUrl": "https://hq.lzu.edu.cn/hdupf/fil/202604/202604101775803131572269.pdf",
+        "date": "2026-04",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
       }
     },
     {
@@ -3726,7 +4220,8 @@
         "confidence": "medium",
         "sha256": "21b82b3e3b67706d105a09a9e09112a353ece163ec241602f26de11ae85f97f3",
         "width": 7360,
-        "height": 4912
+        "height": 4912,
+        "source": "Wikimedia Commons"
       },
       "imageStatus": "image-available-detail",
       "sourceNotes": "区域补充·乡土适生",
