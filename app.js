@@ -5,8 +5,11 @@
  */
 import {
   balanceSpace, filterPlants, buildBOQ, boqTotal, toCSV,
-  materialBreakdown, validSnapshot, plantUnitPrice, quantity, round
+  materialBreakdown, materialBreakdownRows, validSnapshot, plantUnitPrice, quantity, round
 } from './src/core.js';
+import {
+  mergePlants, mergeMaterials, statusLabel, hasLicensedImage
+} from './src/catalog.js';
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -14,6 +17,9 @@ const money = n => '¥' + Math.round(n || 0).toLocaleString('zh-CN');
 
 // 运行时数据（从 JSON 加载，不再内嵌假数据）
 let PLANTS = [], ENGINEERING = null, MATERIALS = [], FEATURES = [], PLANTS_BY_ID = {};
+let CATALOG_STATS = null;
+let PICKER_PAGE = 1;
+const PAGE_SIZE = 24;
 
 // 分类/属性/季相选项从真实数据统计得出
 let CATEGORIES = ['全部'], FEATURES_OPT = ['全部'], SEASONS = ['全部', '春', '夏', '秋', '冬'];
@@ -23,7 +29,7 @@ const state = {
   chosen: { chosenTrees: [], chosenShrubs: [], chosenGround: [] },
   chosenFeatures: [],
   selectedMaterial: 'granite',
-  filters: { category: '全部', feature: '全部', season: '全部', month: null },
+  filters: { category: '全部', feature: '全部', season: '全部', month: null, source: '全部' },
   view: 'cost'
 };
 
@@ -36,23 +42,26 @@ function toast(t) {
 
 /* ---------------- 数据加载 ---------------- */
 async function loadData() {
-  const [plantsRes, engRes, matRes, featRes] = await Promise.all([
-    fetch('./src/data/plants.json'),
-    fetch('./src/data/engineering.json'),
-    fetch('./src/data/materials.json'),
-    fetch('./src/data/features.json')
-  ]);
-  if (!plantsRes.ok || !engRes.ok || !matRes.ok || !featRes.ok) {
-    throw new Error('数据文件加载失败');
-  }
-  const [plantsDoc, eng, matDoc, featDoc] = await Promise.all([
-    plantsRes.json(), engRes.json(), matRes.json(), featRes.json()
-  ]);
-  PLANTS = plantsDoc.plants;
+  const files = [
+    './src/data/plants.json', './src/data/engineering.json',
+    './src/data/materials.json', './src/data/features.json',
+    './src/data/plants.imported.json', './src/data/materials.imported.json'
+  ];
+  const res = await Promise.all(files.map(f => fetch(f)));
+  if (res.some(r => !r.ok)) throw new Error('数据文件加载失败');
+  const [plantsDoc, eng, matDoc, featDoc, plantsImp, matsImp] = await Promise.all(res.map(r => r.json()));
+
+  // 合并两层数据：已核验层 + 导入层（严格分层标注）
+  const merged = mergePlants(plantsDoc, plantsImp);
+  const mergedMats = mergeMaterials(matDoc.materials, matsImp);
+  PLANTS = merged.plants;
   ENGINEERING = eng;
-  MATERIALS = matDoc.materials;
+  // 把导入植物的工程参数并入 entries，供 BOQ/价格复用
+  Object.assign(ENGINEERING.entries, merged.engineeringEntries);
+  MATERIALS = mergedMats.materials;
   FEATURES = featDoc.features;
   PLANTS_BY_ID = Object.fromEntries(PLANTS.map(p => [p.id, p]));
+  CATALOG_STATS = { plants: merged.stats, materials: mergedMats.stats, importedAt: plantsImp.importedAt };
 
   // 从真数据统计筛选项
   const cats = new Set(), feats = new Set();
@@ -63,10 +72,10 @@ async function loadData() {
   CATEGORIES = ['全部', ...[...cats].sort()];
   FEATURES_OPT = ['全部', ...[...feats].sort()];
 
-  const verified = PLANTS.filter(p => p.reviewStatus === 'botanical-verified').length;
-  $('#dataStatus').textContent = `已加载 ${PLANTS.length} 条植物学核验记录（${verified} 条 botanical-verified）· 价格与图片为演示基线`;
-  $('#plantLibStat').textContent = `已核验 ${verified} 条`;
-  $('#pickerSource').textContent = `已核验库 ${PLANTS.length} 条 · 非完整图库`;
+  const v = merged.stats.verified, im = merged.stats.imported;
+  $('#dataStatus').textContent = `植物 ${PLANTS.length} 条（已核验 ${v} · 导入待复核 ${im}）· 材料 ${MATERIALS.length} 项 · 价格演示基线 · 图片待授权本地化`;
+  $('#plantLibStat').textContent = `共 ${PLANTS.length} 条（已核验 ${v}）`;
+  $('#pickerSource').textContent = `全目录 ${PLANTS.length} 条 · 已核验 ${v} / 导入 ${im}（导入层未经植物学复核）`;
 }
 
 /* ---------------- 状态读取 ---------------- */
@@ -123,7 +132,7 @@ function renderChosen() {
         <p>${(p.categories || []).join(' · ')}<br>${(p.ornamentalFeatures || []).join(' / ')} · ${e.spec}</p>
         <footer><small>${e.unit === '㎡' ? qty + '㎡' : qty + '株'} · 演示价</small><button data-remove="${id}" data-target="${key}">移除</button></footer>
       </article>`;
-    }).join('') : '<div class="empty">尚未选择。点击上方按钮从已核验植物库添加。</div>';
+    }).join('') : '<div class="empty">尚未选择。点击上方按钮从分层植物目录添加。</div>';
   }
 }
 
@@ -142,17 +151,25 @@ function renderMaterials() {
   const st = currentState();
   $('#materialGrid').innerHTML = MATERIALS.map(m =>
     `<button class="material ${m.id === state.selectedMaterial ? 'active' : ''}" data-mat="${m.id}">
-      <b>${m.name}</b><small>${m.spec}</small><strong>${money(materialBreakdown(m, st.grade).total)}/㎡</strong>
+      <b>${m.name}</b><small>${m.spec}</small><strong>${money(materialBreakdownRows(m, st.grade).total)}/${m.unit || '㎡'}</strong>
     </button>`).join('');
   const m = MATERIALS.find(x => x.id === state.selectedMaterial) || MATERIALS[0];
   $('#buildTitle').textContent = m.name + ' · ' + m.spec;
-  $('#buildLayers').innerHTML = (m.constructionLayers || []).map(l => `<li><b>${l.name}</b><span>${l.desc}</span></li>`).join('');
-  const b = materialBreakdown(m, st.grade);
-  $('#costTitle').textContent = money(b.total) + ' /㎡';
-  const label = { main: '主材', sub: '基层/辅材', labor: '人工', machine: '机械', logistics: '物流', waste: '损耗', measure: '措施' };
-  $('#costRows').innerHTML = Object.entries(label).map(([k, v]) =>
-    `<li><span>${v}</span><b>${money(b.rows[k])}</b></li>`).join('');
-  $('#wasteNote').textContent = `损耗率 ${(m.wasteRate * 100).toFixed(0)}% · 单价为演示基线，非正式询价`;
+  const flat = m.pricingMode === 'flat';
+  $('#buildLayers').innerHTML = flat
+    ? (m.buildUp || []).map(l => `<li>${l}</li>`).join('') || '<li>构造断面待补充</li>'
+    : (m.constructionLayers || []).map(l => `<li><b>${l.name}</b><span>${l.desc}</span></li>`).join('');
+  const b = materialBreakdownRows(m, st.grade);
+  $('#costTitle').textContent = money(b.total) + ' /' + (m.unit || '㎡');
+  const entries = flat
+    ? [['主材', b.rows.main], ['施工', b.rows.const]]
+    : [['主材', b.rows.main], ['基层/辅材', b.rows.sub], ['人工', b.rows.labor], ['机械', b.rows.machine],
+       ['物流', b.rows.logistics], ['损耗', b.rows.waste], ['措施', b.rows.measure]];
+  $('#costRows').innerHTML = entries.map(([v, val]) =>
+    `<li><span>${v}</span><b>${money(val)}</b></li>`).join('');
+  $('#wasteNote').textContent = (flat
+    ? `损耗率 ${(m.lossPct || 0).toFixed(0)}%`
+    : `损耗率 ${((m.wasteRate || 0) * 100).toFixed(0)}%`) + ' · 来源:' + (m.sourceType || 'baseline') + ' · 演示价非正式询价';
 }
 
 function renderBOQ() {
@@ -216,8 +233,10 @@ function renderPicker() {
   chips('#featureTabs', FEATURES_OPT, 'feature');
   chips('#seasonTabs', SEASONS, 'season');
   chips('#monthTabs', MONTHS, 'month');
+  chips('#sourceTabs', ['全部', '已核验', '导入待复核'], 'source');
   $('#pickerClimate').textContent = $('#climate').value + ' · 气候匹配仅供参考';
-  const list = filterPlants(PLANTS, ENGINEERING, {
+
+  let list = filterPlants(PLANTS, ENGINEERING, {
     climate: $('#climate').value,
     category: state.filters.category,
     feature: state.filters.feature,
@@ -225,19 +244,38 @@ function renderPicker() {
     month: state.filters.month,
     keyword: $('#search').value
   });
+  // 数据源分层筛选
+  if (state.filters.source === '已核验') list = list.filter(p => p.reviewStatus === 'botanical-verified');
+  if (state.filters.source === '导入待复核') list = list.filter(p => String(p.reviewStatus).startsWith('imported'));
+
   $('#matchCount').textContent = list.length + ' / ' + PLANTS.length + ' 条匹配';
-  $('#pickerGrid').innerHTML = list.map(p => {
+  const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  if (PICKER_PAGE > pages) PICKER_PAGE = pages;
+  const pageList = list.slice((PICKER_PAGE - 1) * PAGE_SIZE, PICKER_PAGE * PAGE_SIZE);
+
+  $('#pickerGrid').innerHTML = pageList.map(p => {
     const e = ENGINEERING.entries[p.id];
     const target = e.target;
     const added = state.chosen[target].includes(p.id);
+    const label = statusLabel(p);
+    const cls = label === '已核验' ? 'ok' : 'warn';
     return `<article class="pick">
-      <h4>${p.name} ${added ? '<small class="tag">已加入</small>' : ''}</h4>
+      <h4>${p.name} ${added ? '<small class="tag">已加入</small>' : ''}<span class="review ${cls}">${label}</span></h4>
       <em>${p.latinName}</em>
-      <p>${(p.categories || []).join(' / ')}<br>${(p.ornamentalFeatures || []).join(' / ')}<br>${e.spec}</p>
+      <p>${(p.categories || []).join(' / ')}${(p.ornamentalFeatures || []).length ? '<br>' + p.ornamentalFeatures.join(' / ') : ''}<br>${e.spec}</p>
       <footer><b>${money(plantUnitPrice(e, +$('#grade').value || 1))}/${e.unit}</b><button data-add="${p.id}" data-target="${target}" ${added ? 'disabled' : ''}>${added ? '已加入' : '加入'}</button></footer>
-      <div class="pick-source">来源：${p.sourceType} · ${p.reviewStatus}</div>
+      <div class="pick-source">${p.sourceType}${p.duplicateOf ? ' · 疑似重复' : ''} · 图片:${hasLicensedImage(p) ? '已授权' : '待授权'}</div>
     </article>`;
   }).join('') || '<div class="empty">当前筛选无匹配项。已核验库不补假条目。</div>';
+
+  // 分页控件
+  const pager = $('#pickerPager');
+  if (pager) {
+    pager.innerHTML = pages <= 1 ? '' :
+      `<button data-page="prev" ${PICKER_PAGE === 1 ? 'disabled' : ''}>‹ 上一页</button>
+       <span>第 ${PICKER_PAGE} / ${pages} 页</span>
+       <button data-page="next" ${PICKER_PAGE === pages ? 'disabled' : ''}>下一页 ›</button>`;
+  }
 }
 
 function openPicker(def) {
@@ -245,6 +283,8 @@ function openPicker(def) {
   state.filters.feature = '全部';
   state.filters.season = '全部';
   state.filters.month = null;
+  state.filters.source = '全部';
+  PICKER_PAGE = 1;
   $('#search').value = '';
   $('#drawer').classList.add('open');
   $('#drawer').setAttribute('aria-hidden', 'false');
@@ -307,7 +347,13 @@ function bindEvents() {
       let v = e.target.dataset.value;
       if (key === 'month') v = v === '全部' ? null : Number(v);
       state.filters[key] = v;
+      PICKER_PAGE = 1;
       renderPicker();
+    }
+    if (e.target.dataset.page) {
+      PICKER_PAGE += e.target.dataset.page === 'next' ? 1 : -1;
+      renderPicker();
+      $('#drawer').scrollTop = 0;
     }
     if (e.target.dataset.add) {
       const id = e.target.dataset.add;

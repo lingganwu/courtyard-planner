@@ -35,20 +35,24 @@ async function boot() {
   window.URL.createObjectURL = () => 'blob:mock';
   window.URL.revokeObjectURL = () => {};
 
-  const appCode = read('app.js').replace(
-    /import\s*\{[\s\S]*?\}\s*from\s*'\.\/src\/core\.js';/,
-    ''
-  );
+  const appCode = read('app.js')
+    .replace(/import\s*\{[\s\S]*?\}\s*from\s*'\.\/src\/core\.js';/, '')
+    .replace(/import\s*\{[\s\S]*?\}\s*from\s*'\.\/src\/catalog\.js';/, '');
   // 把 core.js 的导出注入为全局（剥离 export 关键字后 eval）
   const coreCode = read('src/core.js').replace(/export\s+function/g, 'function');
   window.eval(coreCode);
+  // 把 catalog.js 的导出注入为全局
+  const catalogCode = read('src/catalog.js').replace(/export\s+function/g, 'function');
+  window.eval(catalogCode);
   // 构造 import 的对象
-  const coreNames = ['balanceSpace','filterPlants','buildBOQ','boqTotal','toCSV','materialBreakdown','validSnapshot','plantUnitPrice','quantity','round'];
+  const coreNames = ['balanceSpace','filterPlants','buildBOQ','boqTotal','toCSV','materialBreakdown','materialBreakdownRows','validSnapshot','plantUnitPrice','quantity','round'];
+  const catalogNames = ['mergePlants','mergeMaterials','statusLabel','hasLicensedImage'];
   window.__core = Object.fromEntries(coreNames.map(n => [n, window[n]]));
+  window.__catalog = Object.fromEntries(catalogNames.map(n => [n, window[n]]));
   // 替换 app.js 顶部 import 为 const 解构
   const appBoot = appCode.replace(
     /(const \$ =)/,
-    `const {${coreNames.join(',')}} = window.__core;\n$1`
+    `const {${coreNames.join(',')}} = window.__core;\nconst {${catalogNames.join(',')}} = window.__catalog;\n$1`
   );
   window.eval(appBoot);
 
@@ -57,16 +61,35 @@ async function boot() {
   return window;
 }
 
-test('前端加载真实数据并渲染 32 条已核验植物到选品抽屉', async () => {
+test('前端加载 414 条植物（32 已核验 + 382 导入）并渲染到选品抽屉', async () => {
   const w = await boot();
   const status = w.document.querySelector('#dataStatus').textContent;
-  assert.match(status, /32 条/);
-  assert.match(status, /botanical-verified/);
+  assert.match(status, /414/);
+  assert.match(status, /已核验 32/);
+  assert.match(status, /导入待复核 382/);
 
   w.document.querySelector('.open-picker').click();
   const picks = w.document.querySelectorAll('#pickerGrid .pick');
   assert.ok(picks.length > 0, '选品抽屉应渲染植物');
-  assert.match(w.document.querySelector('#matchCount').textContent, /\/ 32 条/);
+  assert.ok(picks.length <= 24, '首屏应分页，最多 24 条');
+  assert.match(w.document.querySelector('#matchCount').textContent, /\/ 414 条/);
+  // 审核标注应同时出现已核验与导入待复核
+  const labels = w.document.querySelector('#pickerGrid').textContent;
+  assert.match(labels, /已核验/);
+});
+
+test('数据源筛选：只看导入待复核', async () => {
+  const w = await boot();
+  w.document.querySelector('.open-picker').click();
+  const btn = [...w.document.querySelectorAll('#sourceTabs [data-filter]')].find(b => b.dataset.value === '导入待复核');
+  assert.ok(btn, '应有导入待复核筛选');
+  btn.click();
+  const mc = w.document.querySelector('#matchCount').textContent;
+  // 数据源筛选叠加默认气候区(华北温带)，结果应 ≤382 且 >0
+  const m = mc.match(/^(\d+)/);
+  assert.ok(m && +m[1] > 0 && +m[1] <= 382, '导入待复核筛选数量应在 1~382 之间：' + mc);
+  const grid = w.document.querySelector('#pickerGrid').textContent;
+  assert.doesNotMatch(grid, /已核验<\/span>/, '结果不应含已核验层');
 });
 
 test('默认方案渲染出真实植物名与拉丁名', async () => {

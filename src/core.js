@@ -162,9 +162,28 @@ export function materialBreakdown(mat, grade = 1) {
   return { rows, subtotal: round(subtotal * g), total, closed: absDiff(subtotal, Object.values(rows).reduce((a,b)=>a+b,0) / g) < 0.01 };
 }
 
-/** 材料综合单价：工料机拆解合计 × 品质档位（演示） */
+/** 材料综合单价：工料机拆解合计 × 品质档位（演示）
+ *  导入层材料用 pricingMode:'flat'，直接 材料价+施工价 同乘品质档位，
+ *  保证卡片标价与 BOQ 单价完全同源（避免 poke 版卡片/清单价不一致的缺陷）。 */
 export function materialUnitPrice(mat, grade = 1) {
+  const g = Number(grade) || 1;
+  if (mat && mat.pricingMode === 'flat') {
+    return round(((Number(mat.flatMaterial) || 0) + (Number(mat.flatConst) || 0)) * g);
+  }
   return materialBreakdown(mat, grade).total;
+}
+
+/** 材料拆解行：兼容扁平计价材料（返回材料价/施工价两项） */
+export function materialBreakdownRows(mat, grade = 1) {
+  const g = Number(grade) || 1;
+  if (mat && mat.pricingMode === 'flat') {
+    return {
+      rows: { main: round((Number(mat.flatMaterial) || 0) * g), const: round((Number(mat.flatConst) || 0) * g) },
+      total: materialUnitPrice(mat, g)
+    };
+  }
+  const b = materialBreakdown(mat, g);
+  return { rows: b.rows, total: b.total };
 }
 
 export function boqTotal(rows) {

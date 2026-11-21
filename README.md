@@ -45,29 +45,39 @@
 
 ## 数据结构
 
-数据层位于 `src/data/`：
+数据层位于 `src/data/`，采用**两层目录**结构（已核验层 + 导入层，严格分层标注）：
 
-- `plants.json`：**32 条已核验植物学记录**（中文名、拉丁学名、科属、分类、观赏属性、物候月份、分布、来源、审核状态）——植物学事实的唯一权威来源
+**已核验层（权威）**
+- `plants.json`：**32 条 botanical-verified 植物记录**（中文名、拉丁学名、科属、分类、观赏属性、物候月份、分布、来源、审核状态）——植物学事实的唯一权威来源
 - `engineering.json`：演示工程参数（规格、单位、密度、演示单价、省份→气候区映射），`status: demo-baseline`
 - `materials.json`：8 种硬景材料，含构造层、损耗率、人工/机械/物流/措施拆解
 - `features.json`：5 项景观小品与水系选配
-- `assets.json`：本地图片及授权审核信息（当前为空，等待有许可的素材）
 
-**数据分层纪律**：`plants.json` 的植物学字段不得被工程参数层覆盖。价格与图片均为演示基线，正式数据须记录地区、日期、来源与含税口径。所有“多少种植物 / 多少项材料”的数字均从实际记录统计，不写死宣传数量。
+**导入层（批量、待复核）**
+- `plants.imported.json`：**382 条植物**，从 poke 版线上源码完整抽取（12 个分类：常绿/落叶乔木、果树、花灌木、花境、竹类、藤本、水生、草坪、蕨类苔藓等），含中文名、拉丁学名、规格、功能/观赏属性、适生气候区、演示单价。全部标注 `reviewStatus: imported-unverified`，**未经独立植物学复核**，9 条重复学名已标记
+- `materials.imported.json`：**81 项材料**（61 硬景 + 20 软景），含规格、损耗率、工料机演示价、构造断面（61 项硬景均有 buildUp），同样标注 imported-unverified
+
+**合并层**：`src/catalog.js` 负责把两层合并成前端目录（植物共 **414** 条，材料共 **89** 项），并为导入植物自动生成工程参数条目，保证卡片与 BOQ 同价。
+
+**数据分层纪律（红线）**：
+- 导入层**绝不得**冒充 `botanical-verified`；选品抽屉按「已核验 / 导入待复核」分层展示
+- poke 版的外链图片**一律不带入**；导入数据图片字段为空、`assetStatus: pending-local-license`（当前全库 0 张已授权图片，宁缺毋滥）
+- 所有价格为 `demo-baseline`，卡片与 BOQ 同口径；正式数据须记录地区、日期、来源与含税口径
+- “多少种植物 / 多少项材料”均从实际记录统计，不写死宣传数量
 
 ## 自动化验证
 
 核心计算逻辑集中在 `src/core.js`（纯函数），浏览器与 Node 测试共用同一份代码。
 
 ```bash
-npm run audit   # 植物/图片/工程参数三项审计
-npm test        # 核心逻辑 + DOM 集成测试
-npm run check   # 审计 + 测试
+npm run audit   # 植物/图片/工程参数/导入层 四项审计
+npm test        # 核心逻辑(22) + 目录合并(10) + DOM 集成(7)
+npm run check   # 审计 + 测试（39 项测试）
 ```
 
-- 审计脚本：`scripts/audit-plants.mjs`、`audit-assets.mjs`、`audit-engineering.mjs`
-- 单元测试：`tests/core.test.js`（空间配平、筛选、气候匹配、BOQ 平账、工料机拆解、CSV 等）
-- DOM 集成测试：`tests/dom.integration.test.js`（用 jsdom 加载真实页面与数据，验证植物渲染、BOQ、小品联动、汇报视图、导出）
+- 审计脚本：`scripts/audit-plants.mjs`、`audit-assets.mjs`、`audit-engineering.mjs`、`audit-imports.mjs`（导入层数据完整性与分层红线校验）
+- 单元测试：`tests/core.test.js`（空间配平、筛选、气候匹配、BOQ 平账、工料机拆解、CSV 等）、`tests/catalog.test.js`（两层合并、审核标注、导入植物 BOQ、卡片/BOQ 同价、大数据筛选）
+- DOM 集成测试：`tests/dom.integration.test.js`（用 jsdom 加载真实页面与数据，验证 414 条目录加载、数据源分层筛选、分页、BOQ、小品联动、汇报视图、导出）
   - 依赖 jsdom，运行时需将 jsdom 置于 Node 模块解析路径；CI 环境请先安装。
 
 ## 造价模型
