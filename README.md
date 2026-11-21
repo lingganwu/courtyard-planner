@@ -45,15 +45,30 @@
 
 ## 数据结构
 
-数据层位于 `src/data/`，逐步拆分为：
+数据层位于 `src/data/`：
 
-- `plants.json`：植物学信息、分类、季相、生态习性和工程规格
-- `materials.json`：硬景材料、规格和构造
-- `structures.json`：构筑物和水景
-- `prices.json`：区域价格基准、日期、来源及口径
-- `assets.json`：本地图片及授权审核信息
+- `plants.json`：**32 条已核验植物学记录**（中文名、拉丁学名、科属、分类、观赏属性、物候月份、分布、来源、审核状态）——植物学事实的唯一权威来源
+- `engineering.json`：演示工程参数（规格、单位、密度、演示单价、省份→气候区映射），`status: demo-baseline`
+- `materials.json`：8 种硬景材料，含构造层、损耗率、人工/机械/物流/措施拆解
+- `features.json`：5 项景观小品与水系选配
+- `assets.json`：本地图片及授权审核信息（当前为空，等待有许可的素材）
 
-所有“多少种植物 / 多少项材料”的数字最终均从实际数据记录统计，不写死宣传数量。
+**数据分层纪律**：`plants.json` 的植物学字段不得被工程参数层覆盖。价格与图片均为演示基线，正式数据须记录地区、日期、来源与含税口径。所有“多少种植物 / 多少项材料”的数字均从实际记录统计，不写死宣传数量。
+
+## 自动化验证
+
+核心计算逻辑集中在 `src/core.js`（纯函数），浏览器与 Node 测试共用同一份代码。
+
+```bash
+npm run audit   # 植物/图片/工程参数三项审计
+npm test        # 核心逻辑 + DOM 集成测试
+npm run check   # 审计 + 测试
+```
+
+- 审计脚本：`scripts/audit-plants.mjs`、`audit-assets.mjs`、`audit-engineering.mjs`
+- 单元测试：`tests/core.test.js`（空间配平、筛选、气候匹配、BOQ 平账、工料机拆解、CSV 等）
+- DOM 集成测试：`tests/dom.integration.test.js`（用 jsdom 加载真实页面与数据，验证植物渲染、BOQ、小品联动、汇报视图、导出）
+  - 依赖 jsdom，运行时需将 jsdom 置于 Node 模块解析路径；CI 环境请先安装。
 
 ## 造价模型
 

@@ -1,0 +1,16 @@
+{
+  "name": "courtyard-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "庭院设计百宝箱 · 专业版重构",
+  "scripts": {
+    "test": "node --test tests/core.test.js && node --test tests/dom.integration.test.js",
+    "audit": "node scripts/audit-plants.mjs && node scripts/audit-assets.mjs && node scripts/audit-engineering.mjs",
+    "check": "npm run audit && npm test",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "demo-baseline",
+  "notice": "景观小品与水系演示选配库。价格为功能联调基线，非市场询价；正式条目须记录地区、日期、来源、含税口径与构造断面。",
+  "features": [
+    {
+      "id": "pergola", "name": "防腐木廊架", "category": "构筑物",
+      "spec": "150×150mm 立柱 + 榫卯梁架，含基础", "unit": "㎡",
+      "price": 680, "qtyHint": "按投影面积", "assetId": null, "reviewStatus": "demo",
+      "layers": ["防腐木立柱与横梁", "金属连接件", "混凝土独立基础", "表面防腐处理"]
+    },
+    {
+      "id": "feature-wall", "name": "景墙", "category": "构筑物",
+      "spec": "240mm 砖砌 + 石材饰面，含压顶", "unit": "㎡",
+      "price": 520, "qtyHint": "按立面面积", "assetId": null, "reviewStatus": "demo",
+      "layers": ["石材/文化石饰面", "砖砌墙体", "钢筋混凝土构造柱", "压顶与泛水"]
+    },
+    {
+      "id": "rock", "name": "景观置石", "category": "小品",
+      "spec": "天然黄石/太湖石，含吊装就位", "unit": "组",
+      "price": 2800, "qtyHint": "按组估算", "assetId": null, "reviewStatus": "demo",
+      "layers": ["石材采购", "运输", "吊装就位", "基础固定"]
+    },
+    {
+      "id": "pond", "name": "庭院鱼池", "category": "水系",
+      "spec": "防水卷材 + 卵石饰面，含溢水口", "unit": "㎡",
+      "price": 760, "qtyHint": "按水面面积", "assetId": null, "reviewStatus": "demo",
+      "layers": ["池体开挖与夯实", "防水卷材", "卵石/石材饰面", "进排水与溢水口"]
+    },
+    {
+      "id": "filter", "name": "鱼池过滤系统", "category": "水系",
+      "spec": "物理+生化过滤，含水泵与管路", "unit": "套",
+      "price": 4200, "qtyHint": "按套", "assetId": null, "reviewStatus": "demo",
+      "layers": ["过滤缸与滤材", "循环水泵", "管路与阀门", "电气与控制"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "demo-baseline",
+  "notice": "工程参数层：规格、单位、演示单价与密度。价格仅为功能联调基线，非市场询价；正式价格须记录地区、日期、来源与含税口径。植物学事实一律以 plants.json 为准，本文件不得覆盖名称/学名/分类/物候。",
+  "priceStatus": "demo-baseline",
+  "climateRegionByProvince": {
+    "华北温带": ["北京", "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "甘肃", "宁夏", "青海", "山东", "河南"],
+    "华中过渡": ["河南", "湖北", "湖南", "陕西", "安徽", "江苏"],
+    "华东暖温带": ["江苏", "安徽", "浙江", "上海", "山东", "江西", "福建"],
+    "华南亚热带": ["广东", "广西", "福建", "海南", "台湾", "香港", "澳门"],
+    "西南高原亚热带": ["四川", "云南", "贵州", "重庆", "西藏", "甘肃", "陕西"]
+  },
+  "note": "省份到气候区的映射仅用于演示筛选，非正式适生区结论；同一省份可落入多个过渡带。",
+  "entries": {
+    "ginkgo-biloba": { "target": "chosenTrees", "spec": "Φ10-12cm H3.5-4.0m", "unit": "株", "base": 980, "qtyMode": "perPlant", "density": 0.02 },
+    "pinus-bungeana": { "target": "chosenTrees", "spec": "H3.0-3.5m P2.0-2.5m", "unit": "株", "base": 1350, "qtyMode": "perPlant", "density": 0.02 },
+    "malus-micromalus": { "target": "chosenTrees", "spec": "D8-10cm H2.5-3.0m", "unit": "株", "base": 760, "qtyMode": "perPlant", "density": 0.03 },
+    "punica-granatum": { "target": "chosenTrees", "spec": "D8-10cm H2.0-2.5m", "unit": "株", "base": 680, "qtyMode": "perPlant", "density": 0.03 },
+    "osmanthus-fragrans": { "target": "chosenTrees", "spec": "H2.5-3.0m P2.0-2.5m", "unit": "株", "base": 880, "qtyMode": "perPlant", "density": 0.03 },
+    "lagerstroemia-indica": { "target": "chosenTrees", "spec": "D6-8cm H2.0-2.5m", "unit": "株", "base": 520, "qtyMode": "perPlant", "density": 0.04 },
+    "acer-palmatum-atropurpureum": { "target": "chosenTrees", "spec": "D6-8cm H2.0-2.5m", "unit": "株", "base": 680, "qtyMode": "perPlant", "density": 0.04 },
+    "acer-palmatum": { "target": "chosenTrees", "spec": "D6-8cm H1.8-2.2m", "unit": "株", "base": 560, "qtyMode": "perPlant", "density": 0.04 },
+    "styphnolobium-japonicum": { "target": "chosenTrees", "spec": "Φ12-15cm H4.0-5.0m", "unit": "株", "base": 1200, "qtyMode": "perPlant", "density": 0.015 },
+    "yulania-denudata": { "target": "chosenTrees", "spec": "Φ10-12cm H3.5-4.0m", "unit": "株", "base": 1150, "qtyMode": "perPlant", "density": 0.02 },
+    "cornus-officinalis": { "target": "chosenTrees", "spec": "D6-8cm H2.5-3.0m", "unit": "株", "base": 420, "qtyMode": "perPlant", "density": 0.04 },
+    "ligustrum-lucidum": { "target": "chosenTrees", "spec": "Φ8-10cm H3.0-3.5m", "unit": "株", "base": 480, "qtyMode": "perPlant", "density": 0.03 },
+    "koelreuteria-paniculata": { "target": "chosenTrees", "spec": "Φ10-12cm H4.0-4.5m", "unit": "株", "base": 720, "qtyMode": "perPlant", "density": 0.02 },
+    "prunus-serrulata": { "target": "chosenTrees", "spec": "D8-10cm H2.5-3.0m", "unit": "株", "base": 820, "qtyMode": "perPlant", "density": 0.03 },
+
+    "syringa-oblata": { "target": "chosenShrubs", "spec": "H1.5-1.8m P1.2-1.5m", "unit": "株", "base": 160, "qtyMode": "perPlant", "density": 0.11 },
+    "nandina-domestica": { "target": "chosenShrubs", "spec": "H0.8-1.0m P0.6-0.8m", "unit": "株", "base": 58, "qtyMode": "perPlant", "density": 0.16 },
+    "chimonanthus-praecox": { "target": "chosenShrubs", "spec": "H1.2-1.5m", "unit": "株", "base": 180, "qtyMode": "perPlant", "density": 0.11 },
+    "cotinus-coggygria-cinereus": { "target": "chosenShrubs", "spec": "H1.2-1.5m", "unit": "株", "base": 95, "qtyMode": "perPlant", "density": 0.11 },
+    "paeonia-suffruticosa": { "target": "chosenShrubs", "spec": "H0.8-1.0m", "unit": "株", "base": 120, "qtyMode": "perPlant", "density": 0.16 },
+    "rosa-chinensis": { "target": "chosenShrubs", "spec": "H0.6-0.8m", "unit": "株", "base": 35, "qtyMode": "perPlant", "density": 0.25 },
+    "jasminum-nudiflorum": { "target": "chosenShrubs", "spec": "H0.5-0.8m", "unit": "株", "base": 28, "qtyMode": "perPlant", "density": 0.25 },
+    "forsythia-suspensa": { "target": "chosenShrubs", "spec": "H1.0-1.5m", "unit": "株", "base": 32, "qtyMode": "perPlant", "density": 0.16 },
+    "euonymus-japonicus": { "target": "chosenShrubs", "spec": "H0.8-1.0m P0.5-0.6m", "unit": "株", "base": 42, "qtyMode": "perPlant", "density": 0.25 },
+    "buxus-megistophylla": { "target": "chosenShrubs", "spec": "H0.6-0.8m P0.4-0.5m", "unit": "株", "base": 38, "qtyMode": "perPlant", "density": 0.25 },
+    "cercis-chinensis": { "target": "chosenShrubs", "spec": "H1.5-2.0m", "unit": "株", "base": 110, "qtyMode": "perPlant", "density": 0.11 },
+
+    "hylotelephium-erythrostictum": { "target": "chosenGround", "spec": "H0.3-0.4m 25株/㎡", "unit": "㎡", "base": 115, "qtyMode": "perArea", "density": 25 },
+    "miscanthus-sinensis": { "target": "chosenGround", "spec": "H1.0-1.4m 9株/㎡", "unit": "㎡", "base": 138, "qtyMode": "perArea", "density": 9 },
+    "hosta-plantaginea": { "target": "chosenGround", "spec": "H0.3-0.5m 16株/㎡", "unit": "㎡", "base": 126, "qtyMode": "perArea", "density": 16 },
+    "ophiopogon-japonicus": { "target": "chosenGround", "spec": "H0.15-0.2m 25株/㎡", "unit": "㎡", "base": 68, "qtyMode": "perArea", "density": 25 },
+    "paeonia-lactiflora": { "target": "chosenGround", "spec": "H0.6-0.8m 9株/㎡", "unit": "㎡", "base": 145, "qtyMode": "perArea", "density": 9 },
+    "hemerocallis-fulva": { "target": "chosenGround", "spec": "H0.5-0.7m 16株/㎡", "unit": "㎡", "base": 88, "qtyMode": "perArea", "density": 16 },
+    "iris-tectorum": { "target": "chosenGround", "spec": "H0.3-0.5m 16株/㎡", "unit": "㎡", "base": 72, "qtyMode": "perArea", "density": 16 }
+  }
+}

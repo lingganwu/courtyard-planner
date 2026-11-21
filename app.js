@@ -1,32 +1,398 @@
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],money=n=>'¥'+Math.round(n||0).toLocaleString('zh-CN');
-const demoPlants=[
-{id:'ginkgo',name:'银杏',latin:'Ginkgo biloba',climate:['华北温带','华中过渡','华东暖温带'],group:'乔木',category:'落叶乔木',feature:['观叶','观姿观干'],season:['秋'],spec:'Φ10-12cm P3.0-3.5m',unit:'株',base:980,target:'chosenTrees'},
-{id:'pine',name:'白皮松',latin:'Pinus bungeana',climate:['华北温带','华中过渡'],group:'乔木',category:'常绿乔木',feature:['观叶','观姿观干'],season:['冬'],spec:'H3.0-3.5m P2.0-2.5m',unit:'株',base:1350,target:'chosenTrees'},
-{id:'crabapple',name:'西府海棠',latin:'Malus micromalus',climate:['华北温带','华中过渡','华东暖温带'],group:'乔木',category:'落叶乔木',feature:['观花','观果'],season:['春','秋'],spec:'D8-10cm P2.5-3.0m',unit:'株',base:760,target:'chosenTrees'},
-{id:'pomegranate',name:'石榴',latin:'Punica granatum',climate:['华北温带','华中过渡','华东暖温带'],group:'乔木',category:'庭院观果树',feature:['观花','观果'],season:['夏','秋'],spec:'D8-10cm P2.0-2.5m',unit:'株',base:680,target:'chosenTrees'},
-{id:'lilac',name:'紫丁香',latin:'Syringa oblata',climate:['华北温带','华中过渡'],group:'灌木',category:'灌木与球类',feature:['观花','芳香'],season:['春'],spec:'H1.5-1.8m P1.2-1.5m',unit:'株',base:160,target:'chosenShrubs'},
-{id:'nandina',name:'南天竹',latin:'Nandina domestica',climate:['华中过渡','华东暖温带','华南亚热带','西南高原亚热带'],group:'灌木',category:'灌木与球类',feature:['观叶','观果'],season:['秋','冬'],spec:'H0.8-1.0m P0.6-0.8m',unit:'株',base:58,target:'chosenShrubs'},
-{id:'hydrangea',name:'绣球',latin:'Hydrangea macrophylla',climate:['华中过渡','华东暖温带','华南亚热带','西南高原亚热带'],group:'灌木',category:'花境·主调',feature:['观花'],season:['夏'],spec:'H0.5-0.7m P0.5-0.6m',unit:'株',base:48,target:'chosenShrubs'},
-{id:'sedum',name:'八宝景天',latin:'Hylotelephium erythrostictum',climate:['华北温带','华中过渡','华东暖温带'],group:'地被',category:'花境·填充与观赏草',feature:['观花'],season:['秋'],spec:'H0.3-0.4m 25盆/㎡',unit:'㎡',base:115,target:'chosenGround'},
-{id:'miscanthus',name:'细叶芒',latin:'Miscanthus sinensis',climate:['华北温带','华中过渡','华东暖温带','西南高原亚热带'],group:'地被',category:'花境·填充与观赏草',feature:['观姿观干'],season:['秋','冬'],spec:'H1.0-1.4m 6-9株/㎡',unit:'㎡',base:138,target:'chosenGround'},
-{id:'hosta',name:'玉簪',latin:'Hosta plantaginea',climate:['华北温带','华中过渡','华东暖温带','西南高原亚热带'],group:'地被',category:'阴生蕨类与苔藓',feature:['观叶','观花','芳香'],season:['夏'],spec:'H0.3-0.5m 16-25株/㎡',unit:'㎡',base:126,target:'chosenGround'}];
-const materials=[{id:'granite',name:'天然花岗岩',spec:'30mm 火烧面 / 荔枝面',base:360,layers:[['面层 Facing','30mm 花岗岩面层'],['结合层 Bedding','30mm 1:3 干硬性水泥砂浆'],['垫层 Base','120mm C20 混凝土'],['基层 Sub-base','150mm 级配碎石夯实']]},{id:'pc',name:'仿石 PC 砖',spec:'600×300×30mm',base:285,layers:[['面层 Facing','30mm 仿石 PC 砖'],['结合层 Bedding','30mm 干硬性砂浆'],['垫层 Base','100mm C20 混凝土'],['基层 Sub-base','150mm 级配碎石']]},{id:'brick',name:'陶土烧结砖',spec:'200×100×50mm',base:260,layers:[['面层 Facing','50mm 烧结砖'],['找平层 Bedding','30mm 中砂找平'],['基层 Base','100mm C20 混凝土'],['垫层 Sub-base','150mm 碎石']]},{id:'deck',name:'户外共挤塑木',spec:'共挤面层 + 架空龙骨',base:520,layers:[['面层 Facing','共挤塑木面板'],['龙骨 Joist','防腐/金属龙骨架空'],['支座 Support','可调支座或固定件'],['基层 Base','混凝土结构基层']]},{id:'permeable',name:'透水混凝土',spec:'彩色透水体系',base:310,layers:[['面层 Facing','40mm 彩色透水面层'],['结构层 Base','100mm C20 透水混凝土'],['滤水层 Filter','150mm 级配碎石'],['土基 Subgrade','素土压实']]},{id:'qingstone',name:'天然青石板',spec:'乱拼 / 冰裂纹',base:390,layers:[['面层 Facing','30-50mm 青石板'],['结合层 Bedding','30mm 1:3 水泥砂浆'],['垫层 Base','120mm C20 混凝土'],['基层 Sub-base','150mm 级配碎石']]},{id:'grass',name:'植草砖',spec:'80mm 厚生态嵌草',base:210,layers:[['面层 Facing','80mm 植草砖+种植土'],['找平层 Bedding','30mm 粗砂'],['基层 Base','150mm 级配碎石'],['土基 Subgrade','素土压实']]},{id:'steel',name:'耐候钢收边',spec:'3-5mm 折弯板',base:185,layers:[['收边 Edge','3-5mm 耐候钢板'],['连接 Fixing','焊接/螺栓固定'],['锚固 Anchor','预埋地锚'],['基础 Base','局部混凝土固定']]}];
-let chosen={chosenTrees:['ginkgo'],chosenShrubs:['lilac'],chosenGround:['sedum']},selectedMaterial='granite',filters={category:'全部',feature:'全部',season:'全部'};
-const categories=['全部','常绿乔木','落叶乔木','庭院观果树','灌木与球类','花境·主调','花境·填充与观赏草','阴生蕨类与苔藓'],features=['全部','观花','观叶','观果','观姿观干','芳香'],seasons=['全部','春','夏','秋','冬'];
-function toast(t){const x=$('#toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1400)}
-function pct(){let g=+$('#green').value||0,p=+$('#paving').value||0;if(g+p>100){p=Math.max(0,100-g);$('#paving').value=p}const w=100-g-p,area=+$('#area').value||0;$('#water').value=w;for(const [id,v] of [['#greenText',g+'%'],['#pavingText',p+'%'],['#waterText',w+'%'],['#greenArea',(area*g/100).toFixed(1)+'㎡'],['#pavingArea',(area*p/100).toFixed(1)+'㎡'],['#waterArea',(area*w/100).toFixed(1)+'㎡'],['#kArea',area+'㎡'],['#kGreen',(area*g/100).toFixed(1)+'㎡'],['#kPaving',(area*p/100).toFixed(1)+'㎡'],['#kWater',(area*w/100).toFixed(1)+'㎡'],['#greenRate',g+'%'],['#hardRate',(100-g)+'%']])$(id).textContent=v;$('#segGreen').style.width=g+'%';$('#segPaving').style.width=p+'%';$('#segWater').style.width=w+'%';calc()}
-function plantPrice(p){return Math.round(p.base*(+$('#grade').value||1))}
-function chosenRender(){for(const [target,ids] of Object.entries(chosen)){const box=$('#'+target);box.innerHTML=ids.length?ids.map(id=>{const p=demoPlants.find(x=>x.id===id);return `<article class="plant-card"><header><div><h4>${p.name}</h4><small>${p.latin}</small></div><b>${money(plantPrice(p))}/${p.unit}</b></header><p>${p.category} · ${p.feature.join(' / ')} · ${p.season.join(' / ')}<br>${p.spec}</p><footer><small>${$('#climate').value}</small><button data-remove="${id}" data-target="${target}">移除</button></footer></article>`}).join(''):'<div class="empty">尚未选择。点击上方按钮从专业选品库添加。</div>'}}
-function materialRender(){$('#materialGrid').innerHTML=materials.map(m=>`<button class="material ${m.id===selectedMaterial?'active':''}" data-mat="${m.id}"><b>${m.name}</b><small>${m.spec}</small><strong>演示综合价 ${money(m.base*(+$('#grade').value||1))}/㎡</strong></button>`).join('');const m=materials.find(x=>x.id===selectedMaterial);$('#buildTitle').textContent=m.name+' · '+m.spec;$('#buildLayers').innerHTML=m.layers.map(x=>`<li><b>${x[0]}</b><span>${x[1]}</span></li>`).join('')}
-function boq(){const area=+$('#area').value||0,g=+$('#green').value||0,p=+$('#paving').value||0,w=100-g-p,grade=+$('#grade').value||1,m=materials.find(x=>x.id===selectedMaterial),rows=[];rows.push(['硬景',m.name,m.spec,'㎡',(area*p/100).toFixed(1),Math.round(m.base*grade)]);for(const ids of Object.values(chosen))for(const id of ids){const x=demoPlants.find(q=>q.id===id),qty=x.unit==='㎡'?Math.max(1,Math.round(area*g/100/(chosen.chosenGround.length||1)*.35)):1;rows.push(['绿化',x.name,x.spec,x.unit,qty,plantPrice(x)])}if(w>0)rows.push(['水景/构筑','空间预留','待深化后拆分正式清单','㎡',(area*w/100).toFixed(1),0]);return rows}
-function totalNow(){return boq().reduce((a,r)=>a+(+r[4]||0)*(+r[5]||0),0)}
-function calc(){chosenRender();materialRender();const rows=boq();let total=0;$('#boqBody').innerHTML=rows.map(r=>{const sum=(+r[4]||0)*(+r[5]||0);total+=sum;return `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td><td>${money(r[5])}</td><td>${money(sum)}</td></tr>`}).join('');$('#boqTotal').textContent=money(total);$('#kCost').textContent=money(total);persistCurrent()}
-function chips(id,items,key){$(id).innerHTML=items.map(x=>`<button class="chip ${filters[key]===x?'active':''}" data-filter="${key}" data-value="${x}">${x}</button>`).join('')}
-function picker(){chips('#categoryTabs',categories,'category');chips('#featureTabs',features,'feature');chips('#seasonTabs',seasons,'season');const climate=$('#climate').value,q=$('#search').value.trim().toLowerCase();$('#pickerClimate').textContent=climate;const list=demoPlants.filter(p=>p.climate.includes(climate)&&(filters.category==='全部'||p.category===filters.category)&&(filters.feature==='全部'||p.feature.includes(filters.feature))&&(filters.season==='全部'||p.season.includes(filters.season))&&(!q||p.name.includes(q)||p.latin.toLowerCase().includes(q)));$('#matchCount').textContent=list.length+' 个演示条目匹配';$('#pickerGrid').innerHTML=list.map(p=>`<article class="pick"><h4>${p.name}</h4><em>${p.latin}</em><p>${p.category} · ${p.feature.join(' / ')} · ${p.season.join(' / ')}<br>${p.spec}</p><footer><b>${money(plantPrice(p))}/${p.unit}</b><button data-add="${p.id}" data-target="${p.target}">加入</button></footer></article>`).join('')||'<div class="empty">当前演示数据没有匹配项。正式数据库不会用假条目补数量。</div>'}
-function openPicker(def){filters.category=def==='灌木'?'灌木与球类':def==='地被'?'花境·填充与观赏草':'全部';$('#search').value='';$('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');picker()}
-function snapshot(){return{city:$('#city').value,climate:$('#climate').value,area:+$('#area').value||0,sun:$('#sun').value,grade:$('#grade').value,site:$('#site').value,green:+$('#green').value,paving:+$('#paving').value,chosen:JSON.parse(JSON.stringify(chosen)),selectedMaterial,total:totalNow()}}
-function applyState(s){if(!s)return;$('#city').value=s.city;$('#climate').value=s.climate;$('#area').value=s.area;$('#sun').value=s.sun;$('#grade').value=s.grade;$('#site').value=s.site;$('#green').value=s.green;$('#paving').value=s.paving;chosen=s.chosen;selectedMaterial=s.selectedMaterial;pct()}
-function persistCurrent(){try{localStorage.setItem('courtyard-current',JSON.stringify(snapshot()))}catch{}}
-function loadCurrent(){try{const s=JSON.parse(localStorage.getItem('courtyard-current'));if(s)applyState(s)}catch{}}
-function compareRender(){const current=snapshot(),cards=[['当前',current],...['A','B','C'].map(k=>{try{return[k,JSON.parse(localStorage.getItem('courtyard-slot-'+k))]}catch{return[k,null]}})];$('#compareGrid').innerHTML=cards.map(([k,s])=>s?`<article class="compare-card"><small>方案 ${k}</small><h3>${s.city} · ${s.climate}</h3><strong>${money(s.total)}</strong><p>${s.area}㎡ · 绿化 ${s.green}% · 铺装 ${s.paving}% · 水景 ${100-s.green-s.paving}%</p><p>植物 ${Object.values(s.chosen).flat().length} 项 · ${materials.find(m=>m.id===s.selectedMaterial)?.name||''}</p>${k!=='当前'?`<button class="button apply-slot" data-slot="${k}">应用此方案</button>`:''}</article>`:`<article class="compare-card empty-slot"><small>方案 ${k}</small><p>尚未保存</p></article>`).join('')}
-$$('.open-picker').forEach(b=>b.onclick=()=>openPicker(b.dataset.default));$$('[data-close]').forEach(b=>b.onclick=()=>{$('#drawer').classList.remove('open');$('#drawer').setAttribute('aria-hidden','true')});$('#drawer').addEventListener('click',e=>{if(e.target.dataset.filter){filters[e.target.dataset.filter]=e.target.dataset.value;picker()}if(e.target.dataset.add){const a=chosen[e.target.dataset.target];if(!a.includes(e.target.dataset.add))a.push(e.target.dataset.add);calc();picker()}});$('#search').oninput=picker;$('#plants').addEventListener('click',e=>{if(e.target.dataset.remove){chosen[e.target.dataset.target]=chosen[e.target.dataset.target].filter(x=>x!==e.target.dataset.remove);calc()}});$('#materialGrid').addEventListener('click',e=>{const b=e.target.closest('[data-mat]');if(b){selectedMaterial=b.dataset.mat;calc()}});['#area','#green','#paving'].forEach(id=>$(id).addEventListener('input',pct));['#grade','#climate','#city','#sun','#site'].forEach(id=>$(id).addEventListener(id==='#city'?'input':'change',()=>{calc();if($('#drawer').classList.contains('open'))picker()}));$$('.slot-save').forEach(b=>b.onclick=()=>{localStorage.setItem('courtyard-slot-'+b.dataset.slot,JSON.stringify(snapshot()));toast('方案 '+b.dataset.slot+' 已保存')});$('#compare').onclick=()=>{compareRender();$('#compareModal').classList.add('open')};$$('.compare-close').forEach(b=>b.onclick=()=>$('#compareModal').classList.remove('open'));$('#compareModal').addEventListener('click',e=>{const b=e.target.closest('.apply-slot');if(b){const s=JSON.parse(localStorage.getItem('courtyard-slot-'+b.dataset.slot));applyState(s);$('#compareModal').classList.remove('open');toast('已应用方案 '+b.dataset.slot)}});$('#theme').onclick=()=>document.body.classList.toggle('dark');$('#export').onclick=()=>{const rows=boq(),csv='\ufeff'+[['分部','项目','规格/特征','单位','工程量','综合单价','合价'],...rows.map(r=>[...r,(+r[4]||0)*(+r[5]||0)])].map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n'),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='庭院设计百宝箱-施工算量演示.csv';a.click();URL.revokeObjectURL(a.href)};loadCurrent();pct();
+/**
+ * 庭院设计百宝箱 · 前端主控
+ * 数据：plants.json(已核验植物学) + engineering.json/materials.json/features.json(演示工程参数)
+ * 计算：src/core.js 纯函数（与测试共用）
+ */
+import {
+  balanceSpace, filterPlants, buildBOQ, boqTotal, toCSV,
+  materialBreakdown, validSnapshot, plantUnitPrice, quantity, round
+} from './src/core.js';
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const money = n => '¥' + Math.round(n || 0).toLocaleString('zh-CN');
+
+// 运行时数据（从 JSON 加载，不再内嵌假数据）
+let PLANTS = [], ENGINEERING = null, MATERIALS = [], FEATURES = [], PLANTS_BY_ID = {};
+
+// 分类/属性/季相选项从真实数据统计得出
+let CATEGORIES = ['全部'], FEATURES_OPT = ['全部'], SEASONS = ['全部', '春', '夏', '秋', '冬'];
+const MONTHS = ['全部', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+const state = {
+  chosen: { chosenTrees: [], chosenShrubs: [], chosenGround: [] },
+  chosenFeatures: [],
+  selectedMaterial: 'granite',
+  filters: { category: '全部', feature: '全部', season: '全部', month: null },
+  view: 'cost'
+};
+
+function toast(t) {
+  const x = $('#toast');
+  x.textContent = t;
+  x.classList.add('show');
+  setTimeout(() => x.classList.remove('show'), 1500);
+}
+
+/* ---------------- 数据加载 ---------------- */
+async function loadData() {
+  const [plantsRes, engRes, matRes, featRes] = await Promise.all([
+    fetch('./src/data/plants.json'),
+    fetch('./src/data/engineering.json'),
+    fetch('./src/data/materials.json'),
+    fetch('./src/data/features.json')
+  ]);
+  if (!plantsRes.ok || !engRes.ok || !matRes.ok || !featRes.ok) {
+    throw new Error('数据文件加载失败');
+  }
+  const [plantsDoc, eng, matDoc, featDoc] = await Promise.all([
+    plantsRes.json(), engRes.json(), matRes.json(), featRes.json()
+  ]);
+  PLANTS = plantsDoc.plants;
+  ENGINEERING = eng;
+  MATERIALS = matDoc.materials;
+  FEATURES = featDoc.features;
+  PLANTS_BY_ID = Object.fromEntries(PLANTS.map(p => [p.id, p]));
+
+  // 从真数据统计筛选项
+  const cats = new Set(), feats = new Set();
+  for (const p of PLANTS) {
+    (p.categories || []).forEach(c => cats.add(c));
+    (p.ornamentalFeatures || []).forEach(f => feats.add(f));
+  }
+  CATEGORIES = ['全部', ...[...cats].sort()];
+  FEATURES_OPT = ['全部', ...[...feats].sort()];
+
+  const verified = PLANTS.filter(p => p.reviewStatus === 'botanical-verified').length;
+  $('#dataStatus').textContent = `已加载 ${PLANTS.length} 条植物学核验记录（${verified} 条 botanical-verified）· 价格与图片为演示基线`;
+  $('#plantLibStat').textContent = `已核验 ${verified} 条`;
+  $('#pickerSource').textContent = `已核验库 ${PLANTS.length} 条 · 非完整图库`;
+}
+
+/* ---------------- 状态读取 ---------------- */
+function currentState() {
+  return {
+    area: +$('#area').value || 0,
+    green: +$('#green').value || 0,
+    paving: +$('#paving').value || 0,
+    grade: +$('#grade').value || 1,
+    city: $('#city').value,
+    climate: $('#climate').value,
+    sun: $('#sun').value,
+    site: $('#site').value,
+    chosen: JSON.parse(JSON.stringify(state.chosen)),
+    chosenFeatures: [...state.chosenFeatures],
+    selectedMaterial: state.selectedMaterial
+  };
+}
+
+/* ---------------- 渲染 ---------------- */
+function renderSpace() {
+  const s = balanceSpace($('#area').value, $('#green').value, $('#paving').value);
+  const set = (id, v) => $(id).textContent = v;
+  set('#greenText', s.greenPct + '%');
+  set('#pavingText', s.pavingPct + '%');
+  set('#waterText', s.waterPct + '%');
+  set('#greenArea', s.greenArea + '㎡');
+  set('#pavingArea', s.pavingArea + '㎡');
+  set('#waterArea', s.waterArea + '㎡');
+  set('#kArea', s.totalArea + '㎡');
+  set('#kGreen', s.greenArea + '㎡');
+  set('#kPaving', s.pavingArea + '㎡');
+  set('#kWater', s.waterArea + '㎡');
+  set('#greenRate', s.greenPct + '%');
+  set('#hardRate', (100 - s.greenPct) + '%');
+  $('#segGreen').style.width = s.greenPct + '%';
+  $('#segPaving').style.width = s.pavingPct + '%';
+  $('#segWater').style.width = s.waterPct + '%';
+  $('#water').value = s.waterPct;
+}
+
+function renderChosen() {
+  const st = currentState();
+  for (const [key, box] of [['chosenTrees', '#chosenTrees'], ['chosenShrubs', '#chosenShrubs'], ['chosenGround', '#chosenGround']]) {
+    const el = $(box);
+    const ids = state.chosen[key];
+    el.innerHTML = ids.length ? ids.map(id => {
+      const p = PLANTS_BY_ID[id];
+      const e = ENGINEERING.entries[id];
+      if (!p || !e) return '';
+      const qty = quantity(p, e, st, (state.chosen.chosenGround.length) || 1);
+      return `<article class="plant-card">
+        <header><div><h4>${p.name}</h4><small>${p.latinName}</small></div><b>${money(plantUnitPrice(e, st.grade))}/${e.unit}</b></header>
+        <p>${(p.categories || []).join(' · ')}<br>${(p.ornamentalFeatures || []).join(' / ')} · ${e.spec}</p>
+        <footer><small>${e.unit === '㎡' ? qty + '㎡' : qty + '株'} · 演示价</small><button data-remove="${id}" data-target="${key}">移除</button></footer>
+      </article>`;
+    }).join('') : '<div class="empty">尚未选择。点击上方按钮从已核验植物库添加。</div>';
+  }
+}
+
+function renderFeatures() {
+  $('#featureGrid').innerHTML = FEATURES.map(f => {
+    const on = state.chosenFeatures.includes(f.id);
+    return `<article class="feature-card ${on ? 'active' : ''}" data-feature="${f.id}">
+      <header><div><h4>${f.name}</h4><small>${f.category} · ${f.spec}</small></div><span class="sel">${on ? '已选' : '＋ 选配'}</span></header>
+      <footer><b>${money(f.price)}/${f.unit}</b><small>${f.qtyHint} · 演示基线</small></footer>
+      <ul>${(f.layers || []).map(l => `<li>${l}</li>`).join('')}</ul>
+    </article>`;
+  }).join('');
+}
+
+function renderMaterials() {
+  const st = currentState();
+  $('#materialGrid').innerHTML = MATERIALS.map(m =>
+    `<button class="material ${m.id === state.selectedMaterial ? 'active' : ''}" data-mat="${m.id}">
+      <b>${m.name}</b><small>${m.spec}</small><strong>${money(materialBreakdown(m, st.grade).total)}/㎡</strong>
+    </button>`).join('');
+  const m = MATERIALS.find(x => x.id === state.selectedMaterial) || MATERIALS[0];
+  $('#buildTitle').textContent = m.name + ' · ' + m.spec;
+  $('#buildLayers').innerHTML = (m.constructionLayers || []).map(l => `<li><b>${l.name}</b><span>${l.desc}</span></li>`).join('');
+  const b = materialBreakdown(m, st.grade);
+  $('#costTitle').textContent = money(b.total) + ' /㎡';
+  const label = { main: '主材', sub: '基层/辅材', labor: '人工', machine: '机械', logistics: '物流', waste: '损耗', measure: '措施' };
+  $('#costRows').innerHTML = Object.entries(label).map(([k, v]) =>
+    `<li><span>${v}</span><b>${money(b.rows[k])}</b></li>`).join('');
+  $('#wasteNote').textContent = `损耗率 ${(m.wasteRate * 100).toFixed(0)}% · 单价为演示基线，非正式询价`;
+}
+
+function renderBOQ() {
+  const st = currentState();
+  const rows = buildBOQ(st, PLANTS, ENGINEERING, MATERIALS, FEATURES);
+  const total = boqTotal(rows);
+  $('#boqTotal').textContent = money(total);
+  $('#kCost').textContent = money(total);
+  $('#boqBody').innerHTML = rows.map(r => {
+    const sum = r.qty * r.unitPrice;
+    const badge = r.source === 'placeholder' ? ' <small class="tag">预留</small>' : '';
+    return `<tr><td>${r.division}</td><td>${r.name}${badge}</td><td>${r.spec}</td><td>${r.unit}</td><td>${r.qty}</td><td>${money(r.unitPrice)}</td><td>${money(sum)}</td></tr>`;
+  }).join('');
+  renderOwnerView(rows, total, st);
+  persistCurrent();
+}
+
+function renderOwnerView(rows, total, st) {
+  const byDiv = {};
+  for (const r of rows) {
+    const sum = r.qty * r.unitPrice;
+    byDiv[r.division] = (byDiv[r.division] || 0) + sum;
+  }
+  const plantCount = Object.values(st.chosen).flat().length;
+  const box = $('#ownerView');
+  box.innerHTML = `
+    <div class="owner-summary">
+      <div class="owner-hero"><small>项目估算总额（演示基线）</small><strong>${money(total)}</strong><p>${st.city || '—'} · ${st.climate} · ${st.area}㎡ · ${$('#grade').selectedOptions[0].text}</p></div>
+      <div class="owner-chart">${Object.entries(byDiv).map(([k, v]) => {
+        const pct = total ? (v / total * 100) : 0;
+        return `<div class="owner-bar"><div class="owner-bar-label"><span>${k}</span><b>${money(v)} · ${pct.toFixed(0)}%</b></div><div class="owner-bar-track"><i style="width:${pct}%"></i></div></div>`;
+      }).join('')}</div>
+    </div>
+    <div class="owner-points">
+      <div><small>绿地率</small><b>${st.green}%</b></div>
+      <div><small>硬景率</small><b>${100 - st.green}%</b></div>
+      <div><small>已选植物</small><b>${plantCount} 种</b></div>
+      <div><small>已选小品</small><b>${state.chosenFeatures.length} 项</b></div>
+    </div>
+    <p class="note">业主汇报版仅做汇总呈现，金额与施工算量版同源。所有价格为演示基线，正式汇报前须替换为经核实的地区询价。</p>`;
+}
+
+function renderAll() {
+  renderSpace();
+  renderChosen();
+  renderFeatures();
+  renderMaterials();
+  renderBOQ();
+}
+
+/* ---------------- 选品抽屉 ---------------- */
+function chips(id, items, key) {
+  $(id).innerHTML = items.map(x => {
+    const label = x === '全部' ? '全部' : (key === 'month' ? x + '月' : x);
+    return `<button class="chip ${String(state.filters[key]) === String(x) ? 'active' : ''}" data-filter="${key}" data-value="${x}">${label}</button>`;
+  }).join('');
+}
+
+function renderPicker() {
+  chips('#categoryTabs', CATEGORIES, 'category');
+  chips('#featureTabs', FEATURES_OPT, 'feature');
+  chips('#seasonTabs', SEASONS, 'season');
+  chips('#monthTabs', MONTHS, 'month');
+  $('#pickerClimate').textContent = $('#climate').value + ' · 气候匹配仅供参考';
+  const list = filterPlants(PLANTS, ENGINEERING, {
+    climate: $('#climate').value,
+    category: state.filters.category,
+    feature: state.filters.feature,
+    season: state.filters.season,
+    month: state.filters.month,
+    keyword: $('#search').value
+  });
+  $('#matchCount').textContent = list.length + ' / ' + PLANTS.length + ' 条匹配';
+  $('#pickerGrid').innerHTML = list.map(p => {
+    const e = ENGINEERING.entries[p.id];
+    const target = e.target;
+    const added = state.chosen[target].includes(p.id);
+    return `<article class="pick">
+      <h4>${p.name} ${added ? '<small class="tag">已加入</small>' : ''}</h4>
+      <em>${p.latinName}</em>
+      <p>${(p.categories || []).join(' / ')}<br>${(p.ornamentalFeatures || []).join(' / ')}<br>${e.spec}</p>
+      <footer><b>${money(plantUnitPrice(e, +$('#grade').value || 1))}/${e.unit}</b><button data-add="${p.id}" data-target="${target}" ${added ? 'disabled' : ''}>${added ? '已加入' : '加入'}</button></footer>
+      <div class="pick-source">来源：${p.sourceType} · ${p.reviewStatus}</div>
+    </article>`;
+  }).join('') || '<div class="empty">当前筛选无匹配项。已核验库不补假条目。</div>';
+}
+
+function openPicker(def) {
+  state.filters.category = def === '灌木' ? '灌木与球类' : def === '地被' ? '地被草本' : '全部';
+  state.filters.feature = '全部';
+  state.filters.season = '全部';
+  state.filters.month = null;
+  $('#search').value = '';
+  $('#drawer').classList.add('open');
+  $('#drawer').setAttribute('aria-hidden', 'false');
+  renderPicker();
+}
+
+/* ---------------- 方案 ---------------- */
+function snapshot() {
+  const s = currentState();
+  s.total = boqTotal(buildBOQ(s, PLANTS, ENGINEERING, MATERIALS, FEATURES));
+  return s;
+}
+function applySnapshot(s) {
+  if (!validSnapshot(s)) return;
+  $('#city').value = s.city || '';
+  $('#climate').value = s.climate || '华北温带';
+  $('#area').value = s.area;
+  $('#sun').value = s.sun || '南向 / 全日照';
+  $('#grade').value = s.grade || 1;
+  $('#site').value = s.site || '毛坯新院';
+  $('#green').value = s.green;
+  $('#paving').value = s.paving;
+  state.chosen = JSON.parse(JSON.stringify(s.chosen));
+  state.chosenFeatures = [...(s.chosenFeatures || [])];
+  state.selectedMaterial = s.selectedMaterial;
+  renderAll();
+}
+function persistCurrent() {
+  try { localStorage.setItem('courtyard-current', JSON.stringify(snapshot())); } catch {}
+}
+function loadCurrent() {
+  try {
+    const s = JSON.parse(localStorage.getItem('courtyard-current'));
+    if (s && validSnapshot(s)) applySnapshot(s);
+  } catch {}
+}
+function renderCompare() {
+  const cur = snapshot();
+  const cards = [['当前', cur], ...['A', 'B', 'C'].map(k => {
+    try { return [k, JSON.parse(localStorage.getItem('courtyard-slot-' + k))]; } catch { return [k, null]; }
+  })];
+  $('#compareGrid').innerHTML = cards.map(([k, s]) => s && validSnapshot(s)
+    ? `<article class="compare-card"><small>方案 ${k}</small><h3>${s.city} · ${s.climate}</h3><strong>${money(s.total)}</strong>
+       <p>${s.area}㎡ · 绿化 ${s.green}% · 铺装 ${s.paving}%</p>
+       <p>植物 ${Object.values(s.chosen).flat().length} 种 · 小品 ${(s.chosenFeatures || []).length} 项</p>
+       ${k !== '当前' ? `<button class="button apply-slot" data-slot="${k}">应用此方案</button>` : ''}</article>`
+    : `<article class="compare-card empty-slot"><small>方案 ${k}</small><p>尚未保存</p></article>`).join('');
+}
+
+/* ---------------- 事件 ---------------- */
+function bindEvents() {
+  $$('.open-picker').forEach(b => b.onclick = () => openPicker(b.dataset.default));
+  $$('[data-close]').forEach(b => b.onclick = () => {
+    $('#drawer').classList.remove('open');
+    $('#drawer').setAttribute('aria-hidden', 'true');
+  });
+  $('#drawer').addEventListener('click', e => {
+    if (e.target.dataset.filter) {
+      const key = e.target.dataset.filter;
+      let v = e.target.dataset.value;
+      if (key === 'month') v = v === '全部' ? null : Number(v);
+      state.filters[key] = v;
+      renderPicker();
+    }
+    if (e.target.dataset.add) {
+      const id = e.target.dataset.add;
+      const target = e.target.dataset.target;
+      if (!state.chosen[target].includes(id)) {
+        state.chosen[target].push(id);
+        renderAll();
+        renderPicker();
+        toast('已加入选配方案');
+      }
+    }
+  });
+  $('#search').oninput = renderPicker;
+  $('#plants').addEventListener('click', e => {
+    if (e.target.dataset.remove) {
+      const key = e.target.dataset.target;
+      state.chosen[key] = state.chosen[key].filter(x => x !== e.target.dataset.remove);
+      renderAll();
+    }
+  });
+  $('#featureGrid').addEventListener('click', e => {
+    const card = e.target.closest('[data-feature]');
+    if (!card) return;
+    const id = card.dataset.feature;
+    state.chosenFeatures = state.chosenFeatures.includes(id)
+      ? state.chosenFeatures.filter(x => x !== id)
+      : [...state.chosenFeatures, id];
+    renderFeatures();
+    renderBOQ();
+  });
+  $('#materialGrid').addEventListener('click', e => {
+    const b = e.target.closest('[data-mat]');
+    if (b) { state.selectedMaterial = b.dataset.mat; renderMaterials(); renderBOQ(); }
+  });
+  ['#area', '#green', '#paving'].forEach(id => $(id).addEventListener('input', () => { renderSpace(); renderChosen(); renderMaterials(); renderBOQ(); }));
+  ['#grade', '#climate'].forEach(id => $(id).addEventListener('change', () => { renderChosen(); renderMaterials(); renderBOQ(); }));
+  $$('.slot-save').forEach(b => b.onclick = () => {
+    localStorage.setItem('courtyard-slot-' + b.dataset.slot, JSON.stringify(snapshot()));
+    toast('方案 ' + b.dataset.slot + ' 已保存');
+  });
+  $('#compare').onclick = () => { renderCompare(); $('#compareModal').classList.add('open'); };
+  $$('.compare-close').forEach(b => b.onclick = () => $('#compareModal').classList.remove('open'));
+  $('#compareModal').addEventListener('click', e => {
+    const b = e.target.closest('.apply-slot');
+    if (b) {
+      applySnapshot(JSON.parse(localStorage.getItem('courtyard-slot-' + b.dataset.slot)));
+      $('#compareModal').classList.remove('open');
+      toast('已应用方案 ' + b.dataset.slot);
+    }
+  });
+  $('#theme').onclick = () => document.body.classList.toggle('dark');
+  $$('.tab').forEach(t => t.onclick = () => {
+    $$('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    state.view = t.dataset.view;
+    const isCost = state.view === 'cost';
+    $('.table').hidden = !isCost;
+    $('#ownerView').hidden = isCost;
+  });
+  $('#export').onclick = () => {
+    const rows = buildBOQ(currentState(), PLANTS, ENGINEERING, MATERIALS, FEATURES);
+    const csv = toCSV(rows);
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    a.download = '庭院设计百宝箱-施工算量.csv';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    toast('已导出 ' + rows.length + ' 条清单');
+  };
+}
+
+/* ---------------- 启动 ---------------- */
+(async function init() {
+  try {
+    await loadData();
+    // 默认选配：从真实库各取一个代表
+    state.chosen.chosenTrees = ['ginkgo-biloba'];
+    state.chosen.chosenShrubs = ['syringa-oblata'];
+    state.chosen.chosenGround = ['hosta-plantaginea'];
+    bindEvents();
+    loadCurrent();
+    renderAll();
+  } catch (err) {
+    console.error(err);
+    $('#dataStatus').textContent = '数据加载失败：' + err.message + '（请通过本地 HTTP 服务器或 GitHub Pages 打开，勿直接双击 HTML）';
+    $('#dataStrip').classList.add('error');
+  }
+})();
