@@ -13,4 +13,15 @@
 .pick footer b,.plant-card footer b{color:var(--green)!important;white-space:nowrap}.pick footer small,.plant-card footer small{color:var(--muted)}.dark .data-strip{background:#1c2c24;border-color:#2e4538;color:#9ad3b5}.dark .feature-card.active{background:#22372d}.dark .owner-hero{background:linear-gradient(135deg,#2f8d68,#3aa579)}
 .pick h4{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.review{font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px;white-space:nowrap}.review.ok{background:#e3f4ea;color:#1f7a4d}.review.warn{background:#fff2d9;color:#9a6500}.dark .review.ok{background:#214533;color:#8fe0b0}.dark .review.warn{background:#4a3a18;color:#f0c46a}
 .picker-pager{display:flex;justify-content:center;align-items:center;gap:14px;padding:16px 4px 30px;flex-wrap:wrap}.picker-pager button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:20px;cursor:pointer;font-size:13px}.picker-pager button:hover:not(:disabled){border-color:var(--green);color:var(--green)}.picker-pager button:disabled{opacity:.4;cursor:not-allowed}.picker-pager span{font-size:13px;color:var(--muted)}
+.pick-thumb{position:relative;height:120px;overflow:hidden;border-radius:8px 8px 0 0;background:#eef2ee;margin:-8px -8px 10px;border-bottom:1px solid var(--line)}
+.pick-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.pick:hover .pick-thumb img{transform:scale(1.05)}
+.pick-thumb.img-fail{background:repeating-linear-gradient(45deg,#eef2ee,#eef2ee 8px,#e6ece6 8px,#e6ece6 16px)}
+.pick-thumb.img-fail img{display:none}
+.pick-thumb.no-img{display:flex;align-items:center;justify-content:center;color:#a9b5ab;font-size:12px;letter-spacing:1px}
+.img-badge{position:absolute;top:6px;left:6px;background:rgba(21,60,47,.82);color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;letter-spacing:.5px}
+.pheno{color:#7a6a3f;font-size:11px}
+.price-tag{display:inline-block;margin-left:5px;font-size:10px;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.price-tag.verified{background:#e4f3e8;color:#1b6b3a}
+.price-tag.pending{background:#f5efe0;color:#8a6d20}
 @media(max-width:800px){.build-layout,.owner-summary{grid-template-columns:1fr}.owner-points{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}}

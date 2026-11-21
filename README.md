@@ -32,16 +32,14 @@
 
 ## 图片本地化
 
-正式图片存放在 `public/assets/`，图片元数据登记在 `src/data/assets.json`。
+本轮已完成图片本地化：400+ 张植物真实照片存放在 `public/assets/plants/`，全部来自 **Wikimedia Commons**（许可明确：CC BY / CC BY-SA / Public Domain），按拉丁学名精确匹配下载，本地压缩至 800px。
 
-计划按以下结构管理：
+- 每张图带完整审核字段：来源页、许可类型与 URL、作者、视觉类型（整株 habit / 细节 detail）、审核方式（auto-reviewed）、置信度、SHA256 哈希
+- 乔木优先整株立面图，无法确认的一律标 detail 而不是冒充整株
+- 选品卡片直接显示本地缩略图 + 许可标注，图源可点击查看原始页面
+- 图片元数据登记在 `src/data/image-candidates.json` 与各 `*.enriched.json` 中
 
-- `public/assets/plants/`
-- `public/assets/materials/`
-- `public/assets/structures/`
-- `public/assets/water/`
-
-仓库已经加入 `scripts/audit-assets.mjs`，用于检查远程图片路径、缺失文件、重复图片和未审核素材。
+`scripts/fetch-plant-images.mjs`、`retry-plant-images.mjs`、`enrich-verified.mjs`、`add-regional.mjs` 是可复现的抓取脚本（低并发 + 限流退避）。`scripts/compress-and-sync.mjs` 负责压缩并同步哈希。`scripts/audit-assets.mjs` 检查图片路径与重复。
 
 ## 数据结构
 
@@ -57,13 +55,20 @@
 - `plants.imported.json`：**382 条植物**，从 poke 版线上源码完整抽取（12 个分类：常绿/落叶乔木、果树、花灌木、花境、竹类、藤本、水生、草坪、蕨类苔藓等），含中文名、拉丁学名、规格、功能/观赏属性、适生气候区、演示单价。全部标注 `reviewStatus: imported-unverified`，**未经独立植物学复核**，9 条重复学名已标记
 - `materials.imported.json`：**81 项材料**（61 硬景 + 20 软景），含规格、损耗率、工料机演示价、构造断面（61 项硬景均有 buildUp），同样标注 imported-unverified
 
-**合并层**：`src/catalog.js` 负责把两层合并成前端目录（植物共 **414** 条，材料共 **89** 项），并为导入植物自动生成工程参数条目，保证卡片与 BOQ 同价。
+**查证数据层（本轮新增，可追溯来源）**
+- `image-candidates.json`：从 Wikimedia Commons 按拉丁学名抓取的**本地化图片**元数据（来源页、CC 许可、作者、视觉类型、置信度、SHA256、图源关键词打分）
+- `price-benchmarks.json`：**234 条公开查证价格**，来自政府造价信息（信息价）、政府采购中标价、苗木行情与批发价；每条带规格、口径、地区、来源 URL、日期
+- `plants.enriched.json` / `plants.verified.enriched.json`：把图片、查证价、植物学物候合并进 382 条导入层和 32 条已核验层的增强目录
+- `plants.regional.json`：**华南/西南各 30 种乡土适生植物**（拉丁学名经核实、图片本地化），补齐区域覆盖缺口
+
+**合并层**：`src/catalog.js` 负责把各层合并成前端目录（植物共 **474** 条，材料共 **89** 项），并为导入植物自动生成工程参数条目，保证卡片与 BOQ 同价。
 
 **数据分层纪律（红线）**：
 - 导入层**绝不得**冒充 `botanical-verified`；选品抽屉按「已核验 / 导入待复核」分层展示
-- poke 版的外链图片**一律不带入**；导入数据图片字段为空、`assetStatus: pending-local-license`（当前全库 0 张已授权图片，宁缺毋滥）
-- 所有价格为 `demo-baseline`，卡片与 BOQ 同口径；正式数据须记录地区、日期、来源与含税口径
-- “多少种植物 / 多少项材料”均从实际记录统计，不写死宣传数量
+- 图片**全部本地化**到 `public/assets/`，来自许可明确的 Wikimedia Commons，逐张带来源/许可/作者/视觉类型/审核状态；**不加载任何外链图**，图名不符、水印、裂图一律剔除
+- 价格优先级：①公开查证基准价（带来源/口径/地区）→ ②poke 原始参考价（明确标注 reference-only）→ ③无价（标注待询价）；**查不到的绝不编造**，卡片与 BOQ 同口径
+- 观赏/物候属性来自植物学资料，缺的标 `pending` 不臆造
+- “多少种植物 / 多少项材料 / 多少张图”均从实际记录统计，不写死宣传数量
 
 ## 自动化验证
 
@@ -77,8 +82,19 @@ npm run check   # 审计 + 测试（39 项测试）
 
 - 审计脚本：`scripts/audit-plants.mjs`、`audit-assets.mjs`、`audit-engineering.mjs`、`audit-imports.mjs`（导入层数据完整性与分层红线校验）
 - 单元测试：`tests/core.test.js`（空间配平、筛选、气候匹配、BOQ 平账、工料机拆解、CSV 等）、`tests/catalog.test.js`（两层合并、审核标注、导入植物 BOQ、卡片/BOQ 同价、大数据筛选）
-- DOM 集成测试：`tests/dom.integration.test.js`（用 jsdom 加载真实页面与数据，验证 414 条目录加载、数据源分层筛选、分页、BOQ、小品联动、汇报视图、导出）
+- DOM 集成测试：`tests/dom.integration.test.js`（用 jsdom 加载真实页面与数据，验证目录加载、数据源分层筛选、分页、BOQ、小品联动、汇报视图、导出）
   - 依赖 jsdom，运行时需将 jsdom 置于 Node 模块解析路径；CI 环境请先安装。
+
+**数据可复现脚本**（`npm run` 之外，用 node 直接跑）：
+```bash
+node scripts/fetch-plant-images.mjs     # 从 Wikimedia 抓取导入层图片
+node scripts/retry-plant-images.mjs     # 补抓限流失败项
+node scripts/enrich-verified.mjs        # 已核验层补图补价补物候
+node scripts/build-prices.mjs           # 整理查证价格库（需 /tmp/price_research.json）
+node scripts/integrate-data.mjs         # 合并图片/价格/物候到植物目录
+node scripts/add-regional.mjs           # 区域补充植物+抓图（需 /tmp/regional_plants.json）
+node scripts/compress-and-sync.mjs      # 图片压缩+哈希同步
+```
 
 ## 造价模型
 

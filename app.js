@@ -8,7 +8,7 @@ import {
   materialBreakdown, materialBreakdownRows, validSnapshot, plantUnitPrice, quantity, round
 } from './src/core.js';
 import {
-  mergePlants, mergeMaterials, statusLabel, hasLicensedImage
+  mergePlants, mergeMaterials, statusLabel, hasLicensedImage, imagePath, priceLabel, priceTypeTag
 } from './src/catalog.js';
 
 const $ = s => document.querySelector(s);
@@ -43,16 +43,20 @@ function toast(t) {
 /* ---------------- 数据加载 ---------------- */
 async function loadData() {
   const files = [
-    './src/data/plants.json', './src/data/engineering.json',
+    './src/data/plants.verified.enriched.json', './src/data/engineering.json',
     './src/data/materials.json', './src/data/features.json',
-    './src/data/plants.imported.json', './src/data/materials.imported.json'
+    './src/data/plants.enriched.json', './src/data/materials.imported.json',
+    './src/data/plants.regional.json'
   ];
   const res = await Promise.all(files.map(f => fetch(f)));
   if (res.some(r => !r.ok)) throw new Error('数据文件加载失败');
-  const [plantsDoc, eng, matDoc, featDoc, plantsImp, matsImp] = await Promise.all(res.map(r => r.json()));
+  const [plantsDoc, eng, matDoc, featDoc, plantsEnriched, matsImp, plantsRegional] = await Promise.all(res.map(r => r.json()));
 
-  // 合并两层数据：已核验层 + 导入层（严格分层标注）
-  const merged = mergePlants(plantsDoc, plantsImp);
+  // 合并三层：已核验层 + poke导入层 + 区域补充层（均整合图片/价格/物候，严格分层标注）
+  const merged = mergePlants(plantsDoc, {
+    plants: [...plantsEnriched.plants, ...plantsRegional.plants],
+    importMeta: { importedAt: plantsEnriched.builtAt }
+  });
   const mergedMats = mergeMaterials(matDoc.materials, matsImp);
   PLANTS = merged.plants;
   ENGINEERING = eng;
@@ -61,7 +65,7 @@ async function loadData() {
   MATERIALS = mergedMats.materials;
   FEATURES = featDoc.features;
   PLANTS_BY_ID = Object.fromEntries(PLANTS.map(p => [p.id, p]));
-  CATALOG_STATS = { plants: merged.stats, materials: mergedMats.stats, importedAt: plantsImp.importedAt };
+  CATALOG_STATS = { plants: merged.stats, materials: mergedMats.stats, builtAt: plantsEnriched.builtAt };
 
   // 从真数据统计筛选项
   const cats = new Set(), feats = new Set();
@@ -73,7 +77,9 @@ async function loadData() {
   FEATURES_OPT = ['全部', ...[...feats].sort()];
 
   const v = merged.stats.verified, im = merged.stats.imported;
-  $('#dataStatus').textContent = `植物 ${PLANTS.length} 条（已核验 ${v} · 导入待复核 ${im}）· 材料 ${MATERIALS.length} 项 · 价格演示基线 · 图片待授权本地化`;
+  const imgCount = PLANTS.filter(p => p.image && p.image.file).length;
+  const priceCount = PLANTS.filter(p => p.price && p.price.status === 'verified').length;
+  $('#dataStatus').textContent = `植物 ${PLANTS.length} 条（已核验 ${v} · 导入待复核 ${im}）· 材料 ${MATERIALS.length} 项 · 本地图片 ${imgCount} 张 · 查证价 ${priceCount} 条`;
   $('#plantLibStat').textContent = `共 ${PLANTS.length} 条（已核验 ${v}）`;
   $('#pickerSource').textContent = `全目录 ${PLANTS.length} 条 · 已核验 ${v} / 导入 ${im}（导入层未经植物学复核）`;
 }
@@ -259,12 +265,23 @@ function renderPicker() {
     const added = state.chosen[target].includes(p.id);
     const label = statusLabel(p);
     const cls = label === '已核验' ? 'ok' : 'warn';
+    const ipath = imagePath(p);
+    const thumb = ipath
+      ? `<div class="pick-thumb"><img src="${ipath}" alt="${p.name}" loading="lazy" onerror="this.parentElement.classList.add('img-fail')"><span class="img-badge">${p.image?.visualType === 'whole-or-habit' ? '整株' : '细节'}</span></div>`
+      : '<div class="pick-thumb no-img"><span>图片待补</span></div>';
+    const ph = p.phenology || {};
+    const pheno = (ph.flowerMonths?.length ? '花' + ph.flowerMonths.join(',') : '') +
+      (ph.fruitMonths?.length ? ' 果' + ph.fruitMonths.join(',') : '') +
+      (ph.colorMonths?.length ? ' 色' + ph.colorMonths.join(',') : '');
+    const priceSrc = priceLabel(p);
+    const priceCls = p.price?.status === 'verified' ? 'verified' : 'pending';
     return `<article class="pick">
+      ${thumb}
       <h4>${p.name} ${added ? '<small class="tag">已加入</small>' : ''}<span class="review ${cls}">${label}</span></h4>
       <em>${p.latinName}</em>
-      <p>${(p.categories || []).join(' / ')}${(p.ornamentalFeatures || []).length ? '<br>' + p.ornamentalFeatures.join(' / ') : ''}<br>${e.spec}</p>
+      <p>${(p.categories || []).join(' / ')}${(p.ornamentalFeatures || []).length ? '<br>' + p.ornamentalFeatures.join(' / ') : ''}${pheno ? '<br><span class="pheno">物候 ' + pheno + '</span>' : ''}<br>${e.spec}</p>
       <footer><b>${money(plantUnitPrice(e, +$('#grade').value || 1))}/${e.unit}</b><button data-add="${p.id}" data-target="${target}" ${added ? 'disabled' : ''}>${added ? '已加入' : '加入'}</button></footer>
-      <div class="pick-source">${p.sourceType}${p.duplicateOf ? ' · 疑似重复' : ''} · 图片:${hasLicensedImage(p) ? '已授权' : '待授权'}</div>
+      <div class="pick-source">${priceSrc}<span class="price-tag ${priceCls}">${priceTypeTag(p)}</span>${p.image ? ' · 图源Wikimedia/' + (p.image.license || 'CC') : ''}</div>
     </article>`;
   }).join('') || '<div class="empty">当前筛选无匹配项。已核验库不补假条目。</div>';
 

@@ -6,8 +6,9 @@
  *
  * 原则（用户明示）：
  * - 已核验与未核验分层标注，绝不把导入数据冒充 botanical-verified
- * - 导入数据无图片，一律 pending-local-license，前端不得加载任何外链图
- * - 价格为 demo-baseline，卡片与 BOQ 必须同口径（同一 unitPrice 来源）
+ * - 图片一律本地化（public/assets/），带许可与审核字段，前端不加载任何外链图
+ * - 价格优先使用查证基准价（带来源/口径），查不到才回退 demoPrice 并明确标注
+ * - 卡片与 BOQ 必须同口径（同一 unitPrice 来源）
  */
 
 /** 导入植物 -> 工程参数条目（供 core.js 的价格/数量/BOQ 复用） */
@@ -17,8 +18,21 @@ export function importedPlantEntry(p) {
     : (form.includes('灌木') || form.includes('竹') || form.includes('藤本')) ? 'chosenShrubs'
     : 'chosenGround';
   const unit = target === 'chosenGround' ? '㎡' : '株';
-  // poke 的 price 是「材料/苗木价」，constCost 是施工价；合并为演示综合单价
-  const base = (Number(p.demoPrice) || 0) + (Number(p.demoConstCost) || 0);
+  // 价格优先级：①公开查证基准价 ②poke原始参考价 ③无（0，前端标注待询价）
+  let base = 0, pricingStatus = 'unavailable', priceSource = '';
+  if (p.price && p.price.status === 'verified') {
+    base = Number(p.price.price) || 0;
+    pricingStatus = 'verified-market';
+    priceSource = p.price.source || '';
+  } else if (p.price && p.price.status === 'reference-only') {
+    base = Number(p.price.price) || 0;
+    pricingStatus = 'reference-only';
+    priceSource = p.price.source || 'poke';
+  } else {
+    base = (Number(p.demoPrice) || 0) + (Number(p.demoConstCost) || 0);
+    pricingStatus = base > 0 ? 'reference-only' : 'unavailable';
+    priceSource = 'poke-legacy';
+  }
   // 密度：按生长型给规划级参照（可被 BOQ 复用）
   const density = target === 'chosenTrees' ? 0.02
     : target === 'chosenShrubs' ? 0.11 : 0.25;
@@ -29,8 +43,8 @@ export function importedPlantEntry(p) {
     base,
     qtyMode: target === 'chosenGround' ? 'perArea' : 'perPlant',
     density,
-    source: 'poke-import',
-    pricingStatus: 'demo-baseline'
+    source: priceSource || 'poke-import',
+    pricingStatus
   };
 }
 
@@ -109,7 +123,30 @@ export function statusLabel(p) {
   }
 }
 
-/** 该植物是否可作为图片来源（当前策略：没有任何导入数据带已授权图片） */
+/** 该植物是否有本地化授权图片 */
 export function hasLicensedImage(p) {
-  return !!(p.assetStatus === 'licensed-local' && p.imagePath);
+  return !!(p.image && p.image.file) || !!(p.assetStatus === 'licensed-local' && p.imagePath);
+}
+
+/** 图片相对路径（本地化，前端直接加载，绝无外链） */
+export function imagePath(p) {
+  if (p.image && p.image.file) return './public/assets/' + p.image.file;
+  if (p.imagePath) return p.imagePath;
+  return null;
+}
+
+/** 价格标注（选品卡片展示用）：返回简短前缀，口径由 priceTypeTag 单独显示 */
+export function priceLabel(p) {
+  const st = p.price && p.price.status;
+  if (st === 'verified') return '已查证';
+  if (st === 'reference-only') return '参考价';
+  return '待询价';
+}
+
+/** 价格口径标签 */
+export function priceTypeTag(p) {
+  const pr = p.price || {};
+  if (pr.status === 'verified') return (pr.priceType || '') + (pr.province ? '·' + pr.province : '');
+  if (pr.status === 'reference-only') return 'poke参考';
+  return '需项目询价';
 }
