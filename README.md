@@ -117,7 +117,7 @@
 python3 -m http.server 8080
 ```
 
-浏览器访问 `http://<scrubbed-url-domain>/%60%E3%80%82
+浏览器访问 `http://localhost:8080`。
 
 ## ⚠️ 工程说明
 
