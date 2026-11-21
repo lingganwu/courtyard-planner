@@ -67,9 +67,25 @@ function allMonths(ph) {
   return [...new Set([...(ph.flowerMonths || []), ...(ph.fruitMonths || []), ...(ph.colorMonths || [])])];
 }
 
-/** 单株/单方价格：演示基线 × 品质档位 */
-export function plantUnitPrice(entry, grade = 1) {
-  return Math.round((entry.base || 0) * (Number(grade) || 1));
+/** 规格档次：经济/标配/特选 —— 单价系数 + 说明（规划级参照） */
+export const SPEC_TIERS = {
+  eco: { key: 'eco', label: '经济型', factor: 0.8, note: '小规格，成本低' },
+  std: { key: 'std', label: '标配型', factor: 1, note: '常用规格，成活率高' },
+  premium: { key: 'premium', label: '特选型', factor: 1.45, note: '大规格精品苗' }
+};
+
+/** 单株/单方价格：演示基线 × 品质档位 × 规格档次系数 */
+export function plantUnitPrice(entry, grade = 1, tier = 'std') {
+  const f = (SPEC_TIERS[tier] || SPEC_TIERS.std).factor;
+  return Math.round((entry.base || 0) * (Number(grade) || 1) * f);
+}
+
+/** 应用单价覆写：命中覆写表则用覆写值（仅覆写主材/植物单价，施工价不变） */
+export function overrideUnitPrice(rowKey, unitPrice, overrides = {}) {
+  const v = overrides[rowKey];
+  if (v === undefined || v === null || v === '') return unitPrice;
+  const n = Number(v);
+  return Number.isFinite(n) && n >= 0 ? n : unitPrice;
 }
 
 /** 工程量：perPlant 按绿化面积×密度估算株数；perArea 按分摊的绿化面积计㎡ */
@@ -92,14 +108,18 @@ export function buildBOQ(state, plants, engineering, materials, features = []) {
   const grade = Number(state.grade) || 1;
   const byId = Object.fromEntries(plants.map(p => [p.id, p]));
   const groundCount = (state.chosen && state.chosen.chosenGround || []).length || 1;
+  const tiers = state.specTiers || {};
+  const qtyAdjust = state.qtyAdjust || {};
+  const overrides = state.priceOverrides || {};
 
   // 硬景：所选材料，按铺装面积
   const mat = materials.find(m => m.id === state.selectedMaterial) || materials[0];
   if (mat && space.pavingArea > 0) {
     rows.push({
       division: '硬景', name: mat.name, spec: mat.spec, unit: '㎡',
-      qty: space.pavingArea, unitPrice: materialUnitPrice(mat, grade),
-      source: 'demo-baseline'
+      qty: space.pavingArea,
+      unitPrice: overrideUnitPrice('mat:' + mat.id, materialUnitPrice(mat, grade), overrides),
+      source: 'demo-baseline', rowKey: 'mat:' + mat.id
     });
   }
 
@@ -109,11 +129,15 @@ export function buildBOQ(state, plants, engineering, materials, features = []) {
       const p = byId[id];
       const e = engineering.entries[id];
       if (!p || !e) continue;                               // 数据缺失直接跳过，不造假补位
+      const tier = tiers[id] || 'std';
+      const qty = qtyAdjust[id] !== undefined ? Number(qtyAdjust[id]) : quantity(p, e, state, groundCount);
+      const rowKey = 'plant:' + id;
       rows.push({
-        division: '绿化', name: `${p.name}（${p.latinName}）`, spec: e.spec,
-        unit: e.unit, qty: quantity(p, e, state, groundCount),
-        unitPrice: plantUnitPrice(e, grade), source: 'demo-baseline',
-        plantId: id, reviewStatus: p.reviewStatus
+        division: '绿化', name: `${p.name}（${p.latinName}）`,
+        spec: e.spec + ' · ' + (SPEC_TIERS[tier] || SPEC_TIERS.std).label,
+        unit: e.unit, qty,
+        unitPrice: overrideUnitPrice(rowKey, plantUnitPrice(e, grade, tier), overrides),
+        source: 'demo-baseline', plantId: id, reviewStatus: p.reviewStatus, rowKey, tier
       });
     }
   }

@@ -39,10 +39,10 @@ async function boot() {
     .replace(/import\s*\{[\s\S]*?\}\s*from\s*'\.\/src\/core\.js';/, '')
     .replace(/import\s*\{[\s\S]*?\}\s*from\s*'\.\/src\/catalog\.js';/, '');
   // 把 core.js 的导出注入为全局（剥离 export 关键字后 eval）
-  const coreCode = read('src/core.js').replace(/export\s+function/g, 'function');
+  const coreCode = read('src/core.js').replace(/export\s+(function|const|let|var|class)/g, '$1');
   window.eval(coreCode);
   // 把 catalog.js 的导出注入为全局
-  const catalogCode = read('src/catalog.js').replace(/export\s+function/g, 'function');
+  const catalogCode = read('src/catalog.js').replace(/export\s+(function|const|let|var|class)/g, '$1');
   window.eval(catalogCode);
   // 构造 import 的对象
   const coreNames = ['balanceSpace','filterPlants','buildBOQ','boqTotal','toCSV','materialBreakdown','materialBreakdownRows','validSnapshot','plantUnitPrice','quantity','round'];

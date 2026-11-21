@@ -1,0 +1,84 @@
+{
+  "styles": [
+    {
+      "id": "new-chinese",
+      "name": "新中式",
+      "nameEn": "New Chinese",
+      "tagline": "人文骨架与意境",
+      "scene": "月洞门 · 青砖 · 黑山石 · 点植",
+      "accent": "#1f684c",
+      "desc": {
+        "plants": "罗汉松、乌桕点植，黑山石置景，青瓦漏窗收边。",
+        "materials": "中国黑/芝麻黑火烧面花岗岩、青砖冰裂纹、黑鹅卵石。",
+        "structures": "仿古廊架、月洞门景墙、黑山石置石、跌水照壁与静水池。"
+      },
+      "defaults": {
+        "trees": ["pinus-bungeana", "acer-palmatum"],
+        "shrubs": ["nandina-domestica", "buxus-megistophylla"],
+        "ground": ["ophiopogon-japonicus", "hosta-plantaginea"],
+        "material": "granite",
+        "features": ["feature-wall", "rock"]
+      }
+    },
+    {
+      "id": "minimal-modern",
+      "name": "现代极简",
+      "nameEn": "Minimal Modern",
+      "tagline": "利落几何与留白",
+      "scene": "几何铺装 · 镜面水 · 观赏草",
+      "accent": "#344252",
+      "desc": {
+        "plants": "银杏列植，细叶芒与八宝成片，控制品种少于五种。",
+        "materials": "大规格浅灰花岗岩、仿石PC砖、共挤塑木平台。",
+        "structures": "极简铝合金廊架、镜面无边界水池、线性排水与低压洗墙灯。"
+      },
+      "defaults": {
+        "trees": ["ginkgo-biloba"],
+        "shrubs": ["euonymus-japonicus"],
+        "ground": ["miscanthus-sinensis", "hylotelephium-erythrostictum"],
+        "material": "granite",
+        "features": ["pergola", "pond"]
+      }
+    },
+    {
+      "id": "cottage-natural",
+      "name": "自然野趣·英式乡村",
+      "nameEn": "Cottage Natural",
+      "tagline": "松弛花境与田园",
+      "scene": "花境 · 混播草花 · 自然式",
+      "accent": "#7a8b3c",
+      "desc": {
+        "plants": "月季、芍药、萱草与鸢尾混植，宿根花境层次自然。",
+        "materials": "陶土烧结砖、天然石板汀步、碎石与卵石收边。",
+        "structures": "防腐木花架、自然式置石、浅溪跌水与木平台。"
+      },
+      "defaults": {
+        "trees": ["malus-micromalus", "prunus-serrulata"],
+        "shrubs": ["rosa-chinensis", "paeonia-suffruticosa"],
+        "ground": ["hemerocallis-fulva", "iris-tectorum", "paeonia-lactiflora"],
+        "material": "brick",
+        "features": ["pergola", "rock"]
+      }
+    },
+    {
+      "id": "zen-shansui",
+      "name": "日式枯山水",
+      "nameEn": "Zen Shansui",
+      "tagline": "留白静寂与禅意",
+      "scene": "白砂 · 置石 · 苔藓 · 竹篱",
+      "accent": "#5c6b57",
+      "desc": {
+        "plants": "鸡爪槭点景，麦冬与苔藓覆盖，竹类背景成屏。",
+        "materials": "白川砂/白砂砾、黑色雨花石、自然面石板。",
+        "structures": "竹篱隔断、置石组景、惊鹿蹲踞与低矮景墙。"
+      },
+      "defaults": {
+        "trees": ["acer-palmatum-atropurpureum", "chimonanthus-praecox"],
+        "shrubs": ["nandina-domestica", "buxus-megistophylla"],
+        "ground": ["ophiopogon-japonicus", "hosta-plantaginea"],
+        "material": "imp-m-h-d-whitegravel",
+        "features": ["rock", "feature-wall"]
+      }
+    }
+  ]
+}
