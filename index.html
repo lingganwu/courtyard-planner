@@ -1,1 +1,42 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><link rel="stylesheet" href="/assets/styles-BRh4ek1l.css" data-precedence="default"/><title>庭院设计百宝箱</title><meta name="robots" content="noindex, nofollow"/><meta name="description" content="庭院设计百宝箱（Courtyard Design Toolbox）：面向景观设计师与庭院业主的庭院配植、空间配比、铺装构造、构筑物与水景、以及双视图造价估算的一站式工具。"/><meta name="theme-color" content="#FFFDFA"/><meta property="og:title" content="庭院设计百宝箱"/><meta property="og:description" content="庭院设计百宝箱（Courtyard Design Toolbox）：面向景观设计师与庭院业主的庭院配植、空间配比、铺装构造、构筑物与水景、以及双视图造价估算的一站式工具。"/><meta property="og:type" content="website"/><meta property="og:image" content="https://courtyard-planner.dont.poke.site/api/og"/><meta property="og:url" content="https://courtyard-planner.dont.poke.site"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="庭院设计百宝箱"/><meta name="twitter:description" content="庭院设计百宝箱（Courtyard Design Toolbox）：面向景观设计师与庭院业主的庭院配植、空间配比、铺装构造、构筑物与水景、以及双视图造价估算的一站式工具。"/><meta name="twitter:image" content="https://courtyard-planner.dont.poke.site/api/og"/><link rel="modulepreload" href="/assets/index-BDqUrxVK.js"/><link rel="modulepreload" href="/assets/routes-DT3qFazx.js"/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="icon" href="/favicon.ico" sizes="any"/></head><body><!--$--><main class="mx-auto flex w-full max-w-[1140px] flex-col gap-12 overflow-x-clip px-4 pb-36 pt-6 sm:px-8 sm:pt-10"><!-- Deployment HTML includes rendered page content; preserved verbatim from live site. --></main></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="庭院设计百宝箱：空间配比、苗木数量、铺装材料与工程造价快速估算。">
+  <meta name="theme-color" content="#1f5c45">
+  <title>庭院设计百宝箱</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<header class="hero">
+  <nav class="nav wrap"><a class="brand" href="#">庭院设计百宝箱</a><div><button id="themeBtn" class="ghost" type="button">深色模式</button><button id="printBtn" class="ghost" type="button">打印方案</button></div></nav>
+  <div class="wrap hero-grid"><div><span class="eyebrow">COURTYARD PLANNING TOOLBOX</span><h1>把庭院构想，快速变成可落地的工程数据</h1><p>面积配比、苗木数量、铺装用量和造价清单，一页完成。计算结果仅作方案阶段参考，施工前请结合图纸与现场复核。</p></div><div class="hero-card"><b>方案总览</b><div><span>庭院面积</span><strong id="summaryArea">120 ㎡</strong></div><div><span>估算总价</span><strong id="summaryCost">¥0.00</strong></div><div><span>单方造价</span><strong id="summaryUnit">¥0.00/㎡</strong></div></div></div>
+</header>
+<main class="wrap">
+  <section class="panel intro"><div><h2>基础参数</h2><p>先设置庭院总面积，其他工具会自动联动。</p></div><label>庭院总面积（㎡）<input id="totalArea" type="number" min="1" step="1" value="120"></label></section>
+
+  <section><div class="section-head"><div><span>01</span><h2>空间配比</h2></div><button class="ghost reset" data-reset="space" type="button">恢复建议值</button></div><div class="grid three">
+    <article class="card"><h3>绿化空间</h3><label>比例（%）<input class="space-ratio" data-name="绿化空间" data-color="#3f8f68" type="number" min="0" max="100" value="40"></label><p class="result"><b id="greenArea">48.00</b> ㎡</p></article>
+    <article class="card"><h3>铺装空间</h3><label>比例（%）<input class="space-ratio" data-name="铺装空间" data-color="#c98b4b" type="number" min="0" max="100" value="45"></label><p class="result"><b id="paveArea">54.00</b> ㎡</p></article>
+    <article class="card"><h3>水景及构筑物</h3><label>比例（%）<input class="space-ratio" data-name="水景及构筑物" data-color="#4f86a6" type="number" min="0" max="100" value="15"></label><p class="result"><b id="otherArea">18.00</b> ㎡</p></article>
+  </div><div class="ratio-wrap"><div id="ratioBar" class="ratio-bar"></div><p id="ratioStatus"></p></div></section>
+
+  <section><div class="section-head"><div><span>02</span><h2>苗木数量估算</h2></div></div><div class="grid two">
+    <article class="card"><h3>规则式种植</h3><div class="form-grid"><label>种植面积（㎡）<input id="plantArea" type="number" min="0" value="48"></label><label>株距（m）<input id="rowSpacing" type="number" min="0.1" step="0.1" value="1.5"></label><label>行距（m）<input id="colSpacing" type="number" min="0.1" step="0.1" value="1.5"></label><label>损耗率（%）<input id="plantWaste" type="number" min="0" value="5"></label></div><p class="result">建议采购 <b id="plantCount">23</b> 株</p><small>按面积 ÷ 株距 ÷ 行距，并计入损耗向上取整。</small></article>
+    <article class="card"><h3>乔灌草参考密度</h3><div class="tips"><p><b>庭荫树</b><span>4～6 m 株距</span></p><p><b>小乔木</b><span>2.5～4 m 株距</span></p><p><b>灌木组团</b><span>4～16 株/㎡</span></p><p><b>地被草花</b><span>16～36 株/㎡</span></p></div><small>实际密度应结合成年冠幅、苗木规格及设计效果确定。</small></article>
+  </div></section>
+
+  <section><div class="section-head"><div><span>03</span><h2>铺装材料估算</h2></div></div><div class="grid two">
+    <article class="card"><div class="form-grid"><label>铺装面积（㎡）<input id="materialArea" type="number" min="0" value="54"></label><label>损耗率（%）<input id="materialWaste" type="number" min="0" value="5"></label><label>单块长度（mm）<input id="brickLength" type="number" min="1" value="300"></label><label>单块宽度（mm）<input id="brickWidth" type="number" min="1" value="300"></label></div></article>
+    <article class="card result-card"><h3>材料采购建议</h3><p><span>含损耗面积</span><b id="purchaseArea">56.70 ㎡</b></p><p><span>整砖数量</span><b id="brickCount">630 块</b></p><p><span>参考砂浆量</span><b id="mortarVolume">1.70 m³</b></p><small>砂浆按 30 mm 厚粗估，不含基层、结合层调整及现场二次损耗。</small></article>
+  </div></section>
+
+  <section><div class="section-head"><div><span>04</span><h2>工程造价清单</h2></div><div><button id="addCost" class="button" type="button">新增项目</button><button id="exportBtn" class="ghost" type="button">导出 CSV</button></div></div><div class="table-wrap"><table><thead><tr><th>项目名称</th><th>单位</th><th>工程量</th><th>综合单价（元）</th><th>合价（元）</th><th></th></tr></thead><tbody id="costBody"></tbody><tfoot><tr><td colspan="4">含税估算合计</td><td id="grandTotal">¥0.00</td><td></td></tr></tfoot></table></div><div class="cost-settings"><label>税率（%）<input id="taxRate" type="number" min="0" step="0.1" value="9"></label><label>预备费（%）<input id="contingency" type="number" min="0" step="0.1" value="5"></label><button id="saveBtn" class="button" type="button">保存当前方案</button><button id="clearBtn" class="ghost danger" type="button">清空本地数据</button></div></section>
+
+  <section class="notice"><h2>使用说明</h2><ul><li>浏览器会自动保存当前数据，不上传服务器。</li><li>造价由清单小计、预备费和税金组成，适合前期方案比选。</li><li>正式预算应以施工图、清单计价规范、当地信息价及询价结果为准。</li></ul></section>
+</main>
+<footer><div class="wrap"><b>庭院设计百宝箱</b><span>开源静态工具 · 可离线使用</span></div></footer>
+</body>
+</html>
