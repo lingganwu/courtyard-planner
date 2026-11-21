@@ -1,0 +1,1 @@
+{"status":"demo-only","notice":"仅用于验证数据结构和交互链路，不代表完整植物库。正式数据必须逐条核验中文名、拉丁学名、气候适生性、规格、价格来源和本地图片许可后才能进入生产库。","requiredFields":["id","name","latinName","climates","category","ornamentalFeatures","seasonMonths","sunlight","moisture","specs","pricing","assetId","reviewStatus"]}

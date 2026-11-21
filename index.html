@@ -1,42 +1,12 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="庭院设计百宝箱：空间配比、苗木数量、铺装材料与工程造价快速估算。">
-  <meta name="theme-color" content="#1f5c45">
-  <title>庭院设计百宝箱</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js"></script>
-</head>
-<body>
-<header class="hero">
-  <nav class="nav wrap"><a class="brand" href="#">庭院设计百宝箱</a><div><button id="themeBtn" class="ghost" type="button">深色模式</button><button id="printBtn" class="ghost" type="button">打印方案</button></div></nav>
-  <div class="wrap hero-grid"><div><span class="eyebrow">COURTYARD PLANNING TOOLBOX</span><h1>把庭院构想，快速变成可落地的工程数据</h1><p>面积配比、苗木数量、铺装用量和造价清单，一页完成。计算结果仅作方案阶段参考，施工前请结合图纸与现场复核。</p></div><div class="hero-card"><b>方案总览</b><div><span>庭院面积</span><strong id="summaryArea">120 ㎡</strong></div><div><span>估算总价</span><strong id="summaryCost">¥0.00</strong></div><div><span>单方造价</span><strong id="summaryUnit">¥0.00/㎡</strong></div></div></div>
-</header>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>庭院设计百宝箱 · 专业版</title><meta name="description" content="庭院设计、植物选品、空间配比与工程造价规划工具"><link rel="stylesheet" href="./styles.css"><script defer src="./app.js"></script></head><body>
+<header class="top"><div class="wrap topbar"><div><b>灵感屋 · 庭院设计百宝箱</b><small>PROFESSIONAL COURTYARD TOOLBOX</small></div><nav><a href="#project">项目</a><a href="#space">空间</a><a href="#plants">植物</a><a href="#materials">材料</a><a href="#boq">BOQ</a></nav><button id="theme" class="ghost">深色</button></div></header>
+<div class="sticky"><div class="wrap budget"><span>面积 <b id="kArea">150㎡</b></span><span>绿化 <b id="kGreen">70.5㎡</b></span><span>铺装 <b id="kPaving">60㎡</b></span><span>水景/构筑 <b id="kWater">19.5㎡</b></span><span class="total">当前估算 <b id="kCost">¥0</b></span></div></div>
 <main class="wrap">
-  <section class="panel intro"><div><h2>基础参数</h2><p>先设置庭院总面积，其他工具会自动联动。</p></div><label>庭院总面积（㎡）<input id="totalArea" type="number" min="1" step="1" value="120"></label></section>
-
-  <section><div class="section-head"><div><span>01</span><h2>空间配比</h2></div><button class="ghost reset" data-reset="space" type="button">恢复建议值</button></div><div class="grid three">
-    <article class="card"><h3>绿化空间</h3><label>比例（%）<input class="space-ratio" data-name="绿化空间" data-color="#3f8f68" type="number" min="0" max="100" value="40"></label><p class="result"><b id="greenArea">48.00</b> ㎡</p></article>
-    <article class="card"><h3>铺装空间</h3><label>比例（%）<input class="space-ratio" data-name="铺装空间" data-color="#c98b4b" type="number" min="0" max="100" value="45"></label><p class="result"><b id="paveArea">54.00</b> ㎡</p></article>
-    <article class="card"><h3>水景及构筑物</h3><label>比例（%）<input class="space-ratio" data-name="水景及构筑物" data-color="#4f86a6" type="number" min="0" max="100" value="15"></label><p class="result"><b id="otherArea">18.00</b> ㎡</p></article>
-  </div><div class="ratio-wrap"><div id="ratioBar" class="ratio-bar"></div><p id="ratioStatus"></p></div></section>
-
-  <section><div class="section-head"><div><span>02</span><h2>苗木数量估算</h2></div></div><div class="grid two">
-    <article class="card"><h3>规则式种植</h3><div class="form-grid"><label>种植面积（㎡）<input id="plantArea" type="number" min="0" value="48"></label><label>株距（m）<input id="rowSpacing" type="number" min="0.1" step="0.1" value="1.5"></label><label>行距（m）<input id="colSpacing" type="number" min="0.1" step="0.1" value="1.5"></label><label>损耗率（%）<input id="plantWaste" type="number" min="0" value="5"></label></div><p class="result">建议采购 <b id="plantCount">23</b> 株</p><small>按面积 ÷ 株距 ÷ 行距，并计入损耗向上取整。</small></article>
-    <article class="card"><h3>乔灌草参考密度</h3><div class="tips"><p><b>庭荫树</b><span>4～6 m 株距</span></p><p><b>小乔木</b><span>2.5～4 m 株距</span></p><p><b>灌木组团</b><span>4～16 株/㎡</span></p><p><b>地被草花</b><span>16～36 株/㎡</span></p></div><small>实际密度应结合成年冠幅、苗木规格及设计效果确定。</small></article>
-  </div></section>
-
-  <section><div class="section-head"><div><span>03</span><h2>铺装材料估算</h2></div></div><div class="grid two">
-    <article class="card"><div class="form-grid"><label>铺装面积（㎡）<input id="materialArea" type="number" min="0" value="54"></label><label>损耗率（%）<input id="materialWaste" type="number" min="0" value="5"></label><label>单块长度（mm）<input id="brickLength" type="number" min="1" value="300"></label><label>单块宽度（mm）<input id="brickWidth" type="number" min="1" value="300"></label></div></article>
-    <article class="card result-card"><h3>材料采购建议</h3><p><span>含损耗面积</span><b id="purchaseArea">56.70 ㎡</b></p><p><span>整砖数量</span><b id="brickCount">630 块</b></p><p><span>参考砂浆量</span><b id="mortarVolume">1.70 m³</b></p><small>砂浆按 30 mm 厚粗估，不含基层、结合层调整及现场二次损耗。</small></article>
-  </div></section>
-
-  <section><div class="section-head"><div><span>04</span><h2>工程造价清单</h2></div><div><button id="addCost" class="button" type="button">新增项目</button><button id="exportBtn" class="ghost" type="button">导出 CSV</button></div></div><div class="table-wrap"><table><thead><tr><th>项目名称</th><th>单位</th><th>工程量</th><th>综合单价（元）</th><th>合价（元）</th><th></th></tr></thead><tbody id="costBody"></tbody><tfoot><tr><td colspan="4">含税估算合计</td><td id="grandTotal">¥0.00</td><td></td></tr></tfoot></table></div><div class="cost-settings"><label>税率（%）<input id="taxRate" type="number" min="0" step="0.1" value="9"></label><label>预备费（%）<input id="contingency" type="number" min="0" step="0.1" value="5"></label><button id="saveBtn" class="button" type="button">保存当前方案</button><button id="clearBtn" class="ghost danger" type="button">清空本地数据</button></div></section>
-
-  <section class="notice"><h2>使用说明</h2><ul><li>浏览器会自动保存当前数据，不上传服务器。</li><li>造价由清单小计、预备费和税金组成，适合前期方案比选。</li><li>正式预算应以施工图、清单计价规范、当地信息价及询价结果为准。</li></ul></section>
-</main>
-<footer><div class="wrap"><b>庭院设计百宝箱</b><span>开源静态工具 · 可离线使用</span></div></footer>
-</body>
-</html>
+<section id="project" class="section"><div class="heading"><div><em>01</em><div><h2>项目与场地</h2><p>先确定地区、气候、面积和施工条件，后续筛选与估算统一读取这里。</p></div></div></div><div class="panel fields"><label>项目城市<input id="city" value="濮阳"></label><label>气候区<select id="climate"><option>华北温带</option><option>华中过渡</option><option>华东暖温带</option><option>华南亚热带</option><option>西南高原亚热带</option></select></label><label>庭院面积（㎡）<input id="area" type="number" min="20" value="150"></label><label>日照<select id="sun"><option>南向 / 全日照</option><option>东西向 / 半日照</option><option>北向 / 偏阴</option></select></label><label>预算档位<select id="grade"><option value="1">经济实用</option><option value="1.25" selected>品质舒适</option><option value="1.6">精致造景</option></select></label><label>工况<select id="site"><option>毛坯新院</option><option>老院翻新</option></select></label></div></section>
+<section id="space" class="section"><div class="heading"><div><em>02</em><div><h2>动态空间配比</h2><p>三类空间自由调节，最后一项自动配平，始终保持 100%。</p></div></div></div><div class="space-layout"><div class="panel sliders"><label>绿化种植 <strong id="greenText">47%</strong><input id="green" type="range" min="0" max="100" value="47"></label><label>硬质铺装 <strong id="pavingText">40%</strong><input id="paving" type="range" min="0" max="100" value="40"></label><label>水景 / 构筑物 <strong id="waterText">13%</strong><input id="water" type="range" min="0" max="100" value="13" disabled></label></div><div class="panel distribution"><div class="segments"><i id="segGreen"></i><i id="segPaving"></i><i id="segWater"></i></div><div class="legend"><span><i class="c green"></i>绿化 <b id="greenArea">70.5㎡</b></span><span><i class="c slate"></i>铺装 <b id="pavingArea">60㎡</b></span><span><i class="c blue"></i>水景/构筑 <b id="waterArea">19.5㎡</b></span></div><div class="metric"><div><small>绿地率</small><b id="greenRate">47%</b></div><div><small>硬景率</small><b id="hardRate">53%</b></div><div><small>面积校核</small><b class="ok">100% 闭合</b></div></div></div></div></section>
+<section id="plants" class="section"><div class="heading"><div><em>03</em><div><h2>植物配置</h2><p>主画布只保留已选植物。候选植物通过专业选品抽屉筛选后加入。</p></div></div></div><div class="plant-groups"><article class="panel group"><div><h3>骨干与亚乔木</h3><button class="button open-picker" data-default="乔木">＋ 添加骨干与亚乔木</button></div><div id="chosenTrees" class="chosen"></div></article><article class="panel group"><div><h3>花灌木与绿篱球类</h3><button class="button open-picker" data-default="灌木">＋ 添加花灌木与绿篱球类</button></div><div id="chosenShrubs" class="chosen"></div></article><article class="panel group"><div><h3>花境宿根与观赏草</h3><button class="button open-picker" data-default="地被">＋ 添加花境宿根与观赏草</button></div><div id="chosenGround" class="chosen"></div></article></div></section>
+<section id="materials" class="section"><div class="heading"><div><em>04</em><div><h2>硬景材料与构造</h2><p>本阶段先打通选材、断面与 BOQ 的数据链，价格为明确标识的演示基线，后续接入可追溯地区价格。</p></div></div></div><div id="materialGrid" class="material-grid"></div><div class="panel buildup"><div class="buildup-head"><div><small>当前构造</small><h3 id="buildTitle">天然花岗岩铺装</h3></div><span>Build-up</span></div><ol id="buildLayers"></ol></div></section>
+<section id="boq" class="section"><div class="heading"><div><em>05</em><div><h2>施工算量 BOQ</h2><p>植物、材料、面积和品质档位统一进入同一计算链。</p></div></div><button id="export" class="ghost dark-btn">导出 CSV</button></div><div class="table"><table><thead><tr><th>分部</th><th>项目</th><th>规格/特征</th><th>单位</th><th>工程量</th><th>综合单价</th><th>合价</th></tr></thead><tbody id="boqBody"></tbody><tfoot><tr><td colspan="6">估算合计</td><td id="boqTotal">¥0</td></tr></tfoot></table></div><p class="note">当前价格仅为功能联调演示基线，不作为真实市场询价。正式价格库将记录地区、日期、来源与含税口径。</p></section></main>
+<footer><div class="wrap">灵感屋 · 庭院设计百宝箱 <span>专业版重构进行中</span></div></footer>
+<div id="drawer" class="drawer" aria-hidden="true"><div class="scrim" data-close></div><aside><header><div><small id="pickerClimate">华北温带</small><h2>植物选品库</h2></div><button class="close" data-close>×</button></header><input id="search" class="search" placeholder="搜索中文名 / 拉丁学名"><div class="filter"><b>植物分类</b><div id="categoryTabs" class="chips"></div></div><div class="filter"><b>观赏属性</b><div id="featureTabs" class="chips"></div></div><div class="filter"><b>季相</b><div id="seasonTabs" class="chips"></div></div><div class="picker-meta"><span id="matchCount">0 个匹配</span><span>演示数据，不冒充完整植物库</span></div><div id="pickerGrid" class="picker-grid"></div></aside></div>
+</body></html>
