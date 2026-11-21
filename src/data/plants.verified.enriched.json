@@ -1,0 +1,2434 @@
+{
+  "schemaVersion": 1,
+  "status": "enriched-verified",
+  "builtAt": "2026-11-21",
+  "stats": {
+    "total": 32,
+    "withImage": 31,
+    "withPrice": 8,
+    "withVerifiedPrice": 16
+  },
+  "plants": [
+    {
+      "id": "ginkgo-biloba",
+      "name": "银杏",
+      "latinName": "Ginkgo biloba L.",
+      "family": "Ginkgoaceae",
+      "genus": "Ginkgo",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木",
+        "庭院观果树"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观果",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "安徽",
+        "福建",
+        "甘肃",
+        "贵州",
+        "河南",
+        "河北",
+        "湖北",
+        "江苏",
+        "江西",
+        "陕西",
+        "山东",
+        "山西",
+        "四川",
+        "云南"
+      ],
+      "sourceNotes": "iPlant记载银杏为乔木，高可达40m，叶扇形，秋季亮黄色，花期3-4月，种子9-10月成熟；栽培区广。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E9%93%B6%E6%9D%8F?t=focn",
+      "sourceType": "iPlant/植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/ginkgo-biloba.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Jardins_des_Champs-%C3%89lys%C3%A9es_Paris_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a ",
+        "title": "Jardins des Champs-Élysées Paris 2.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "fe33ff443b433bbd6aef776f1836d1d12395ee1fcf114cf9a7a250517ac1de91",
+        "width": 8073,
+        "height": 8720,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 495.9,
+        "min": 180,
+        "max": 2981.7,
+        "unit": "株",
+        "spec": "胸径Φ12.1-14cm",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "达州市建设工程造价信息2025年第2期(总第125期)",
+        "sourceUrl": "http://zjj.dazhou.gov.cn/uploadfile/14/Attachment/3c6f862983.pdf",
+        "date": "2025-02",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "syringa-oblata",
+      "name": "紫丁香",
+      "latinName": "Syringa oblata Lindl.",
+      "family": "Oleaceae",
+      "genus": "Syringa",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "吉林",
+        "辽宁",
+        "内蒙古",
+        "河北",
+        "天津",
+        "山西",
+        "山东",
+        "河南",
+        "陕西",
+        "宁夏",
+        "甘肃",
+        "青海",
+        "四川"
+      ],
+      "sourceNotes": "iPlant确认中文名紫丁香、学名Syringa oblata Lindl.及分布记录。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%B4%AB%E4%B8%81%E9%A6%99?t=n",
+      "sourceType": "iPlant/物种信息",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/syringa-oblata.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Syringa_oblata_ssp._dilatata%2C_Arnold_Arboretum_-_IMG_5986.JPG",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Daderot",
+        "title": "Syringa oblata ssp. dilatata, Arnold Arboretum - IMG 5986.JPG",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "072af3f9f9b1e30357a2b10277c08497d2e3622ac0cf487c4596e1f5738602b7",
+        "width": 2448,
+        "height": 3264,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "price": 40,
+        "min": 40,
+        "max": 40,
+        "unit": "株",
+        "spec": "高1m以上",
+        "priceType": "中标价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "北京市京西林场管理处2026年义务植树基地补助项目（苗木采购）分项报价表",
+        "sourceUrl": "https://yllhj.beijing.gov.cn/zwgk/zfcg/qtgg/202606/P020260608540703838466.pdf",
+        "date": "2026-05",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "hylotelephium-erythrostictum",
+      "name": "八宝",
+      "aliases": [
+        "八宝三七",
+        "白花蝎子草"
+      ],
+      "latinName": "Hylotelephium erythrostictum (Miq.) H. Ohba",
+      "family": "Crassulaceae",
+      "genus": "Hylotelephium",
+      "growthForm": "草本",
+      "categories": [
+        "花境·填充",
+        "地被草本"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "吉林",
+        "辽宁",
+        "河北",
+        "山西",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "四川",
+        "贵州",
+        "云南"
+      ],
+      "sourceNotes": "iPlant记录正式中文名为八宝，工程口语八宝景天不直接作为标准名。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E5%85%AB%E5%AE%9D?t=n",
+      "sourceType": "iPlant/物种信息",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/hylotelephium-erythrostictum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hylotelephium_erythrostictum_Frosty_Morn_kz1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Hylotelephium erythrostictum Frosty Morn kz1.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "f3c24a7df30abc716cd51f572c2846d27383954146ada836747df7285794816c",
+        "width": 3072,
+        "height": 4608,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "pinus-bungeana",
+      "name": "白皮松",
+      "latinName": "Pinus bungeana Zucc. ex Endl.",
+      "family": "Pinaceae",
+      "genus": "Pinus",
+      "growthForm": "常绿乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [
+          10,
+          11
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "山西",
+        "河南",
+        "陕西",
+        "甘肃",
+        "四川",
+        "湖北"
+      ],
+      "sourceNotes": "iPlant记载白皮松为中国特有高大乔木，高可达30m；花期4-5月，球果翌年10-11月成熟。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%99%BD%E7%9A%AE%E6%9D%BE",
+      "sourceType": "iPlant/植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/pinus-bungeana.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pinus_bungeana_Sosna_plamistokora_2019-05-29_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Agnieszka Kwiecień, Nova",
+        "title": "Pinus bungeana Sosna plamistokora 2019-05-29 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "9db0878e9b9f67015f2e75590ebd3788d67a596b8a67d36d54ee744c8aee6f5c",
+        "width": 3072,
+        "height": 4608,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 7000,
+        "min": 4400,
+        "max": 11500,
+        "unit": "株",
+        "spec": "高4.5-5m",
+        "priceType": "信息价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "《北京工程造价信息(建设工程)》2026年08月·园林绿化(市场参考价)",
+        "sourceUrl": "http://bjjs.zjw.beijing.gov.cn/eportal/ui?areacode=110000&menuGuid=1626173942294&moduleId=d8bcb681d09f46e88a6edb55924d4b85&month=08&pageId=53618840&struts.portlet.action=/portlet/priceFront!queryList.action&struts.portlet.mode=view&year=2026",
+        "date": "2026-08",
+        "recordCount": 4,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "malus-micromalus",
+      "name": "西府海棠",
+      "aliases": [
+        "子母海棠",
+        "小果海棠",
+        "海红"
+      ],
+      "latinName": "Malus × micromalus Makino",
+      "family": "Rosaceae",
+      "genus": "Malus",
+      "growthForm": "小乔木",
+      "categories": [
+        "落叶乔木",
+        "庭院观果树"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "辽宁",
+        "河北",
+        "山西",
+        "山东",
+        "陕西",
+        "甘肃",
+        "云南"
+      ],
+      "sourceNotes": "中国植物志条目记载西府海棠为小乔木，花期4-5月，果期8-9月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E8%A5%BF%E5%BA%9C%E6%B5%B7%E6%A3%A0?t=focn",
+      "sourceType": "iPlant/中国植物志修订版",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/malus-micromalus.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Malus_%C3%97_micromalus-IMG_20180329_155526.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "artist": "Sun Jiao (Interaccoonale)",
+        "title": "Malus × micromalus-IMG 20180329 155526.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "ea375ebc42755a467cb6112a75f696b147d53b213ce07b10f8505b3f6d2948ab",
+        "width": 4048,
+        "height": 3036,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "punica-granatum",
+      "name": "石榴",
+      "aliases": [
+        "安石榴",
+        "丹若",
+        "若榴木"
+      ],
+      "latinName": "Punica granatum L.",
+      "family": "Lythraceae",
+      "genus": "Punica",
+      "growthForm": "落叶灌木或小乔木",
+      "categories": [
+        "庭院观果树",
+        "花灌木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "中国广泛栽培"
+      ],
+      "sourceNotes": "Flora of China条目记载石榴为灌木或小乔木，花期3-7月，在中国广泛栽培。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%9F%B3%E6%A6%B4?t=focn",
+      "sourceType": "iPlant/Flora of China",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/punica-granatum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Magraner_(partida_de_la_Belenguera%2C_Alginet%2C_Pa%C3%ADs_Valenci%C3%A0).jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Carolina Latorre Canet",
+        "title": "Magraner (partida de la Belenguera, Alginet, País Valencià).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "f5a4cf74312c988fb18f0daeeba29173e0145ef4ceb26045c6680978392ea44d",
+        "width": 5536,
+        "height": 4160,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 180,
+        "min": 180,
+        "max": 180,
+        "unit": "株",
+        "spec": "地径4-5cm",
+        "priceType": "中标价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "北京市京西林场管理处2026年义务植树基地补助项目（苗木采购）分项报价表",
+        "sourceUrl": "https://yllhj.beijing.gov.cn/zwgk/zfcg/qtgg/202606/P020260608540703838466.pdf",
+        "date": "2026-05",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "nandina-domestica",
+      "name": "南天竹",
+      "aliases": [
+        "蓝田竹",
+        "红天竺"
+      ],
+      "latinName": "Nandina domestica Thunb.",
+      "family": "Berberidaceae",
+      "genus": "Nandina",
+      "growthForm": "常绿小灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观花",
+        "观果",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6
+        ],
+        "fruitMonths": [
+          10,
+          11,
+          12
+        ],
+        "colorMonths": [
+          10,
+          11,
+          12
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "山西",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "江西",
+        "湖南",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "福建",
+        "广东",
+        "广西"
+      ],
+      "sourceNotes": "中国植物志记载南天竹为常绿小灌木；冬季叶变红；花期3-6月、果期5-11月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E5%8D%97%E5%A4%A9%E7%AB%B9?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/nandina-domestica.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_PfP.jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Jebulon",
+        "title": "Nandina domestica PfP.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "3f8972b6b1396fa20c2344d453866d92e95a710b636b7a5cf9b956ac6adad2cf",
+        "width": 4592,
+        "height": 3056,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 37.8,
+        "min": 19.7,
+        "max": 37.8,
+        "unit": "株",
+        "spec": "P80-100cm/H80-100cm,成都",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "四川地区城市园林绿化主要苗木指导价(第一百六十期·2025年1月)",
+        "sourceUrl": "https://home.gd-esa.com/attachment?id=1603740620512296960",
+        "date": "2025-01",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "miscanthus-sinensis",
+      "name": "芒",
+      "aliases": [
+        "芒草"
+      ],
+      "latinName": "Miscanthus sinensis Andersson",
+      "family": "Poaceae",
+      "genus": "Miscanthus",
+      "growthForm": "多年生草本",
+      "categories": [
+        "观赏草"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "fruitMonths": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "吉林",
+        "河北",
+        "山东",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "江西",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "福建",
+        "台湾",
+        "广东",
+        "广西",
+        "海南"
+      ],
+      "sourceNotes": "iPlant正式物种名为芒；细叶芒是Miscanthus sinensis 'Gracillimus'栽培品种。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Miscanthus%20sinensis?t=n",
+      "sourceType": "iPlant/物种信息+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/miscanthus-sinensis.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ruhland%2C_Gartenanlage_Hundemeile%2C_Baum-Hasel%2C_Vorwinter%2C_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Wilhelm Zimmerling PAR",
+        "title": "Ruhland, Gartenanlage Hundemeile, Baum-Hasel, Vorwinter, 01.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "11dc3ea1f6fd3aab8bff70fd435f0885258cabb9bae7fa7c9a270b75e77c0718",
+        "width": 3000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "hosta-plantaginea",
+      "name": "玉簪",
+      "latinName": "Hosta plantaginea (Lam.) Asch.",
+      "family": "Asparagaceae",
+      "genus": "Hosta",
+      "growthForm": "多年生草本",
+      "categories": [
+        "阴生宿根",
+        "花境·填充"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          7,
+          8
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "辽宁",
+        "河北",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "湖南",
+        "湖北",
+        "四川",
+        "云南",
+        "福建",
+        "广东",
+        "广西"
+      ],
+      "sourceNotes": "iPlant确认玉簪学名、科属及花果期8-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Hosta%20plantaginea?t=hpc",
+      "sourceType": "iPlant/中国高等植物",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/hosta-plantaginea.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hosta_plantaginea_Funkia_babkowata_02.jpg",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Agnieszka Kwiecień (Nova)",
+        "title": "Hosta plantaginea Funkia babkowata 02.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "3cc8ca2fed2d0d266404885d7777a6a7ee68388a81de594278ff1aa5c03e150c",
+        "width": 2448,
+        "height": 3264,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 100,
+        "min": 100,
+        "max": 100,
+        "unit": "元/㎡",
+        "spec": "苗龄≥2a,蓬径≥20cm,枝条≥5",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "osmanthus-fragrans",
+      "name": "木犀",
+      "aliases": [
+        "桂花",
+        "木樨",
+        "桂"
+      ],
+      "latinName": "Osmanthus fragrans (Thunb.) Lour.",
+      "family": "Oleaceae",
+      "genus": "Osmanthus",
+      "growthForm": "常绿乔木或灌木",
+      "categories": [
+        "常绿乔木",
+        "花灌木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          9,
+          10
+        ],
+        "fruitMonths": [
+          3,
+          4,
+          5
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "中国南部",
+        "各地广泛栽培"
+      ],
+      "sourceNotes": "iPlant以木犀为正式中文名，并列桂花等俗名；花期9-10月，果期翌年3-5月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Osmanthus%20fragrans?t=hpc",
+      "sourceType": "iPlant/中国高等植物",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/osmanthus-fragrans.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_in_China.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dinkun Chen",
+        "title": "Osmanthus fragrans in China.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "b299f9dd978cdda443bdd5c07d0f5eabf1b87ced0471e79754fd6da84c32173c",
+        "width": 4425,
+        "height": 7268,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 605,
+        "min": 120,
+        "max": 1200,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 8,
+        "status": "verified",
+        "matchType": "alias"
+      }
+    },
+    {
+      "id": "lagerstroemia-indica",
+      "name": "紫薇",
+      "aliases": [
+        "百日红",
+        "痒痒树"
+      ],
+      "latinName": "Lagerstroemia indica L.",
+      "family": "Lythraceae",
+      "genus": "Lagerstroemia",
+      "growthForm": "落叶灌木或小乔木",
+      "categories": [
+        "落叶乔木",
+        "花灌木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "fruitMonths": [
+          9,
+          10,
+          11
+        ],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "吉林",
+        "河北",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "浙江",
+        "江西",
+        "湖南",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "福建",
+        "台湾",
+        "广东",
+        "广西",
+        "海南"
+      ],
+      "sourceNotes": "中国植物志记载紫薇花期6-9月、果期9-12月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Lagerstroemia%20indica?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/lagerstroemia-indica.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_MHNT_Jardin_des_Plantes_de_Toulouse.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Didier Descouens",
+        "title": "Lagerstroemia indica MHNT Jardin des Plantes de Toulouse.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "506b7232b84b39a9bf5cec6deb609d9d186da9bb018329e13f61136e039a3e9e",
+        "width": 4623,
+        "height": 5294,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 200,
+        "min": 200,
+        "max": 200,
+        "unit": "株",
+        "spec": "胸径8cm",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "四川省发展和改革委员会·四川省特色农产品价格监测表(2025年11月)",
+        "sourceUrl": "https://fgw.sc.gov.cn/sfgw/tslcp/2025/11/27/d839ac8ebbc04e48b937df6fef183fdf.shtml",
+        "date": "2025-11-27",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "acer-palmatum-atropurpureum",
+      "name": "红枫",
+      "aliases": [
+        "红鸡爪槭",
+        "紫红鸡爪槭"
+      ],
+      "latinName": "Acer palmatum 'Atropurpureum'",
+      "family": "Sapindaceae",
+      "genus": "Acer",
+      "growthForm": "栽培木本",
+      "categories": [
+        "彩叶树",
+        "栽培品种"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [
+          3,
+          4,
+          5,
+          10,
+          11
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [],
+      "sourceNotes": "iPlant明确将红枫列为鸡爪槭Acer palmatum下的栽培品种。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%BA%A2%E6%9E%AB",
+      "sourceType": "iPlant/栽培品种信息",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/acer-palmatum-atropurpureum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_-_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dandarmkd",
+        "title": "Acer palmatum - Ботаничка градина Скопје 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "dd3b96f28c2bd417cd9dd7043d20e5076617626c77b00bc8d831db8bb7d373bf",
+        "width": 4000,
+        "height": 6000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 1021,
+        "min": 1021,
+        "max": 1021,
+        "unit": "株",
+        "spec": "未注明规格",
+        "priceType": "中标价",
+        "province": "江西",
+        "climate": "华中过渡",
+        "source": "上饶经开区董团乡人民政府绿植网上超市合同公告",
+        "sourceUrl": "https://sc.zhiliaobiaoxun.com/article/75192783",
+        "date": "2025-08-29",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "chimonanthus-praecox",
+      "name": "蜡梅",
+      "aliases": [
+        "腊梅",
+        "黄梅花",
+        "蜡木"
+      ],
+      "latinName": "Chimonanthus praecox (L.) Link",
+      "family": "Calycanthaceae",
+      "genus": "Chimonanthus",
+      "growthForm": "落叶灌木或小乔木",
+      "categories": [
+        "花灌木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          12,
+          1,
+          2
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "江苏",
+        "浙江",
+        "安徽",
+        "福建",
+        "江西",
+        "山东",
+        "河南",
+        "湖北",
+        "湖南",
+        "四川",
+        "贵州",
+        "云南",
+        "陕西"
+      ],
+      "sourceNotes": "iPlant确认正式中文名为蜡梅，腊梅为别名；FOC记载花期10月至翌年3月、果期4-11月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Chimonanthus%20praecox?t=focn",
+      "sourceType": "iPlant/FOC+Sp2000",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/chimonanthus-praecox.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chimonanthus_Praecox%2C_Xi'an_city%2C_China.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Ttabefbou98",
+        "title": "Chimonanthus Praecox, Xi'an city, China.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "ecfd7db66eaba0b46bbe9fafab11a241aa27831bcbb51f5369415e91b42ca8d8",
+        "width": 3997,
+        "height": 3996,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "acer-palmatum",
+      "name": "鸡爪槭",
+      "aliases": [
+        "七角枫"
+      ],
+      "latinName": "Acer palmatum Thunb.",
+      "family": "Sapindaceae",
+      "genus": "Acer",
+      "growthForm": "落叶小乔木",
+      "categories": [
+        "落叶乔木",
+        "彩叶树"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [
+          9
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "山东",
+        "河南",
+        "江苏",
+        "浙江",
+        "安徽",
+        "江西",
+        "湖北",
+        "湖南",
+        "贵州"
+      ],
+      "sourceNotes": "FOC记载花期4-5月、果期9月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E9%B8%A1%E7%88%AA%E6%A7%AD?t=focn",
+      "sourceType": "iPlant/FOC+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/acer-palmatum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_-_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dandarmkd",
+        "title": "Acer palmatum - Ботаничка градина Скопје 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "dd3b96f28c2bd417cd9dd7043d20e5076617626c77b00bc8d831db8bb7d373bf",
+        "width": 4000,
+        "height": 6000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "cotinus-coggygria-cinereus",
+      "name": "黄栌",
+      "aliases": [
+        "灰毛黄栌",
+        "红叶"
+      ],
+      "latinName": "Cotinus coggygria var. cinereus",
+      "family": "Anacardiaceae",
+      "genus": "Cotinus",
+      "growthForm": "落叶灌木",
+      "categories": [
+        "彩叶树",
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "河北",
+        "山东",
+        "河南",
+        "湖北",
+        "四川"
+      ],
+      "sourceNotes": "iPlant显示接受名为Cotinus coggygria var. cinereus；中国植物志旧处理记载叶秋季变红。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Cotinus%20coggygria%20var.%20cinereus?t=z",
+      "sourceType": "iPlant/中国植物志修订接受名",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/cotinus-coggygria-cinereus.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cotinus_coggygria_kz01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Cotinus coggygria kz01.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "8399ce8f6f9769d5029e62d04a6904a270d04ca82d52825da378db9f7fbba2b4",
+        "width": 4000,
+        "height": 5333,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "paeonia-suffruticosa",
+      "name": "牡丹",
+      "aliases": [
+        "木芍药",
+        "洛阳花",
+        "富贵花"
+      ],
+      "latinName": "Paeonia × suffruticosa Andrews",
+      "family": "Paeoniaceae",
+      "genus": "Paeonia",
+      "growthForm": "落叶灌木",
+      "categories": [
+        "花灌木",
+        "花境·主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5
+        ],
+        "fruitMonths": [
+          6
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "全国广泛栽培"
+      ],
+      "sourceNotes": "iPlant接受名为Paeonia × suffruticosa Andrews；中国植物志旧处理记载花期5月、果期6月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E7%89%A1%E4%B8%B9?t=n",
+      "sourceType": "iPlant/Sp2000+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/paeonia-suffruticosa.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa_Piazzo_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Syrio",
+        "title": "Paeonia suffruticosa Piazzo 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "89c1563e5005c4c55726238a07e8b824cf1e94bfbebf71d0b8099c85a9fba15b",
+        "width": 4608,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 5,
+        "min": 5,
+        "max": 5,
+        "unit": "株",
+        "spec": "高30-50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3413619.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "rosa-chinensis",
+      "name": "月季花",
+      "aliases": [
+        "月季",
+        "月月红",
+        "月月花"
+      ],
+      "latinName": "Rosa chinensis Jacq.",
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "growthForm": "直立灌木",
+      "categories": [
+        "花灌木",
+        "花境·主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fruitMonths": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "中国各地普遍栽培"
+      ],
+      "sourceNotes": "中国植物志记载花期4-9月、果期6-11月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E6%9C%88%E5%AD%A3%E8%8A%B1?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/rosa-chinensis.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Rosa_chinensis_001_-_IES_Perdouro.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Andrés Sánchez Villasuso",
+        "title": "Rosa chinensis 001 - IES Perdouro.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "1e9a1f8fed0678c7ead856f4f995012b3a5e209b8b9794ee31be4febc12be692",
+        "width": 3000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 29,
+        "min": 2.4,
+        "max": 29,
+        "unit": "株",
+        "spec": "苗高≥0.8m,主枝≥4,地径≥1cm",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "alias"
+      }
+    },
+    {
+      "id": "ophiopogon-japonicus",
+      "name": "麦冬",
+      "aliases": [
+        "麦门冬",
+        "沿阶草"
+      ],
+      "latinName": "Ophiopogon japonicus (L. f.) Ker Gawl.",
+      "family": "Asparagaceae",
+      "genus": "Ophiopogon",
+      "growthForm": "多年生草本",
+      "categories": [
+        "地被草本",
+        "阴生宿根"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7
+        ],
+        "fruitMonths": [
+          8,
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "北京",
+        "河北",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "江西",
+        "湖南",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "福建",
+        "台湾",
+        "广东",
+        "广西"
+      ],
+      "sourceNotes": "中国植物志记载花期5-8月、果期8-9月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E9%BA%A6%E5%86%AC?t=n",
+      "sourceType": "iPlant/Sp2000+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/ophiopogon-japonicus.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ophiopogon_japonicus_at_Coker_Arboretum.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Hameltion",
+        "title": "Ophiopogon japonicus at Coker Arboretum.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "9b0bef99b20e8c3f5567367c849e9b55698a88ab2068120e7cdd6b40da74af1e",
+        "width": 5184,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "平方米",
+        "spec": "细叶/阔叶 每平方米",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "styphnolobium-japonicum",
+      "name": "槐",
+      "aliases": [
+        "国槐",
+        "槐树",
+        "槐花树"
+      ],
+      "latinName": "Styphnolobium japonicum (L.) Schott",
+      "family": "Fabaceae",
+      "genus": "Styphnolobium",
+      "growthForm": "落叶乔木",
+      "categories": [
+        "落叶乔木",
+        "庭荫树"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          7,
+          8
+        ],
+        "fruitMonths": [
+          8,
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "中国各地广泛栽培"
+      ],
+      "sourceNotes": "Sp2000接受名为Styphnolobium japonicum (L.) Schott，正式中文名槐，国槐为俗名；FOC和中国高等植物资料记载花期7-8月、果期8-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Styphnolobium%20japonicum?t=n&id=ADB41932797D80B9",
+      "sourceType": "iPlant/Sp2000+FOC+中国高等植物",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/styphnolobium-japonicum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:A_Japanese_Pagoda_Tree_in_Churchill_Gardens%2C_Salisbury%2C_UK.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Richard Avery",
+        "title": "A Japanese Pagoda Tree in Churchill Gardens, Salisbury, UK.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "8bd39162c313f850df2baaed71c9ab63e0cb8c9ad4ff21b94f88e814040c9f93",
+        "width": 2988,
+        "height": 5312,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "yulania-denudata",
+      "name": "玉兰",
+      "aliases": [
+        "白玉兰",
+        "玉堂春",
+        "木兰"
+      ],
+      "latinName": "Yulania denudata (Desr.) D. L. Fu",
+      "family": "Magnoliaceae",
+      "genus": "Yulania",
+      "growthForm": "落叶乔木",
+      "categories": [
+        "落叶乔木",
+        "观花乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          2,
+          3
+        ],
+        "fruitMonths": [
+          8,
+          9
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "陕西",
+        "安徽",
+        "浙江",
+        "江西",
+        "湖南",
+        "湖北",
+        "重庆",
+        "贵州",
+        "云南",
+        "广东"
+      ],
+      "sourceNotes": "Sp2000接受名为Yulania denudata (Desr.) D. L. Fu，Magnolia denudata列为异名；中国植物志记载花先叶开放、芳香，花期2-3月、果期8-9月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Yulania%20denudata?t=n&id=8CFF62CBB6B087A1",
+      "sourceType": "iPlant/Sp2000+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "local-licensed",
+      "image": {
+        "file": "plants/yulania-denudata.jpg",
+        "source": "iNaturalist",
+        "provider": "iNaturalist",
+        "sourcePage": "https://www.inaturalist.org/photos/111409080",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "artist": "Zinogre",
+        "title": "玉兰 · iNaturalist 记录照",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed-source-license",
+        "confidence": "source-license-verified",
+        "sha256": "ebb366313c7ff9f11461a1715463959260f063c2a70c69ddc7d1f7ec5d0a5b81",
+        "width": 800
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "jasminum-nudiflorum",
+      "name": "迎春花",
+      "aliases": [
+        "迎春"
+      ],
+      "latinName": "Jasminum nudiflorum Lindl.",
+      "family": "Oleaceae",
+      "genus": "Jasminum",
+      "growthForm": "落叶灌木",
+      "categories": [
+        "花灌木",
+        "坡地覆盖"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观枝"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "甘肃",
+        "陕西",
+        "四川",
+        "云南",
+        "西藏"
+      ],
+      "sourceNotes": "中国植物志原变种资料记载迎春花为落叶灌木，花冠黄色，花期6月；并称我国及世界各地普遍栽培。当前来源与常见园艺物候印象存在差异，正式库按来源原文记录，不擅自改写。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Jasminum%20nudiflorum?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/jasminum-nudiflorum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mundelsheim_-_M%C3%BChlbachweinberge_-_Felsen_mit_Winterjasmin_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Roman Eisele",
+        "title": "Mundelsheim - Mühlbachweinberge - Felsen mit Winterjasmin (1).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "8d5e16234c37428283c470f33f22e82547b58030d37ab1999e71079472488d22",
+        "width": 9504,
+        "height": 6336,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "paeonia-lactiflora",
+      "name": "芍药",
+      "aliases": [
+        "白芍药",
+        "芍药花",
+        "将离"
+      ],
+      "latinName": "Paeonia lactiflora Pall.",
+      "family": "Paeoniaceae",
+      "genus": "Paeonia",
+      "growthForm": "多年生草本",
+      "categories": [
+        "花境·主调",
+        "宿根花卉"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6
+        ],
+        "fruitMonths": [
+          8
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "黑龙江",
+        "吉林",
+        "辽宁",
+        "内蒙古",
+        "河北",
+        "山东",
+        "河南",
+        "山西",
+        "陕西",
+        "宁夏",
+        "甘肃",
+        "四川",
+        "湖北",
+        "江西"
+      ],
+      "sourceNotes": "中国高等植物和中国植物志记载芍药为多年生草本；中国高等植物记载花期5-6月、果期8月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Paeonia%20lactiflora?t=hpc",
+      "sourceType": "iPlant/中国高等植物+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/paeonia-lactiflora.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pfingstrose_'Belleville'_im_botanischen_Garten_in_M%C3%BCnchen-Nymphenburg_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Kritzolina",
+        "title": "Pfingstrose 'Belleville' im botanischen Garten in München-Nymphenburg 02.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "ae8f986f5e8120fd7e971d339243a793feecde2b24757117c27f943c47140f51",
+        "width": 5472,
+        "height": 3648,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "forsythia-suspensa",
+      "name": "连翘",
+      "aliases": [
+        "垂枝连翘",
+        "黄花杆",
+        "黄寿丹"
+      ],
+      "latinName": "Forsythia suspensa (Thunb.) Vahl",
+      "family": "Oleaceae",
+      "genus": "Forsythia",
+      "growthForm": "落叶灌木",
+      "categories": [
+        "花灌木",
+        "坡地覆盖"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观枝",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          7,
+          8,
+          9
+        ],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "河北",
+        "山西",
+        "陕西",
+        "山东",
+        "安徽",
+        "河南",
+        "湖北",
+        "四川"
+      ],
+      "sourceNotes": "中国植物志和FOC记载连翘为落叶灌木，花先叶开放，花冠黄色，花期3-4月、果期7-9月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Forsythia%20suspensa?t=z",
+      "sourceType": "iPlant/中国植物志+FOC",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/forsythia-suspensa.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:ForsythiaSuspensa3.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "DouglasGoldman",
+        "title": "ForsythiaSuspensa3.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "87cc0bc533e6b86266fcb86262b1eb759339cc00d5371ea82f8a94924c21f951",
+        "width": 1814,
+        "height": 2710,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 5,
+        "min": 5,
+        "max": 5,
+        "unit": "株",
+        "spec": "高1m以上",
+        "priceType": "中标价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "北京市京西林场管理处2026年义务植树基地补助项目（苗木采购）分项报价表",
+        "sourceUrl": "https://yllhj.beijing.gov.cn/zwgk/zfcg/qtgg/202606/P020260608540703838466.pdf",
+        "date": "2026-05",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "cornus-officinalis",
+      "name": "山茱萸",
+      "aliases": [
+        "枣皮"
+      ],
+      "latinName": "Cornus officinalis Sieb. et Zucc.",
+      "family": "Cornaceae",
+      "genus": "Cornus",
+      "growthForm": "落叶乔木或灌木",
+      "categories": [
+        "观花乔木",
+        "庭院观果树"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "山西",
+        "陕西",
+        "甘肃",
+        "山东",
+        "江苏",
+        "浙江",
+        "安徽",
+        "江西",
+        "河南",
+        "湖南"
+      ],
+      "sourceNotes": "中国植物志记载山茱萸为落叶乔木或灌木，高4-10m；花先叶开放，花瓣黄色；花期3-4月，果期9-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Cornus%20officinalis?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/cornus-officinalis.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cornus_officinalis%2C_Morris_Arboretum_06.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Shuvaev",
+        "title": "Cornus officinalis, Morris Arboretum 06.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "b85d002136363f7a20cb54d2877cea8dc01482a52b7a6d680b6efb11b4ae8b2d",
+        "width": 4608,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "hemerocallis-fulva",
+      "name": "萱草",
+      "latinName": "Hemerocallis fulva (L.) L.",
+      "family": "Asphodelaceae",
+      "genus": "Hemerocallis",
+      "growthForm": "多年生草本",
+      "categories": [
+        "宿根花卉",
+        "花境·填充"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "河北",
+        "山西",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "江西",
+        "湖南",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "西藏",
+        "福建",
+        "台湾",
+        "广东",
+        "广西"
+      ],
+      "sourceNotes": "Sp2000确认萱草接受学名及阿福花科萱草属；FOC记载花期6-11月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Hemerocallis%20fulva?t=focn",
+      "sourceType": "iPlant/Sp2000+FOC",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/hemerocallis-fulva.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hemerocallis_fulva_2018_G1.jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "George Chernilevsky",
+        "title": "Hemerocallis fulva 2018 G1.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "f1babef6981153570d44f372315ec9886bbfe5299b784f1206a689c2107ac414",
+        "width": 5200,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 1,
+        "min": 0.5,
+        "max": 1.5,
+        "unit": "株",
+        "spec": "2年生",
+        "priceType": "批发价",
+        "province": "河北",
+        "climate": "华北温带",
+        "source": "大庄绿宝园林网·河北宿根苗木批发价格",
+        "sourceUrl": "https://www.lvbad.com/zhiwuku/723769.html",
+        "date": "2026",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "euonymus-japonicus",
+      "name": "冬青卫矛",
+      "aliases": [
+        "大叶黄杨",
+        "正木"
+      ],
+      "latinName": "Euonymus japonicus Thunb.",
+      "family": "Celastraceae",
+      "genus": "Euonymus",
+      "growthForm": "常绿灌木",
+      "categories": [
+        "灌木与球类",
+        "绿篱"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "中国南北各省区均有栽培"
+      ],
+      "sourceNotes": "中国植物志正式中文名为冬青卫矛，并明确列大叶黄杨为别名；花期6-7月、果熟期9-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E5%86%AC%E9%9D%92%E5%8D%AB%E7%9F%9B?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/euonymus-japonicus.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Euonymus_japonicus_habitus_2009December13_DehesaBoyaldePuertollano.jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Javier martin",
+        "title": "Euonymus japonicus habitus 2009December13 DehesaBoyaldePuertollano.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "3c5952d98d88c96ad2c22eb04d1f1cc5e1a28616aa0859dfedcc98352241e804",
+        "width": 3648,
+        "height": 2736,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "buxus-megistophylla",
+      "name": "大叶黄杨（黄杨属）",
+      "latinName": "Buxus megistophylla Levl.",
+      "family": "Buxaceae",
+      "genus": "Buxus",
+      "growthForm": "灌木或小乔木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          6,
+          7
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "贵州",
+        "广西",
+        "广东",
+        "湖南",
+        "江西"
+      ],
+      "sourceNotes": "中国植物志另有黄杨科黄杨属的正式物种大叶黄杨Buxus megistophylla Levl.，花期3-4月、果期6-7月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/%E5%A4%A7%E5%8F%B6%E9%BB%84%E6%9D%A8?t=z",
+      "sourceType": "iPlant/中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/buxus-megistophylla.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Buxus_megistophylla_-_Hector_L%C3%A9veill%C3%A9_1918.png",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Augustin Abel Hector Léveillé (1864 - 1918)",
+        "title": "Buxus megistophylla - Hector Léveillé 1918.png",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "b065a4e798d13da35eb434f8aad1b293ab43b542825b81b8d077a3e70843170e",
+        "width": 864,
+        "height": 1162,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "ligustrum-lucidum",
+      "name": "女贞",
+      "latinName": "Ligustrum lucidum Aiton",
+      "family": "Oleaceae",
+      "genus": "Ligustrum",
+      "growthForm": "常绿灌木或小乔木",
+      "categories": [
+        "常绿乔木",
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果",
+        "观叶",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7
+        ],
+        "fruitMonths": [
+          10,
+          11,
+          12
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "河南",
+        "安徽",
+        "江苏",
+        "浙江",
+        "江西",
+        "福建",
+        "广东",
+        "海南",
+        "广西",
+        "湖南",
+        "湖北",
+        "贵州",
+        "云南",
+        "四川",
+        "陕西",
+        "甘肃",
+        "西藏"
+      ],
+      "sourceNotes": "深圳植物志记载女贞为常绿灌木或小乔木，高4-8m；花期5-7月，果期7月至翌年5月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/fsz/info/Ligustrum%20lucidum",
+      "sourceType": "iPlant/深圳植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/ligustrum-lucidum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ligustrum_lucidum_(Family_Oleaceae)_-_Flowers.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Juan Carlos Fonseca Mata",
+        "title": "Ligustrum lucidum (Family Oleaceae) - Flowers.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "09edce6c6f5cfc1664817f7e52ea5b3c1f2982020ca054a0695d84382c200494",
+        "width": 5987,
+        "height": 7982,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "cercis-chinensis",
+      "name": "紫荆",
+      "aliases": [
+        "裸枝树",
+        "紫珠"
+      ],
+      "latinName": "Cercis chinensis Bunge",
+      "family": "Fabaceae",
+      "genus": "Cercis",
+      "growthForm": "落叶灌木",
+      "categories": [
+        "花灌木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          8,
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "河北",
+        "山东",
+        "河南",
+        "陕西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "湖北",
+        "四川",
+        "贵州",
+        "云南",
+        "广东",
+        "广西"
+      ],
+      "sourceNotes": "中国植物志和FOC记载紫荆为灌木，花紫红或粉红并多簇生于老枝和主干，通常先叶开放；花期3-4月、果期8-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Cercis%20chinensis?t=z",
+      "sourceType": "iPlant/中国植物志+FOC",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/cercis-chinensis.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kornik_Arboretum_judaszowiec_chinski_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Andrzej Otrębski",
+        "title": "Kornik Arboretum judaszowiec chinski 1.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "7e151f8db472d6ab371334a48433bc17025f2a85f7b760e2bf98dbd9fecdeb9e",
+        "width": 2816,
+        "height": 2112,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "iris-tectorum",
+      "name": "鸢尾",
+      "aliases": [
+        "屋顶鸢尾",
+        "蓝蝴蝶",
+        "紫蝴蝶",
+        "扁竹花"
+      ],
+      "latinName": "Iris tectorum Maxim.",
+      "family": "Iridaceae",
+      "genus": "Iris",
+      "growthForm": "多年生草本",
+      "categories": [
+        "宿根花卉",
+        "花境·填充"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [
+          6,
+          7,
+          8
+        ],
+        "colorMonths": [],
+        "source": "botanical-reference"
+      },
+      "sourceDistribution": [
+        "山西",
+        "安徽",
+        "江苏",
+        "浙江",
+        "福建",
+        "湖北",
+        "湖南",
+        "江西",
+        "广西",
+        "陕西",
+        "甘肃",
+        "四川",
+        "贵州",
+        "云南",
+        "西藏"
+      ],
+      "sourceNotes": "中国植物志记载鸢尾为多年生草本，花蓝紫色，花期4-5月、果期6-8月；FOC指出该物种在中国广泛栽培并已归化。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Iris%20tectorum?t=focn",
+      "sourceType": "iPlant/中国植物志+FOC",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/iris-tectorum.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Iris_tectorum-IMG_20181024_120019.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "artist": "Sun Jiao (Interaccoonale)",
+        "title": "Iris tectorum-IMG 20181024 120019.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "485132bdd01e9357f19c37a4df9166711798cad3b09bac7e525fe86f585dd632",
+        "width": 3024,
+        "height": 4032,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 0.38,
+        "min": 0.38,
+        "max": 0.38,
+        "unit": "棵",
+        "spec": "常绿鸢尾苗",
+        "priceType": "批发价",
+        "province": "山东",
+        "climate": "华北温带",
+        "source": "百度爱采购·园林商户报价",
+        "sourceUrl": "https://b2b.baidu.com/land/7b79657b6781614d8d69e878eed3ed78?fid=403116032",
+        "date": "2026-08-11",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "koelreuteria-paniculata",
+      "name": "栾",
+      "aliases": [
+        "栾树",
+        "木栾",
+        "栾华",
+        "灯笼树"
+      ],
+      "latinName": "Koelreuteria paniculata Laxm.",
+      "family": "Sapindaceae",
+      "genus": "Koelreuteria",
+      "growthForm": "落叶乔木或灌木",
+      "categories": [
+        "落叶乔木",
+        "庭荫树"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7,
+          8
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "安徽",
+        "甘肃",
+        "河北",
+        "河南",
+        "辽宁",
+        "陕西",
+        "山东",
+        "四川",
+        "云南"
+      ],
+      "sourceNotes": "iPlant页面主名显示为栾，并列栾树等俗名；FOC记载落叶乔木或灌木，花淡黄色且微香，花期6-8月、果期9-10月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Koelreuteria%20paniculata?t=focn",
+      "sourceType": "iPlant/FOC+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/koelreuteria-paniculata.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Feuille_compos%C3%A9e_d'un_Koelreuteria_paniculata_en_novembre.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "JackyM59",
+        "title": "Feuille composée d'un Koelreuteria paniculata en novembre.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "f8f40fa81cf6b741e25d8eb1dd20e505940f7e986f04861dadbbf45700461ae7",
+        "width": 4000,
+        "height": 6000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "prunus-serrulata",
+      "name": "山樱花",
+      "aliases": [
+        "樱花",
+        "野生福岛樱"
+      ],
+      "latinName": "Prunus serrulata Lindl.",
+      "family": "Rosaceae",
+      "genus": "Prunus",
+      "growthForm": "落叶乔木",
+      "categories": [
+        "落叶乔木",
+        "观花乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [
+          6,
+          7
+        ],
+        "colorMonths": [],
+        "source": "verified"
+      },
+      "sourceDistribution": [
+        "黑龙江",
+        "河北",
+        "山东",
+        "江苏",
+        "浙江",
+        "安徽",
+        "江西",
+        "湖南",
+        "贵州"
+      ],
+      "sourceNotes": "iPlant明确提示旧组合Cerasus serrulata的正名已修订为Prunus serrulata；中国植物志原变种记载乔木高3-8m，花白色稀粉红色，花期4-5月、果期6-7月。",
+      "sourceUrl": "https://<scrubbed-url-domain>/info/Cerasus%20serrulata?t=z",
+      "sourceType": "iPlant/名称修订+中国植物志",
+      "reviewStatus": "botanical-verified",
+      "pricingStatus": "pending",
+      "assetStatus": "pending-local-license",
+      "image": {
+        "file": "plants/prunus-serrulata.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Prunus_serrulata_at_Claremont_Road_2024-10-24.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "David Newton",
+        "title": "Prunus serrulata at Claremont Road 2024-10-24.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "b7a439214c449c32cd727150fcd2ff6a1815232246b9e291609e8295c191f878",
+        "width": 6120,
+        "height": 8160,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "price": {
+        "price": 322,
+        "min": 322,
+        "max": 322,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "alias"
+      }
+    }
+  ]
+}

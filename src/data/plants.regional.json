@@ -1,0 +1,4236 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-research-import",
+  "notice": "区域补充层：华南/西南各30种常用乡土适生植物，拉丁学名经核实，图片本地化自Wikimedia Commons，物候按区域实际；价格未查到者标unavailable不编造。",
+  "builtAt": "2026-11-21",
+  "stats": {
+    "total": 60,
+    "huanan": 30,
+    "xinan": 30,
+    "withImage": 59,
+    "withVerifiedPrice": 35
+  },
+  "plants": [
+    {
+      "id": "reg-hn-01",
+      "name": "小叶榕",
+      "latinName": "Ficus microcarpa",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐修剪",
+        "抗污染",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H3-5m",
+      "careNotes": "喜温暖湿润、耐半阴；耐修剪，注意疏剪气生根与遮挡枝，防治榕树介壳虫。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bonsai_Adam_and_Eve_(PPL2-Enhanced)_julesvernex2.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Jules Verne Times Two",
+        "title": "Bonsai Adam and Eve (PPL2-Enhanced) julesvernex2.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "5156f1eba0b0bacb6ee305b98f8605bd7bf046c59e2abfe16e8c69759ac921f5",
+        "width": 9316,
+        "height": 6433,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 1000,
+        "min": 29.9,
+        "max": 1000,
+        "unit": "棵",
+        "spec": "胸径13.1-15cm,高400-450cm,冠幅250-300cm,假植苗",
+        "priceType": "中标价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "宣汉县行道树补植苗木采购项目中标结果公告",
+        "sourceUrl": "https://m.yfbzb.com/inviteBid/detail/20250411_498593091.html",
+        "date": "2025-04-11",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-02",
+      "name": "高山榕",
+      "latinName": "Ficus altissima",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观姿观干",
+        "抗污染",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H5-8m",
+      "careNotes": "喜光耐半阴，适应性强；宜疏松肥沃排水良好土壤，注意支撑大枝、修剪气生根。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ficus_altissima1.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "artist": "KENPEI",
+        "title": "Ficus altissima1.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "6482ebb6dcb674bf0bdbc01fc5f93f318fb4029e446333c48894df1551b16238",
+        "width": 1537,
+        "height": 2304,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-03",
+      "name": "垂叶榕",
+      "latinName": "Ficus benjamina",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐修剪"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-10cm H3-5m",
+      "careNotes": "喜温暖湿润半阴环境；耐修剪造型，忌强风与干旱，注意防治介壳虫与煤污病。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-03.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ficus_benjamina_Sukabumi.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Afrogindahood",
+        "title": "Ficus benjamina Sukabumi.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "595e2477a0a556ebba5259869e4e5b2147ac7e098b832c90fa27e02e649b069a",
+        "width": 4000,
+        "height": 3000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 29.9,
+        "min": 29.9,
+        "max": 29.9,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有水东陂林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "https://m.cgwenjian.com/view/file/202503060001605646",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-04",
+      "name": "黄葛树",
+      "latinName": "Ficus virens var. sublanceolata",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观姿观干",
+        "耐旱",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-10m",
+      "careNotes": "喜光耐旱，适应性极强；短时落叶换叶，宜作行道树与庭荫树，注意修剪裸枝。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-04.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ficus_virens%2C_Shau_Kei_Wan_Main_Street_East_(Hong_Kong).jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Mk2010",
+        "title": "Ficus virens, Shau Kei Wan Main Street East (Hong Kong).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "e34845fa8bf85db41805afaff27220d58b54f6dec709813a178d1a62932fbd68",
+        "width": 2700,
+        "height": 3600,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 578.5,
+        "min": 200.2,
+        "max": 1584.7,
+        "unit": "株",
+        "spec": "胸径Φ12.1-14cm",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "达州市建设工程造价信息2025年第2期(总第125期)",
+        "sourceUrl": "http://zjj.dazhou.gov.cn/uploadfile/14/Attachment/3c6f862983.pdf",
+        "date": "2025-02",
+        "recordCount": 4,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-05",
+      "name": "秋枫",
+      "latinName": "Bischofia javanica",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐水湿",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-10m",
+      "careNotes": "喜光耐半阴，较耐水湿；宜肥沃湿润酸性土，苗期需水肥充足。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-05.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bischofia-javanica-SF22158-01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Steve Fitzgerald",
+        "title": "Bischofia-javanica-SF22158-01.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "1386289cc882746267d42d335016942d682708fc64914875aed2a196d41ba34c",
+        "width": 4896,
+        "height": 3672,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 34.9,
+        "min": 30,
+        "max": 34.9,
+        "unit": "株",
+        "spec": "未细分规格",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "丰顺县2025年绿美丰顺六大行动苗木保障项目采购合同(gdgpo.czt.gd.gov.cn)",
+        "sourceUrl": "https://gdgpo.czt.gd.gov.cn/gpx-bid-file/ZF_JGBM_000009/441423/2025/3/26/8a7eaf7e954d82170195cb2ef1214939/gpx-contract/8a7e8859967787c10196a9c8f3e25756.pdf?accessCode=8d360d86310737191df100acb82e9cb3",
+        "date": "2025-03-26",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-06",
+      "name": "木棉",
+      "latinName": "Bombax ceiba",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观姿观干",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          2,
+          3,
+          4
+        ],
+        "fruitMonths": [
+          6,
+          7
+        ],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-10m",
+      "careNotes": "喜光喜高温，耐旱忌积水；先花后叶，宜排水良好土壤，树干有瘤刺注意行人安全。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-06.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba2.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "DouglasGoldman",
+        "title": "Bombax ceiba2.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "2f4dc2fd6cabab782b7d54b05d6e55b5d3affd4fd07bc9d5324c1b60f0984a29",
+        "width": 2710,
+        "height": 1814,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-07",
+      "name": "凤凰木",
+      "latinName": "Delonix regia",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7
+        ],
+        "fruitMonths": [
+          8,
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-12cm H5-8m",
+      "careNotes": "喜光喜高温，不耐寒；宜排水良好土壤，花期前勿重剪，注意防治天牛。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-07.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Delonix_Regia_at_Tasik_Y_Recreational_Park.jpg",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Wiki Farazi",
+        "title": "Delonix Regia at Tasik Y Recreational Park.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "34c76ca9527021ecec92007ffea906a949679cfce07896cd0d332087105412e6",
+        "width": 2448,
+        "height": 3264,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 30,
+        "min": 30,
+        "max": 30,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-08",
+      "name": "火焰木",
+      "latinName": "Spathodea campanulata",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "速生"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H5-8m",
+      "careNotes": "喜高温湿润，生长快；忌积水与低温，宜作行道树与风景树，注意防风与修枝。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-08.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Spathodea_campanulata_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Nativeplants garden",
+        "title": "Spathodea campanulata 4.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "64625db7eadca4e44d6f6d45841b9e9cb1278cb9cc78963ee687c8944270dd29",
+        "width": 8160,
+        "height": 6120,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 29.2,
+        "min": 29.2,
+        "max": 29.2,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-09",
+      "name": "鸡蛋花",
+      "latinName": "Plumeria rubra",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "芳香",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "地径8-10cm H2-4m",
+      "careNotes": "喜光耐旱，忌积水；宜疏松排水好土壤，冬季控水，枝条折断易流乳汁需注意。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-09.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plumeria_rubra_Greenhouse_N17_of_Saint_Petersburg_Botanical_Garden.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Afanasovich",
+        "title": "Plumeria rubra Greenhouse N17 of Saint Petersburg Botanical Garden.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "f125c1529637ecb9688b97dcac9eecd939023681abd39ecbb6cf9c919172591e",
+        "width": 2268,
+        "height": 4032,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 50,
+        "min": 50,
+        "max": 50,
+        "unit": "棵",
+        "spec": "容器苗胸径3-50cm",
+        "priceType": "批发价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "百度爱采购·广东苗木商户报价",
+        "sourceUrl": "https://b2b.baidu.com/land/da051c469eea489be03d0c1168ad030b?fid=403116032",
+        "date": "2026-09-01",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-10",
+      "name": "王棕",
+      "latinName": "Roystonea regia",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观姿观干",
+        "抗污染"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径20-30cm H8-15m",
+      "careNotes": "喜光喜高温多湿，抗风性强；宜深厚肥沃土壤，移栽需带大土球并支撑。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-10.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Royal_palm_tree_in_Boca_Raton.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "artist": "No machine-readable author provided. Dtobias assumed (based on copyright claims).",
+        "title": "Royal palm tree in Boca Raton.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "1cc0642a491b88b46c7227dd173a9b7ef8313f4fb1bdd9edb08eb62315c6c636",
+        "width": 954,
+        "height": 1269,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-11",
+      "name": "蒲葵",
+      "latinName": "Livistona chinensis",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "抗污染",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径15-20cm H3-6m",
+      "careNotes": "喜高温多湿，耐半阴较耐寒；宜肥沃湿润土壤，修剪老叶保持树冠整洁。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-11.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Livistona_Chinensis_in_Nishi_Park_Nishi-k%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_City_20221209.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Hirho",
+        "title": "Livistona Chinensis in Nishi Park Nishi-kōen Chūō-ku Fukuoka City 20221209.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "7d19a67829efcdb9c88a7d43c305a6643b046b995ee0c95a4b5ddc3826460831",
+        "width": 4000,
+        "height": 3000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-12",
+      "name": "加拿利海枣",
+      "latinName": "Phoenix canariensis",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观姿观干",
+        "耐旱",
+        "抗污染"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径30-40cm H5-8m",
+      "careNotes": "喜光耐旱，较耐寒；宜排水良好土壤，移栽需带土球支撑，注意防治象甲。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-12.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Phoenix_canariensis_kz11.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Phoenix canariensis kz11.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "78464ce44122a12f936a705e65a1f4b5bef69705e1a5fd1548001afffe554155",
+        "width": 5918,
+        "height": 3945,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-13",
+      "name": "散尾葵",
+      "latinName": "Dypsis lutescens",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1.5-2.5m 丛生",
+      "careNotes": "喜温暖湿润半阴，忌强光直射；越冬需10℃以上，保持较高空气湿度。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-13.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens_2024-01-20_Malaga_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Agnieszka Kwiecień, Nova",
+        "title": "Dypsis lutescens 2024-01-20 Malaga 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "df0ad4bd6a1ac2b98e1955eda26d0ea613b3995ed48c229b7547e721fb86c776",
+        "width": 4608,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-14",
+      "name": "鱼尾葵",
+      "latinName": "Caryota maxima",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径15-20cm H5-8m",
+      "careNotes": "喜温暖湿润半阴，较耐寒；宜疏松肥沃酸性土，注意防风与修剪枯黄叶。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-14.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%AD%9A%E5%B0%BE%E8%91%B5_Caryota_ochlandra_-%E9%A6%99%E6%B8%AF%E9%9D%92%E8%A1%A3%E5%85%AC%E5%9C%92_Tsing_Yi_Park%2C_Hong_Kong-_(9219902179).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "阿橋 HQ",
+        "title": "魚尾葵 Caryota ochlandra -香港青衣公園 Tsing Yi Park, Hong Kong- (9219902179).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "48d79083d0d7fa92f86077897a94813a71c1017b19bcf25b5d3183ae8bd79c21",
+        "width": 1712,
+        "height": 2288,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-15",
+      "name": "苏铁",
+      "latinName": "Cycas revoluta",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "观姿观干",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "地径20-40cm H1-2m",
+      "careNotes": "喜光耐旱，忌积水；宜疏松排水好土壤，冬季防寒，注意防治介壳虫。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-15.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_from_Sirsi%2C_Karnataka.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Maninair999",
+        "title": "Cycas revoluta from Sirsi, Karnataka.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "5c0c0c512382a754bfbb033790901bf513a57d6e8d20b5d2e78345b5512976fe",
+        "width": 6000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-16",
+      "name": "三角梅",
+      "latinName": "Bougainvillea spectabilis",
+      "growthForm": "藤本",
+      "categories": [
+        "藤本"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "耐旱",
+        "耐修剪"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "冠幅1-3m 攀援",
+      "careNotes": "喜光耐旱不耐寒，忌积水；控制浇水可促花，耐修剪，宜作花墙与造型。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-16.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E8%8A%B1%E8%91%89%E8%91%89%E5%AD%90%E8%8A%B1_Bougainvillea_spectabilis_-%E9%A6%99%E6%B8%AF%E5%8B%95%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92_Hong_Kong_Botanical_Garden-_(9200950314).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "阿橋 HQ",
+        "title": "花葉葉子花 Bougainvillea spectabilis -香港動植物公園 Hong Kong Botanical Garden- (9200950314).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "3c423aec369f6877025430e3a9bc8880a784460bc54820e9ce3246e787a18ebd",
+        "width": 2592,
+        "height": 1944,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 29.9,
+        "min": 12.43,
+        "max": 29.9,
+        "unit": "株",
+        "spec": "未细分规格",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "丰顺县2025年绿美丰顺六大行动苗木保障项目采购合同(gdgpo.czt.gd.gov.cn)",
+        "sourceUrl": "https://gdgpo.czt.gd.gov.cn/gpx-bid-file/ZF_JGBM_000009/441423/2025/3/26/8a7eaf7e954d82170195cb2ef1214939/gpx-contract/8a7e8859967787c10196a9c8f3e25756.pdf?accessCode=8d360d86310737191df100acb82e9cb3",
+        "date": "2025-03-26",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-17",
+      "name": "龙船花",
+      "latinName": "Ixora chinensis",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m",
+      "careNotes": "喜光耐半阴，喜温暖湿润；宜酸性土壤，花期长，注意防治红蜘蛛。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-17.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ixora_chinensis_(Ixora)_tree_in_RDA%2C_Bogra_02.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Afifa Afrin",
+        "title": "Ixora chinensis (Ixora) tree in RDA, Bogra 02.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "b7008acff37ccfc0887e8c78761fbbdf52826e54cb803090cff110f8d866b2ce",
+        "width": 4608,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-18",
+      "name": "朱槿",
+      "latinName": "Hibiscus rosa-sinensis",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "耐修剪"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2.5m",
+      "careNotes": "喜光喜温暖，耐修剪；宜肥沃排水好土壤，花期全年，注意防治蚜虫与煤污病。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-18.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hibiscus_rosa-sinensis%2CNativeplants_Botanical_Garden.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Nativeplants garden",
+        "title": "Hibiscus rosa-sinensis,Nativeplants Botanical Garden.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "6be1d5df5812afbd8aec9d8980b44178d9206caaaff00ec74c1e6ff6f13a305d",
+        "width": 4080,
+        "height": 3060,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-19",
+      "name": "红背桂",
+      "latinName": "Excoecaria cochinchinensis",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.2m",
+      "careNotes": "喜温暖湿润半阴，忌强光；宜疏松肥沃土壤，修剪保持株形，汁液有毒注意防护。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-19.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Starr-110215-1446-Excoecaria_cochinchinensis-habit-Kihei-Maui_(25049930866).jpg",
+        "license": "CC BY 3.0 us",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+        "artist": "Forest and Kim Starr",
+        "title": "Starr-110215-1446-Excoecaria cochinchinensis-habit-Kihei-Maui (25049930866).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "7deca8a1c6fa2ff21a304ea082cc66a5accb04dbe4ca6b40a664e0fa6d032165",
+        "width": 3648,
+        "height": 2736,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-20",
+      "name": "变叶木",
+      "latinName": "Codiaeum variegatum",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐修剪"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m",
+      "careNotes": "喜光喜温暖湿润，不耐寒；宜肥沃排水好土壤，保证光照叶色才鲜艳，汁液有毒。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-20.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Codiaeum-variegatum-SF24357-02.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Steve Fitzgerald",
+        "title": "Codiaeum-variegatum-SF24357-02.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "49d07131b9efa007805c708cbe2825b87f9b916be4008e7f053a438f7b0982b4",
+        "width": 4896,
+        "height": 3672,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-21",
+      "name": "鹤望兰",
+      "latinName": "Strelitzia reginae",
+      "growthForm": "宿根花卉",
+      "categories": [
+        "花境主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2m 丛植",
+      "careNotes": "喜光耐半阴，喜温暖湿润；宜疏松肥沃土壤，花形似鸟，宜作花境焦点丛植。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-21.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Trauttmansdorff_gardens_-_Strelitzia_reginae_03.JPG",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Syrio",
+        "title": "Trauttmansdorff gardens - Strelitzia reginae 03.JPG",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "1ef21a82a7e22311a875b0849f058b8ff491567700efdadeaf29871f379a8156",
+        "width": 4608,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-22",
+      "name": "炮仗花",
+      "latinName": "Pyrostegia venusta",
+      "growthForm": "藤本",
+      "categories": [
+        "藤本"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          1,
+          2,
+          3
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "攀援5-10m",
+      "careNotes": "喜光喜温暖，耐旱；宜排水良好土壤，需设支架攀援，花后修剪促分枝。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-22.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pyrostegia_venusta_in_China_(2).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dinkun Chen",
+        "title": "Pyrostegia venusta in China (2).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "8440ef6f8c73d03f6752fcf41730b56f7451a0430042ea2423c6ac76f4d8f520",
+        "width": 8192,
+        "height": 5464,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-23",
+      "name": "使君子",
+      "latinName": "Combretum indicum",
+      "growthForm": "藤本",
+      "categories": [
+        "藤本"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "芳香",
+        "藤本"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "攀援2-8m",
+      "careNotes": "喜光喜温暖，耐旱；花初白后转红且具芳香，需支架或攀附物，注意冬季防寒。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-23.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Combretum_indicum_(at_Mito_Botanical_Garden%2C_Ibaraki%2C_Japan).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "小石川人晃",
+        "title": "Combretum indicum (at Mito Botanical Garden, Ibaraki, Japan).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "206286d203b087075e5c4cd632424820d8205d0351039e108d66dfdf91f9197f",
+        "width": 4928,
+        "height": 3280,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-24",
+      "name": "肾蕨",
+      "latinName": "Nephrolepis cordifolia",
+      "growthForm": "蕨类苔藓",
+      "categories": [
+        "蕨类苔藓"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.3-0.6m 丛植",
+      "careNotes": "喜温暖湿润半阴，忌强光；保持较高空气湿度，宜林下、墙角与假山配置。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-24.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nephrolepis_cordifolia_-_Marie_Selby_Botanical_Gardens_-_Sarasota%2C_Florida_-_DSC01746.jpg",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "title": "Nephrolepis cordifolia - Marie Selby Botanical Gardens - Sarasota, Florida - DSC01746.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "cafbaa52ff850bf6c6d7de2eacea4ad66ddc2419fbe6703e41431ae57912c431",
+        "width": 5472,
+        "height": 3648,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 1,
+        "min": 1,
+        "max": 1,
+        "unit": "株",
+        "spec": "高30-50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-25",
+      "name": "铺地锦竹草",
+      "latinName": "Callisia repens",
+      "growthForm": "草坪地被",
+      "categories": [
+        "草坪与阴生地被"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "匍匐地被 株高约10cm",
+      "careNotes": "喜半阴湿润，耐旱耐高温；扦插极易成活，生长迅速有入侵性，宜屋顶与林下地被。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-25.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Creeping_inchplant_(Lat._Callisia_repens).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Humoyun Mehridinov",
+        "title": "Creeping inchplant (Lat. Callisia repens).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "086cf0cf42dbdb4eb52328a39fb293c133916656144bda67752e580b859027dc",
+        "width": 3000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-hn-26",
+      "name": "狼尾草",
+      "latinName": "Pennisetum alopecuroides",
+      "growthForm": "观赏草",
+      "categories": [
+        "花境填充观赏草"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观叶",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.2m 丛植",
+      "careNotes": "喜光耐旱耐瘠薄；宜作花境填充与观赏草，秋冬季保留枯草观姿，早春平茬。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-26.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pennisetum_alopecuroides_-_Berlin_Botanical_Garden_-_IMG_8624.JPG",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Daderot",
+        "title": "Pennisetum alopecuroides - Berlin Botanical Garden - IMG 8624.JPG",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "a290a65a256e1bf06980575b5f90809c5c327335af5bfd0025d9801a8c4263d9",
+        "width": 3264,
+        "height": 2448,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 0.3,
+        "min": 0.3,
+        "max": 0.3,
+        "unit": "丛",
+        "spec": "丛苗",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-27",
+      "name": "再力花",
+      "latinName": "Thalia dealbata",
+      "growthForm": "水生植物",
+      "categories": [
+        "水生湿生"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "观叶",
+        "水生"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2m 浅水丛植",
+      "careNotes": "喜温暖浅水环境，繁殖力强；宜水深0.1-0.4m，小水池需容器隔离防泛滥。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-27.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Thalia_dealbata_at_the_New_York_Botanical_Garden.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "KATHERINE WAGNER-REISS",
+        "title": "Thalia dealbata at the New York Botanical Garden.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "bb7531904cc08b20e52270dc65a517d750a54d30cd87953c344d094f2140f6ab",
+        "width": 3024,
+        "height": 4032,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 0.32,
+        "min": 0.32,
+        "max": 0.32,
+        "unit": "株",
+        "spec": "水生造景苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-28",
+      "name": "梭鱼草",
+      "latinName": "Pontederia cordata",
+      "growthForm": "水生植物",
+      "categories": [
+        "水生湿生"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "水生"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1m 浅水丛植",
+      "careNotes": "喜光喜浅水，宜水深0-0.3m；与再力花、菖蒲组合营造滨水花境，冬季地上部枯萎。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-28.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Coastal_Georgia_Botanical_Gardens%2C_Pickleweed_Pontederia_cordata.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Michael Rivera",
+        "title": "Coastal Georgia Botanical Gardens, Pickleweed Pontederia cordata.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "4e76289a13f5d71ec3e9d2f091e7e6d219e6696ea92c44850f2d354894397fad",
+        "width": 5184,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 0.35,
+        "min": 0.35,
+        "max": 0.35,
+        "unit": "株",
+        "spec": "湿地浅水苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-29",
+      "name": "荷花",
+      "latinName": "Nelumbo nucifera",
+      "growthForm": "水生植物",
+      "categories": [
+        "水生湿生"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶",
+        "芳香"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观叶",
+        "芳香",
+        "水生"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7,
+          8
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "水深0.5-1.2m 片植",
+      "careNotes": "喜光喜肥，宜开阔水面与深厚淤泥；碗莲适合小池，注意控制水位与防治蚜虫。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera%2C_also_known_as_Indian_lotus_in_bud_stage_(Image_7_of_7).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Subhrajyoti07",
+        "title": "Nelumbo nucifera, also known as Indian lotus in bud stage (Image 7 of 7).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "0b65d2eea128567ec726cf42c04448706bfbc60959970d298b4c6a5424bf2130",
+        "width": 4000,
+        "height": 6016,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 2,
+        "min": 2,
+        "max": 2,
+        "unit": "株",
+        "spec": "高60-120cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-hn-30",
+      "name": "睡莲",
+      "latinName": "Nymphaea tetragona",
+      "growthForm": "水生植物",
+      "categories": [
+        "水生湿生"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观叶",
+        "水生"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          6,
+          7,
+          8
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "水深0.3-0.8m 片植",
+      "careNotes": "喜光耐寒，宜静水与肥沃底泥；叶片浮水，昼开夜合，宜与荷花高低搭配。",
+      "pokeRegions": [
+        "huanan"
+      ],
+      "sourceDistribution": [
+        "广东",
+        "广西",
+        "海南",
+        "福建"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-hn-30.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nymphaea_sp._or_hybrid_(16).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dinkun Chen",
+        "title": "Nymphaea sp. or hybrid (16).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "2564f39f4064c4ff75145d664cb0ca7383aa45fee380716c553eb2466511bc5a",
+        "width": 8192,
+        "height": 5464,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 2,
+        "min": 2,
+        "max": 2,
+        "unit": "株",
+        "spec": "浮叶水生苗",
+        "priceType": "批发价",
+        "province": "浙江",
+        "climate": "华东暖温带",
+        "source": "百度爱采购公开报价（浙江供应商，起批量价）",
+        "sourceUrl": "https://b2b.baidu.com/land/f0d6a860a46c4ed483525911f78f8827?fid=403116032",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-31",
+      "name": "滇朴",
+      "latinName": "Celtis tetrandra",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观姿观干",
+        "耐水湿",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-10m",
+      "careNotes": "喜光稍耐阴，耐水湿耐旱；宜深厚肥沃土壤，树形端正，宜作行道树与庭荫树。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-31.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Celtis_tetrandra_in_Eastwoodhill_Arboretum_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Golik",
+        "title": "Celtis tetrandra in Eastwoodhill Arboretum (1).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "b220d65410fc5fc706e0ab0c0c96e1c970ae44338faae73769d4dabb62a307ee",
+        "width": 4000,
+        "height": 6000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 362,
+        "min": 362,
+        "max": 362,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-32",
+      "name": "云南樟",
+      "latinName": "Cinnamomum glanduliferum",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "芳香",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "芳香",
+        "观姿观干",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-12m",
+      "careNotes": "喜光喜温暖湿润，深根性长寿；宜肥沃深厚酸性土，不耐水湿，枝叶具樟香。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-32.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cinnamomum_glanduliferum_kz3.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Cinnamomum glanduliferum kz3.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "cbeb5978f1b6750fa328217c97377c62960bf74010fc8dfd77de855b2cd3b5a0",
+        "width": 4608,
+        "height": 3072,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-33",
+      "name": "蓝花楹",
+      "latinName": "Jacaranda mimosifolia",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观姿观干"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6
+        ],
+        "fruitMonths": [
+          9,
+          10,
+          11
+        ],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-12m",
+      "careNotes": "喜光喜温暖湿润，不耐寒；宜深厚肥沃排水好土壤，为昆明著名观花行道树。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-33.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ted_Mack_Civic_Park_MRD_01.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "artist": "Mike Dickison",
+        "title": "Ted Mack Civic Park MRD 01.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "91eee2cc81d177e97f978ef6e33bdff5568ac52a5df23b0a84d0653835d2c85b",
+        "width": 3024,
+        "height": 4032,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 30,
+        "min": 29.5,
+        "max": 2959,
+        "unit": "株",
+        "spec": "米径3cm以上,苗高2m以上,容器苗",
+        "priceType": "中标价",
+        "province": "广东",
+        "climate": "华南亚热带",
+        "source": "惠州市国有鸡笼山林场2025年乡村绿化苗木采购项目(最高单价限价)",
+        "sourceUrl": "http://www.cgwenjian.com/view/file/202503070001605950",
+        "date": "2025-03",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-34",
+      "name": "云南松",
+      "latinName": "Pinus yunnanensis",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "耐旱",
+        "耐瘠薄",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H6-12m",
+      "careNotes": "喜光耐干旱瘠薄，适应性强；宜酸性土壤，荒山绿化先锋树种，注意防火。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-34.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pinus_yunnanensis_Yulongxueshan.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "Greg Grossmeier from San Francisco",
+        "title": "Pinus yunnanensis Yulongxueshan.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "65f885d472fae094c07a97d448276830619a3cd1a93c4724b21da654dd83d424",
+        "width": 4320,
+        "height": 3240,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 423,
+        "min": 423,
+        "max": 423,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-35",
+      "name": "华山松",
+      "latinName": "Pinus armandii",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "耐寒",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H6-12m",
+      "careNotes": "喜光喜温凉湿润，耐寒；能适应多种土壤，宜高海拔庭园与风景林配置。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-35.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pinus_armandii_kz03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Pinus armandii kz03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "fd3c0daf90f4f569ca872a3394f18dcd3e47c45ef98cad60287bcf2461121a21",
+        "width": 3705,
+        "height": 4940,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-36",
+      "name": "侧柏",
+      "latinName": "Platycladus orientalis",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干",
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "耐旱",
+        "抗污染",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-10cm H4-8m",
+      "careNotes": "喜光耐旱耐瘠薄，抗污染；宜排水良好土壤，耐修剪，常用于陵园与绿篱。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-36.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Platycladus_orientalis_20240317a.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Luis Fernández García",
+        "title": "Platycladus orientalis 20240317a.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "a3862e39cf12ae5f83618d169611fa7d854cb339fc0be3b7f03a6c93db975459",
+        "width": 4000,
+        "height": 3000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 350,
+        "min": 350,
+        "max": 350,
+        "unit": "株",
+        "spec": "高3-3.5m",
+        "priceType": "信息价",
+        "province": "北京",
+        "climate": "华北温带",
+        "source": "《北京工程造价信息(建设工程)》2026年08月·园林绿化(市场参考价)",
+        "sourceUrl": "http://bjjs.zjw.beijing.gov.cn/eportal/ui?areacode=110000&menuGuid=1626173942294&moduleId=d8bcb681d09f46e88a6edb55924d4b85&month=08&pageId=53618840&struts.portlet.action=/portlet/priceFront!queryList.action&struts.portlet.mode=view&year=2026",
+        "date": "2026-08",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-37",
+      "name": "乌桕",
+      "latinName": "Sapium sebiferum",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观叶",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "regional-reference"
+      },
+      "spec": "胸径10-15cm H6-10m",
+      "careNotes": "喜光喜温暖，耐旱耐水湿；秋叶红艳，宜作秋色叶树，注意根系较浅需防风。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-37.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:TriadicaSebifera1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Douglas Goldman",
+        "title": "TriadicaSebifera1.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "94c484eb95648f99d4e3218030f6523e6b9a75d3d8464b54f04eee4ed4273ce7",
+        "width": 1814,
+        "height": 2710,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 1000,
+        "min": 1000,
+        "max": 1000,
+        "unit": "株",
+        "spec": "胸径15cm全冠",
+        "priceType": "中标价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "2025年度墓区苗木、草花采购项目分项价格表(ccgp-jiangsu)",
+        "sourceUrl": "http://www.ccgp-jiangsu.gov.cn/fileApi/320000/d93c697c0f81458cb003b93a308a39b1.pdf",
+        "date": "2025",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-38",
+      "name": "红枫",
+      "latinName": "Acer palmatum 'Atropurpureum'",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观叶",
+        "耐半阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "regional-reference"
+      },
+      "spec": "地径5-8cm H2-4m",
+      "careNotes": "喜光耐半阴，忌烈日暴晒与积水；宜疏松肥沃微酸性土，为著名观叶小乔木。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-38.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_atropurpureum_(Rentilly).jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Tangopaso",
+        "title": "Acer palmatum atropurpureum (Rentilly).jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "1bf867c7788b52bbea6268b0cba69a37751d9899a3ecf1fc1e2fc4fac6228678",
+        "width": 3312,
+        "height": 4416,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 1021,
+        "min": 1021,
+        "max": 1021,
+        "unit": "株",
+        "spec": "未注明规格",
+        "priceType": "中标价",
+        "province": "江西",
+        "climate": "华中过渡",
+        "source": "上饶经开区董团乡人民政府绿植网上超市合同公告",
+        "sourceUrl": "https://sc.zhiliaobiaoxun.com/article/75192783",
+        "date": "2025-08-29",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-39",
+      "name": "鸡爪槭",
+      "latinName": "Acer palmatum",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观姿观干"
+      ],
+      "traits": [
+        "落叶",
+        "观叶",
+        "耐半阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [
+          10,
+          11
+        ],
+        "source": "regional-reference"
+      },
+      "spec": "地径5-8cm H2-4m",
+      "careNotes": "喜光耐半阴，忌西晒与积水；宜湿润排水好土壤，秋色叶绚丽，宜庭园孤植。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-39.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_-_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Dandarmkd",
+        "title": "Acer palmatum - Ботаничка градина Скопје 03.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "2957df9d71a1f205dcc3af42f0c420e602ccf5c1e2454f969554cf3acb675022",
+        "width": 4000,
+        "height": 6000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-40",
+      "name": "樱花",
+      "latinName": "Prunus serrulata",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "地径8-10cm H3-5m",
+      "careNotes": "喜光喜温暖湿润，忌积水；宜深厚肥沃砂壤土，花期怕大风与霜冻，注意防治蚜虫。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-40.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Prunus_serrulata_at_Claremont_Road_2024-10-24.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "David Newton",
+        "title": "Prunus serrulata at Claremont Road 2024-10-24.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "27bff5901ad07d6eb5fe4e5162b5121195cb17b3524035dbe13ed2bf5207293d",
+        "width": 6120,
+        "height": 8160,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 322,
+        "min": 322,
+        "max": 322,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-41",
+      "name": "垂丝海棠",
+      "latinName": "Malus halliana",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观果"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观果"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          3,
+          4
+        ],
+        "fruitMonths": [
+          9,
+          10
+        ],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "地径6-10cm H3-5m",
+      "careNotes": "喜光不耐阴，喜温暖湿润，忌水涝；宜深厚肥沃排水好土壤，花梗下垂花色粉红。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-41.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%9E%82%E7%B5%B2%E6%B5%B7%E6%A3%A0_Malus_halliana_-%E9%A6%99%E6%B8%AF%E5%85%AC%E5%9C%92_Hong_Kong_Park-_(9173504592).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "阿橋 HQ",
+        "title": "垂絲海棠 Malus halliana -香港公園 Hong Kong Park- (9173504592).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "8152239058adc6a0c569a889a973c6015d0ddbf1f350a8871022b824f77abb18",
+        "width": 2288,
+        "height": 1712,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 3,
+        "min": 1,
+        "max": 30,
+        "unit": "株",
+        "spec": "冠径50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-42",
+      "name": "白玉兰",
+      "latinName": "Yulania denudata",
+      "growthForm": "乔木",
+      "categories": [
+        "落叶乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          2,
+          3
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H4-8m",
+      "careNotes": "喜光稍耐阴，先花后叶；宜肥沃排水好微酸性土，花期怕晚霜，注意防治天牛。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-42.jpg",
+        "source": "iNaturalist",
+        "provider": "iNaturalist",
+        "sourcePage": "https://www.inaturalist.org/photos/63357957",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "artist": "Marco Mussita",
+        "title": "白玉兰 · iNaturalist 记录照",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed-source-license",
+        "confidence": "source-license-verified",
+        "sha256": "f6316f7bd24e976d5f72e438a3e6b284a0c51f3b213fa4189101086c33216d97",
+        "width": 800
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 415,
+        "min": 200,
+        "max": 415,
+        "unit": "棵",
+        "spec": "胸径5-7cm",
+        "priceType": "信息价",
+        "province": "云南",
+        "climate": "西南高原亚热带",
+        "source": "云南省交通运输工程材料及设备信息价2025年第7期(总第173期)",
+        "sourceUrl": "https://www.ynszhjtfzzx.cn/uploadfile/s65/2025/0909/20250909105758118.pdf",
+        "date": "2025-09",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      },
+      "assetStatus": "local-licensed"
+    },
+    {
+      "id": "reg-xn-43",
+      "name": "石楠",
+      "latinName": "Photinia serratifolia",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观果"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "观果",
+        "抗污染"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "胸径8-12cm H4-7m",
+      "careNotes": "喜光稍耐阴，耐旱耐修剪；宜肥沃排水好土壤，新叶红艳，秋果红色。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-43.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arboretum_et_fruticetum_britannicum%2C_or_(Plate_157)_(7064328055).jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Loudon, J. C.",
+        "title": "Arboretum et fruticetum britannicum, or (Plate 157) (7064328055).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "3091f15b4d32397a6872fe3a00a897b8e92bb787a5fb89447dd7bd5748083a6a",
+        "width": 1186,
+        "height": 2132,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 30,
+        "min": 6,
+        "max": 40,
+        "unit": "株",
+        "spec": "冠径100cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 4,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-44",
+      "name": "红叶石楠",
+      "latinName": "Photinia × fraseri",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐修剪"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2.5m 球形或绿篱",
+      "careNotes": "喜光耐半阴，耐修剪；新叶鲜红，宜作绿篱与色块，注意防治叶斑病与红蜘蛛。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-44.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Photinia_en_fleurs.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Thomon",
+        "title": "Photinia en fleurs.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "3b0a7bdfd9c39ed5e263bff9404f1949ef2cfd4d4eae0fd45686e613b71d481a",
+        "width": 5152,
+        "height": 3864,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 280,
+        "min": 2.49,
+        "max": 280,
+        "unit": "株",
+        "spec": "地径8cm",
+        "priceType": "中标价",
+        "province": "江苏",
+        "climate": "华东暖温带",
+        "source": "2025年度墓区苗木、草花采购项目分项价格表(ccgp-jiangsu)",
+        "sourceUrl": "http://www.ccgp-jiangsu.gov.cn/fileApi/320000/d93c697c0f81458cb003b93a308a39b1.pdf",
+        "date": "2025",
+        "recordCount": 3,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-45",
+      "name": "山茶",
+      "latinName": "Camellia japonica",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-3m",
+      "careNotes": "喜半阴湿润，忌强光与积水；宜疏松肥沃酸性土，花期长，注意防治茶尺蠖。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-45.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_in_Higashi_Park%2C_Fukuoka.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "そらみみ",
+        "title": "Camellia japonica in Higashi Park, Fukuoka.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "c67dab81cc5eeef93b203a94153e99ba781eaeae91d31a6f6beeea1f8de15458",
+        "width": 3944,
+        "height": 2958,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-46",
+      "name": "杜鹃",
+      "latinName": "Rhododendron simsii",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          4,
+          5
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m",
+      "careNotes": "喜半阴湿润凉爽，忌强光积水；宜疏松酸性土壤，西南山地常见，花期繁花满枝。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-46.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Rhododendron_indicum_-_Kunming_Botanical_Garden_-_DSC02873.JPG",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Daderot",
+        "title": "Rhododendron indicum - Kunming Botanical Garden - DSC02873.JPG",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "3829439347d33bd6bb29c690a8c12ba9179cd98258bb8be0b81358c1f5c4dd71",
+        "width": 4320,
+        "height": 3240,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 10,
+        "min": 1,
+        "max": 610,
+        "unit": "株",
+        "spec": "冠径60cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3413619.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-47",
+      "name": "马缨杜鹃",
+      "latinName": "Rhododendron delavayi",
+      "growthForm": "乔木",
+      "categories": [
+        "常绿乔木"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观姿观干"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H2-5m",
+      "careNotes": "喜凉爽湿润半阴，耐寒；宜酸性土壤，云南高山特有杜鹃，花序顶生红色，宜庭院孤植。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-47.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Rhododendron_delavayi_-_Kunming_Botanical_Garden_-_DSC02852.JPG",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Daderot",
+        "title": "Rhododendron delavayi - Kunming Botanical Garden - DSC02852.JPG",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "ecfe7e012c401714e5ce097e5dc0e2dcc7b3cba0a8d6d1d8c71d25f75ac04ba8",
+        "width": 3240,
+        "height": 4320,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-48",
+      "name": "海桐",
+      "latinName": "Pittosporum tobira",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观果",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "观果",
+        "芳香",
+        "抗污染"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-3m 球形",
+      "careNotes": "喜光耐半阴，抗污染耐修剪；宜肥沃排水好土壤，花具芳香，秋果开裂露红种。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-48.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pittosporum_tobira_kz05.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Pittosporum tobira kz05.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "4b12df83fda8de2e27fff8b330fc695d27b211b93f50456676624f756d2b3801",
+        "width": 4990,
+        "height": 3564,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 23,
+        "min": 0.8,
+        "max": 90,
+        "unit": "株",
+        "spec": "冠径80cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 6,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-49",
+      "name": "含笑",
+      "latinName": "Michelia figo",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "芳香",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2.5m",
+      "careNotes": "喜半阴温暖湿润，忌烈日；宜肥沃微酸性土，花小而芳香，宜庭院与花境配置。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-49.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Michelia_figo_in_Hackfalls_Arboretum_(2).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Golik",
+        "title": "Michelia figo in Hackfalls Arboretum (2).jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "e2491a477a9899a98a19d1d993f0a4180345c9a1fcedcfb1f4619b9749d799b1",
+        "width": 4860,
+        "height": 3240,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-50",
+      "name": "南天竹",
+      "latinName": "Nandina domestica",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "观果"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "观果",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m 丛植",
+      "careNotes": "喜半阴湿润，耐寒；宜肥沃排水好土壤，秋冬叶红果红，全株有毒需注意。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-50.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_PfP.jpg",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Jebulon",
+        "title": "Nandina domestica PfP.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "246c5ec9c1652dee4836412e446d67636cb257049032f97c1f59720261ae7216",
+        "width": 4592,
+        "height": 3056,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 37.8,
+        "min": 19.7,
+        "max": 37.8,
+        "unit": "株",
+        "spec": "P80-100cm/H80-100cm,成都",
+        "priceType": "信息价",
+        "province": "四川",
+        "climate": "西南高原亚热带",
+        "source": "四川地区城市园林绿化主要苗木指导价(第一百六十期·2025年1月)",
+        "sourceUrl": "https://home.gd-esa.com/attachment?id=1603740620512296960",
+        "date": "2025-01",
+        "recordCount": 2,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-51",
+      "name": "栀子",
+      "latinName": "Gardenia jasminoides",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "芳香",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m",
+      "careNotes": "喜半阴湿润，喜酸性土，忌积水碱土；花白芳香，注意防治黄化病与煤污病。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-51.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Jelly_cake_of_Gardenia_jasminoides.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Olaf8940",
+        "title": "Jelly cake of Gardenia jasminoides.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "2012c08b13e773aebd8866034d3f2d44baeb7cf8dc2d5fa803238828221dc846",
+        "width": 4608,
+        "height": 3072,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 1,
+        "min": 0.35,
+        "max": 40,
+        "unit": "株",
+        "spec": "高40-60cm 冠30-50cm",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 5,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-52",
+      "name": "茉莉",
+      "latinName": "Jasminum sambac",
+      "growthForm": "灌木",
+      "categories": [
+        "灌木与球类"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观花",
+        "芳香"
+      ],
+      "phenology": {
+        "flowerMonths": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1.5m",
+      "careNotes": "喜光喜温暖湿润，不耐寒；宜疏松肥沃土壤，花芳香浓郁，花期勤施薄肥。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-52.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Jasminum_sambac_kz01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Ziarnek, Kenraiz",
+        "title": "Jasminum sambac kz01.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "913e73169ae0908fd2d7282afde75c7ccd3650367acac0c3140510acbebcdd66",
+        "width": 4295,
+        "height": 3068,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-53",
+      "name": "麦冬",
+      "latinName": "Ophiopogon japonicus",
+      "growthForm": "草坪地被",
+      "categories": [
+        "草坪与阴生地被"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴",
+        "耐旱"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.2-0.4m 密植",
+      "careNotes": "喜半阴湿润，耐旱耐阴；宜疏松肥沃土壤，常用作林下与阴湿地被，管理粗放。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-53.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ophiopogon_japonicus_at_Coker_Arboretum.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Hameltion",
+        "title": "Ophiopogon japonicus at Coker Arboretum.jpg",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "f1bc91223d5c12271d7fa7b134e44a8e7be7ab6d91b5d2ea6c5dc4b216e02cdf",
+        "width": 5184,
+        "height": 3456,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "平方米",
+        "spec": "细叶/阔叶 每平方米",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-54",
+      "name": "沿阶草",
+      "latinName": "Ophiopogon bodinieri",
+      "growthForm": "草坪地被",
+      "categories": [
+        "草坪与阴生地被"
+      ],
+      "ornamentalFeatures": [
+        "观叶"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.2-0.4m 密植",
+      "careNotes": "喜阴湿耐旱，适应性强；西南山地林下常见，宜作地被与花境镶边，分株繁殖。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-54.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ophiopogon_bodinieri_-_Kunming_Botanical_Garden_-_DSC03002.JPG",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "artist": "Daderot",
+        "title": "Ophiopogon bodinieri - Kunming Botanical Garden - DSC03002.JPG",
+        "visualType": "whole-or-habit",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "high",
+        "sha256": "0f47800cfccf08b42e950e7ce2af5e90d25a964ddf47a6f214a77f4fc74595ba",
+        "width": 4320,
+        "height": 3240,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-whole",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 11,
+        "min": 11,
+        "max": 11,
+        "unit": "平方米",
+        "spec": "细叶/阔叶 每平方米",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://sell.qieta.com.cn/show-5060263.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "alias"
+      }
+    },
+    {
+      "id": "reg-xn-55",
+      "name": "吉祥草",
+      "latinName": "Reineckea carnea",
+      "growthForm": "草坪地被",
+      "categories": [
+        "草坪与阴生地被"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "耐阴",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.2-0.4m 丛植",
+      "careNotes": "喜阴湿耐寒，忌强光；宜肥沃湿润土壤，宜林下与溪边地被，花粉红色具芳香。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-55.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Reineckea_carnea_in_Jardin_botanique_de_la_Charme.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Krzysztof Golik",
+        "title": "Reineckea carnea in Jardin botanique de la Charme.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "ab4e9d6f67fd6f5a5b70b880c565e2654a27a5f061071bdfacb486372c30e1c7",
+        "width": 6000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 0.3,
+        "min": 0.3,
+        "max": 0.3,
+        "unit": "丛",
+        "spec": "丛苗",
+        "priceType": "批发价",
+        "province": "河南",
+        "climate": "华北温带",
+        "source": "切它网·河南潢川花木苗木销售公司规格报价表",
+        "sourceUrl": "http://www.qieta.com/sell/show-3323028.html",
+        "date": "2026-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-56",
+      "name": "玉簪",
+      "latinName": "Hosta plantaginea",
+      "growthForm": "宿根花卉",
+      "categories": [
+        "花境主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "芳香",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "芳香",
+        "耐阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.3-0.6m 丛植",
+      "careNotes": "喜阴湿忌强光；宜肥沃湿润土壤，花白芳香，宜林下与阴生花境主景，防蜗牛蛞蝓。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-56.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hosta_plantaginea_Funkia_babkowata_02.jpg",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Agnieszka Kwiecień (Nova)",
+        "title": "Hosta plantaginea Funkia babkowata 02.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "7dc5277489fb5d58f4d3779e2e2306942864fff86e11741a28d4bad905676713",
+        "width": 2448,
+        "height": 3264,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 100,
+        "min": 100,
+        "max": 100,
+        "unit": "元/㎡",
+        "spec": "苗龄≥2a,蓬径≥20cm,枝条≥5",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-57",
+      "name": "鸢尾",
+      "latinName": "Iris tectorum",
+      "growthForm": "宿根花卉",
+      "categories": [
+        "花境主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "耐半阴"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.3-0.6m 丛植",
+      "careNotes": "喜光耐半阴，喜湿润忌积水；宜疏松肥沃土壤，宜花境与林缘丛植，分株繁殖。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-57.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Iris_tectorum-IMG_20181024_120019.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "artist": "Sun Jiao (Interaccoonale)",
+        "title": "Iris tectorum-IMG 20181024 120019.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "244b4dc4c9bf845add36a8856c96647f9a3a1998fd4dad076dffb45036393f42",
+        "width": 3024,
+        "height": 4032,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 67,
+        "min": 67,
+        "max": 67,
+        "unit": "元/㎡",
+        "spec": "苗龄≥2a,蓬径≥15cm,枝条≥5",
+        "priceType": "信息价",
+        "province": "山西",
+        "climate": "华北温带",
+        "source": "2025年太原地区常用园林苗木秋季价格信息(山西省住建厅)",
+        "sourceUrl": "https://zjt.shanxi.gov.cn/fwzl/bzdexx/jgxx/202602/P020260202573024397489.pdf",
+        "date": "2025-09",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-58",
+      "name": "菖蒲",
+      "latinName": "Acorus calamus",
+      "growthForm": "水生植物",
+      "categories": [
+        "水生湿生"
+      ],
+      "ornamentalFeatures": [
+        "观叶",
+        "芳香"
+      ],
+      "traits": [
+        "常绿",
+        "观叶",
+        "芳香",
+        "水生",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H0.5-1m 浅水丛植",
+      "careNotes": "喜湿润浅水，耐阴；宜水深0-0.3m，叶具清香，宜溪边石隙与水景配置。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-58.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Beelitz%2C_Landesgartenschau_2022%2C_Blumenbeet_und_Skulpturengruppe_Kalmus%2C_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Wilhelm Zimmerling PAR",
+        "title": "Beelitz, Landesgartenschau 2022, Blumenbeet und Skulpturengruppe Kalmus, 02.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "2085ad9ee2822c15eaa28844ae8a2ab8f1f980bcb97e481c194e64713d71b424",
+        "width": 3000,
+        "height": 4000,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    },
+    {
+      "id": "reg-xn-59",
+      "name": "美人蕉",
+      "latinName": "Canna indica",
+      "growthForm": "宿根花卉",
+      "categories": [
+        "花境主调"
+      ],
+      "ornamentalFeatures": [
+        "观花",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观花",
+        "观叶",
+        "水生"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1-2m 丛植",
+      "careNotes": "喜光喜温暖湿润，水陆两生；宜肥沃土壤，花期长，冬季地上部枯萎需重剪。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-59.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Edible_Canna_(Canna_edulis)_in_North_Vietnam.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "NusHub",
+        "title": "Edible Canna (Canna edulis) in North Vietnam.JPG",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "7649c6ca256cb66ad57398a71f23103a2856a97bfb1c9c5c1b084ceb6a81c6e9",
+        "width": 4592,
+        "height": 3056,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "price": 32,
+        "min": 32,
+        "max": 32,
+        "unit": "株",
+        "spec": "1加仑",
+        "priceType": "中标价",
+        "province": "甘肃",
+        "climate": "全国参考",
+        "source": "兰州大学后勤保障部2026年花卉采购项目结算价格",
+        "sourceUrl": "https://hq.lzu.edu.cn/hdupf/fil/202604/202604101775803131572269.pdf",
+        "date": "2026-04",
+        "recordCount": 1,
+        "status": "verified",
+        "matchType": "name"
+      }
+    },
+    {
+      "id": "reg-xn-60",
+      "name": "芦苇",
+      "latinName": "Phragmites australis",
+      "growthForm": "观赏草",
+      "categories": [
+        "花境填充观赏草"
+      ],
+      "ornamentalFeatures": [
+        "观姿观干",
+        "观叶"
+      ],
+      "traits": [
+        "落叶",
+        "观姿观干",
+        "水生",
+        "乡土"
+      ],
+      "phenology": {
+        "flowerMonths": [],
+        "fruitMonths": [],
+        "colorMonths": [],
+        "source": "regional-reference"
+      },
+      "spec": "H1.5-3m 片植",
+      "careNotes": "喜光喜水湿，适应性强；宜浅水与湿地片植，净化水质，根茎蔓延强需控制范围。",
+      "pokeRegions": [
+        "xinan"
+      ],
+      "sourceDistribution": [
+        "四川",
+        "云南",
+        "贵州",
+        "重庆"
+      ],
+      "sourceUrl": "",
+      "sourceType": "regional-research",
+      "reviewStatus": "imported-unverified",
+      "image": {
+        "file": "plants/reg-xn-60.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Poertschach_Halbinselpromenade_Schilfrohr_mit_Erle_am_Seeufer_18042015_2132.jpg",
+        "license": "CC BY-SA 3.0 at",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+        "artist": "Johann Jaritz",
+        "title": "Poertschach Halbinselpromenade Schilfrohr mit Erle am Seeufer 18042015 2132.jpg",
+        "visualType": "detail",
+        "reviewStatus": "auto-reviewed",
+        "confidence": "medium",
+        "sha256": "21b82b3e3b67706d105a09a9e09112a353ece163ec241602f26de11ae85f97f3",
+        "width": 7360,
+        "height": 4912,
+        "source": "Wikimedia Commons"
+      },
+      "imageStatus": "image-available-detail",
+      "sourceNotes": "区域补充·乡土适生",
+      "demoPrice": 0,
+      "demoConstCost": 0,
+      "price": {
+        "status": "unavailable",
+        "note": "暂无查证价格，需项目询价"
+      }
+    }
+  ]
+}

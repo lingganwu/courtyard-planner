@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "status": "demo-baseline",
+  "notice": "硬景材料演示库。综合单价=主材+基层辅材+人工+机械+物流+损耗+措施，价格为功能联调基线，非市场询价。正式条目须记录地区、日期、来源与含税口径。",
+  "materials": [
+    {
+      "id": "granite", "name": "天然花岗岩", "category": "天然石材",
+      "spec": "30mm 火烧面/荔枝面",
+      "constructionLayers": [
+        { "name": "面层", "desc": "30mm 花岗岩面层", "cost": 210 },
+        { "name": "结合层", "desc": "30mm 1:3 干硬性水泥砂浆", "cost": 28 },
+        { "name": "垫层", "desc": "120mm C20 混凝土", "cost": 62 },
+        { "name": "基层", "desc": "150mm 级配碎石夯实", "cost": 35 }
+      ],
+      "wasteRate": 0.05,
+      "pricing": { "labor": 38, "machine": 8, "logistics": 14, "measure": 6 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "pc", "name": "仿石 PC 砖", "category": "景观砖",
+      "spec": "600×300×30mm",
+      "constructionLayers": [
+        { "name": "面层", "desc": "30mm 仿石 PC 砖", "cost": 145 },
+        { "name": "结合层", "desc": "30mm 干硬性砂浆", "cost": 26 },
+        { "name": "垫层", "desc": "100mm C20 混凝土", "cost": 52 },
+        { "name": "基层", "desc": "150mm 级配碎石", "cost": 35 }
+      ],
+      "wasteRate": 0.04,
+      "pricing": { "labor": 32, "machine": 6, "logistics": 12, "measure": 5 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "brick", "name": "陶土烧结砖", "category": "景观砖",
+      "spec": "200×100×50mm",
+      "constructionLayers": [
+        { "name": "面层", "desc": "50mm 烧结砖", "cost": 138 },
+        { "name": "找平层", "desc": "30mm 中砂找平", "cost": 18 },
+        { "name": "基层", "desc": "100mm C20 混凝土", "cost": 52 },
+        { "name": "垫层", "desc": "150mm 碎石", "cost": 32 }
+      ],
+      "wasteRate": 0.06,
+      "pricing": { "labor": 35, "machine": 6, "logistics": 13, "measure": 5 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "permeable", "name": "透水混凝土", "category": "透水铺装",
+      "spec": "彩色透水体系",
+      "constructionLayers": [
+        { "name": "面层", "desc": "40mm 彩色透水面层", "cost": 155 },
+        { "name": "结构层", "desc": "100mm C20 透水混凝土", "cost": 78 },
+        { "name": "滤水层", "desc": "150mm 级配碎石", "cost": 38 },
+        { "name": "土基", "desc": "素土压实", "cost": 12 }
+      ],
+      "wasteRate": 0.05,
+      "pricing": { "labor": 30, "machine": 10, "logistics": 11, "measure": 6 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "deck", "name": "户外共挤塑木", "category": "木竹与合成材料",
+      "spec": "共挤面层 + 架空龙骨",
+      "constructionLayers": [
+        { "name": "面层", "desc": "共挤塑木面板", "cost": 265 },
+        { "name": "龙骨", "desc": "防腐/金属龙骨架空", "cost": 72 },
+        { "name": "支座", "desc": "可调支座或固定件", "cost": 38 },
+        { "name": "基层", "desc": "混凝土结构基层", "cost": 55 }
+      ],
+      "wasteRate": 0.07,
+      "pricing": { "labor": 45, "machine": 5, "logistics": 18, "measure": 8 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "qingstone", "name": "天然青石板", "category": "天然石材",
+      "spec": "乱拼/冰裂纹 30-50mm",
+      "constructionLayers": [
+        { "name": "面层", "desc": "30-50mm 青石板", "cost": 235 },
+        { "name": "结合层", "desc": "30mm 1:3 水泥砂浆", "cost": 28 },
+        { "name": "垫层", "desc": "120mm C20 混凝土", "cost": 62 },
+        { "name": "基层", "desc": "150mm 级配碎石", "cost": 35 }
+      ],
+      "wasteRate": 0.08,
+      "pricing": { "labor": 42, "machine": 8, "logistics": 16, "measure": 6 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "grass", "name": "植草砖", "category": "生态铺装",
+      "spec": "80mm 厚生态嵌草",
+      "constructionLayers": [
+        { "name": "面层", "desc": "80mm 植草砖+种植土", "cost": 118 },
+        { "name": "找平层", "desc": "30mm 粗砂", "cost": 18 },
+        { "name": "基层", "desc": "150mm 级配碎石", "cost": 42 },
+        { "name": "土基", "desc": "素土压实", "cost": 12 }
+      ],
+      "wasteRate": 0.05,
+      "pricing": { "labor": 28, "machine": 6, "logistics": 12, "measure": 5 },
+      "assetId": null, "reviewStatus": "demo"
+    },
+    {
+      "id": "steel", "name": "耐候钢收边", "category": "金属收边",
+      "spec": "3-5mm 折弯板",
+      "constructionLayers": [
+        { "name": "收边", "desc": "3-5mm 耐候钢板", "cost": 118 },
+        { "name": "连接", "desc": "焊接/螺栓固定", "cost": 22 },
+        { "name": "锚固", "desc": "预埋地锚", "cost": 18 },
+        { "name": "基础", "desc": "局部混凝土固定", "cost": 25 }
+      ],
+      "wasteRate": 0.06,
+      "pricing": { "labor": 30, "machine": 12, "logistics": 10, "measure": 5 },
+      "assetId": null, "reviewStatus": "demo"
+    }
+  ]
+}

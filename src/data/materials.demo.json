@@ -1,0 +1,1 @@
+{"status":"demo-only","notice":"仅用于构造断面与BOQ链路联调。当前演示价格不是市场询价，不得作为正式预算依据。正式条目需要地区、日期、来源、含税口径和工料机拆解。","requiredFields":["id","name","category","specification","constructionLayers","wasteRate","pricing","assetId","reviewStatus"]}
